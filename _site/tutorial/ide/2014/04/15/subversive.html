@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<! -- header.html -->
+<meta charset="utf-8">
+<title>SVN no Eclipse: Subversive vs. Subclipse e integração com o Maven (M2E connector)</title>
+
+<meta name="author" content="acdcjunior">
+
+<!-- Enable responsive viewport -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+<!--[if lt IE 9]>
+ <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<!-- Le styles -->
+<link href="/assets/resources/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link href="/assets/resources/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+<link href="/assets/resources/syntax/syntax.css" rel="stylesheet">
+<link href="/assets/css/style.css" rel="stylesheet">
+
+<!-- Le fav and touch icons -->
+<!-- Update these with your own images
+<link rel="shortcut icon" href="images/favicon.ico">
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+-->
+
+ <link rel="alternate" type="application/rss+xml" title="" href="/feed.xml">
+
+<! -- header.html end -->
+
+
+   <body>
+   		<nav class="navbar navbar-default visible-xs" role="navigation">
+		  <!-- Brand and toggle get grouped for better mobile display -->
+		  <div class="navbar-header">
+		    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+			  <span class="sr-only">Toggle navigation</span>
+			  <span class="icon-bar"></span>
+			  <span class="icon-bar"></span>
+			  <span class="icon-bar"></span>
+			</button>
+			
+			<a type="button" class="navbar-toggle nav-link" href="http://github.com/acdcjunior">
+		      <i class="fa fa-github"></i>
+		    </a>
+		    
+		    
+		    <a type="button" class="navbar-toggle nav-link" href="http://twitter.com/acdcjunior">
+		      <i class="fa fa-twitter"></i>
+		    </a>
+		    
+		    
+			<a class="navbar-brand" href="/">
+				<img src="http://www.gravatar.com/avatar/3a07af5b5bd64cf027735db364a14298?s=35" class="img-circle" />
+				titlz acdcjunior's
+			</a>
+		  </div>
+
+		  <!-- Collect the nav links, forms, and other content for toggling -->
+		  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<ul class="nav navbar-nav">
+			  <li class="active"><a href="/">Home</a></li>
+			  <li><a href="/categories.html">Categories</a></li>
+  			  <li><a href="/tags.html">Tags</a></li>
+			</ul>
+		  </div><!-- /.navbar-collapse -->
+		</nav>
+
+       <!-- nav-menu-dropdown -->
+       <div class="btn-group hidden-xs" id="nav-menu">
+          <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+            <i class="fa fa-bars"></i>
+          </button>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="/"><i class="fa fa-home"></i> Home</a></li>
+            <li><a href="/categories.html"><i class="fa fa-folder"></i> Categories</a></li>
+            <li><a href="/tags.html"><i class="fa fa-tags"></i> Tags</a></li>
+              <li class="divider"></li>
+            <li><a href="#"><i class="fa fa-arrow-up"></i> Top of Page</a></li>
+          </ul>
+       </div>
+
+		<div class="col-sm-3 sidebar hidden-xs">
+			<! -- sidebar.html -->
+<header class="sidebar-header" role="banner">
+	<a href="/">
+		<img src="http://www.gravatar.com/avatar/3a07af5b5bd64cf027735db364a14298?s=150" class="img-circle" />
+	</a>
+	<h3 class="title">
+        <a href="/">titlz acdcjunior's</a>
+    </h3>
+</header>
+
+
+<div id="bio" class="text-center">
+	This is the bio
+</div>
+
+
+<div id="contact-list" class="text-center">
+	<ul class="list-unstyled list-inline">
+		
+		<li>
+			<a class="btn btn-default btn-sm" href="https://github.com/acdcjunior">
+				<i class="fa fa-github-alt fa-lg"></i>
+			</a>
+		</li>
+		
+		
+		<li>
+			<a class="btn btn-default btn-sm" href="https://twitter.com/acdcjunior">
+				<i class="fa fa-twitter fa-lg"></i>
+			</a>
+		</li>
+		
+		
+	</ul>
+	<ul id="contact-list-secondary" class="list-unstyled list-inline">
+		
+		
+		<li>
+			<a class="btn btn-default btn-sm" href="/feed.xml">
+				<i class="fa fa-rss fa-lg"></i>
+			</a>
+		</li>
+	</ul>
+</div>
+
+	
+
+<! -- sidebar.html end -->
+
+		</div>
+
+		<div class="col-sm-9 col-sm-offset-3">
+			<article>
+	<div class="page-header">
+	  <h1>SVN no Eclipse: Subversive vs. Subclipse e integração com o Maven (M2E connector) </h1>
+	</div>
+
+	<div class="col-sm-10">
+	 <span class="post-date">
+	   
+	   April 
+	   15th,
+	   
+	   2014
+	 </span>
+	  <div class="article_body">
+	  <p>Quando se fala de suporte a Subversion (SVN) no Eclipse, sabe-se que ele conta com dois principais plugins:</p>
+
+<ul>
+<li>Subversive</li>
+
+<li>Subclipse</li>
+</ul>
+
+<p>O Subversive é mantido pela equipe que programa o eclipse. O Subclipse é mantido pela equipe que programa o SVN. Páreo duro.</p>
+
+<p>Indo direto ao ponto, os dois plugins são bem parecidos, e ambos podem ser instalados pelo Eclipse Marketplace (veja abaixo).</p>
+
+<p>Minha recomendação pessoal é o <strong>Subversive</strong>, por uma razão simples: sempre funcionou pra mim (ótimo argumento :) e tem integração fácil e sem defeitos com o <strong>M2E</strong>, o plugin do <strong>Maven</strong> para o eclipse.</p>
+
+<p><br /></p>
+
+<h3 id="instalando_o_subversive">Instalando o Subversive</h3>
+
+<p><br /></p>
+
+<p>Utilize o Eclipse Marketplace: <strong><code>Menu -&gt; Help -&gt; Eclipse Marketplace</code></strong> Digite <code>svn</code> na caixa de busca. O Subversive deve aparecer como uma das primeiras opções.</p>
+
+<p><br /></p>
+
+<h3 id="conectores_os_drivers_para_o_svn">Conectores, os “drivers” para o SVN</h3>
+
+<p><br /></p>
+
+<p>O Subversive precisará de uma implementação do SVN para que ele possa se contectar com os repositórios.</p>
+
+<p>Vá em: <strong><code>Menu -&gt; Help -&gt; Update</code></strong></p>
+
+<p>Depois, selecione a URL do subersive no combo <em>Work with</em>, selecione algumas implementacoes e instale (conforme figura abaixo).</p>
+
+<p><img src="http://oi43.tinypic.com/314f3mh.jpg" alt="subversive svn connectors" /></p>
+
+<p><br /></p>
+
+<h3 id="integrando_com_o_m2e_maven">Integrando com o M2E (Maven)</h3>
+
+<p><br /></p>
+
+<p>A funcionalidade mais interessante, porém, é a integração com o M2E, o que permite que você faça o checkout direto de uma pasta no SVN como projeto Maven:</p>
+
+<p><img src="http://1.bp.blogspot.com/-e9bVp1G2Qm8/UuHHuo_LM9I/AAAAAAAAAwY/jkuqW5gL7hw/s1600/checkout+as+maven+project.png" alt="Check out as Maven Project" /></p>
+
+<p>Para adicionar essa possibilidade, siga: <strong><code>Window -&gt; Preferences -&gt; Maven -&gt; Discovery</code></strong></p>
+
+<p>Uma vez lá, selecione e instale o <strong>m2e-subversive</strong>, conforme figura abaixo.</p>
+
+<p><img src="http://3.bp.blogspot.com/-p5w8n-ZpvkY/UuHFx4qimkI/AAAAAAAAAwM/TztSLRlycFg/s1600/subversive+connectors.png" alt="instalando m2e-subversive connector" /></p>
+
+<p>Após isso a opção <em>Check out as Maven Project</em> estará habilitada.</p>
+	  </div>
+
+		
+		<ul class="tag_box list-unstyled list-inline">
+		  <li><i class="fa fa-folder-open"></i></li>
+		  
+		  
+			 
+				<li><a href="/categories.html#tutorial-ref">
+					tutorial <span>(1)</span>
+					,
+				</a></li>
+			 
+				<li><a href="/categories.html#ide-ref">
+					ide <span>(1)</span>
+					
+				</a></li>
+			
+		  
+		</ul>
+		  
+
+		
+		<ul class="list-inline">
+		  <li><i class="fa fa-tags"></i></li>
+		  
+		  
+			 
+				<li>
+					<a href="/tags.html#svn-ref">
+					svn <span>(1)</span>
+					,
+					</a>
+				</li>
+			 
+				<li>
+					<a href="/tags.html#eclipse-ref">
+					eclipse <span>(1)</span>
+					,
+					</a>
+				</li>
+			 
+				<li>
+					<a href="/tags.html#subversive-ref">
+					subversive <span>(1)</span>
+					,
+					</a>
+				</li>
+			 
+				<li>
+					<a href="/tags.html#subclipse-ref">
+					subclipse <span>(1)</span>
+					,
+					</a>
+				</li>
+			 
+				<li>
+					<a href="/tags.html#plugin-ref">
+					plugin <span>(1)</span>
+					,
+					</a>
+				</li>
+			 
+				<li>
+					<a href="/tags.html#maven-ref">
+					maven <span>(2)</span>
+					,
+					</a>
+				</li>
+			 
+				<li>
+					<a href="/tags.html#m2e-ref">
+					m2e <span>(1)</span>
+					
+					</a>
+				</li>
+			
+		  
+		  
+		</ul>
+		  
+
+		<hr>
+		
+<div class="comments>
+		    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'acdcjunior'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+
+		<ul class="pager">
+		  
+		  <li class="previous"><a href="//java/junit/2014/04/13/junit-rule.html" title="Exemplos de @Rule do JUnit (@Rule annotation example)">&larr; Previous</a></li>
+		  
+		  
+			<li class="next disabled"><a>Next &rarr;</a>
+		  
+		</ul>
+
+		<hr>
+	</div>
+	
+	<div class="col-sm-2 sidebar-2">
+	
+	</div>
+</article>
+<div class="clearfix"></div>
+
+
+
+			<!-- footer.html -->
+<footer>
+ <hr/>
+ <p>
+ 	&copy; 2014 acdcjunior - Powered by <a href="http://jekyllrb.com/">Jekyll</a>. Theme: <a href="https://github.com/dbtek/dbyll">dbyll</a> by dbtek.
+ </p>
+</footer>
+
+<!-- footer.html end -->
+
+
+		</div>
+
+    
+	<script type="text/javascript" src="/assets/resources/jquery/jquery.min.js"></script>
+	<script type="text/javascript" src="/assets/resources/bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="/assets/js/app.js"></script>
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	
+	  ga('create', 'UA-???????-2', 'acdcjunior.github.io');
+	  ga('send', 'pageview');
+	
+	</script>
+   </body>
+
+</html>
+
+
