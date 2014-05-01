@@ -6,17 +6,18 @@ exclude: ["README.md"] # files to exclude
 pygments: true
 
 excerpt_separator: <!--more-->
+timezone: America/Sao_Paulo
 
-title: titlz acdcjunior's
+title: acdcjunior's
 description: descriz
 author:
   name: acdcjunior
-#  email: acdcjunior@gmail.com
+#  email: 
   github: acdcjunior
   twitter: acdcjunior
 #  pinterest: asd123
 #  linkedin: asd123
-  bio: This is the bio
+  bio: agile software, 'ssaporra.
   email_md5: 3a07af5b5bd64cf027735db364a14298
 
 rss_path: feed.xml

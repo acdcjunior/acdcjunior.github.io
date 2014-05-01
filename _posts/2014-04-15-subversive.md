@@ -11,8 +11,9 @@ Quando se fala de suporte a Subversion (SVN) no Eclipse, sabe-se que ele conta c
 
 O Subversive é mantido pela equipe que programa o eclipse. O Subclipse é mantido pela equipe que programa o SVN. Páreo duro.
 
-Indo direto ao ponto, os dois plugins são bem parecidos, e ambos podem ser instalados pelo Eclipse Marketplace (veja abaixo).
+Indo direto ao ponto, os dois plugins são bem parecidos, e ambos podem ser instalados pelo Eclipse Marketplace (veja a seguir).
 
+<!--more-->
 Minha recomendação pessoal é o **Subversive**, por uma razão simples: sempre funcionou pra mim (ótimo argumento :) e tem integração fácil e sem defeitos com o **M2E**, o plugin do **Maven** para o eclipse.
 
 <br>

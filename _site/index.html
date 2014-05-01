@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="tr">
-
+<html>
+<head>
 <! -- header.html -->
 <meta charset="utf-8">
-<title>acdcjunior's | agile, software, agile software, craftsmanship, code & whatnot.</title>
+<title>acdcjunior's | agile software, 'ssaporra.</title>
 
 <meta name="author" content="acdcjunior">
 
@@ -33,7 +33,7 @@
 
 <! -- header.html end -->
 
-
+</head>
    <body>
    		<nav class="navbar navbar-default visible-xs" role="navigation">
 		  <!-- Brand and toggle get grouped for better mobile display -->
@@ -57,7 +57,7 @@
 		    
 			<a class="navbar-brand" href="/">
 				<img src="http://www.gravatar.com/avatar/3a07af5b5bd64cf027735db364a14298?s=35" class="img-circle" />
-				titlz acdcjunior's
+				acdcjunior's
 			</a>
 		  </div>
 
@@ -92,13 +92,13 @@
 		<img src="http://www.gravatar.com/avatar/3a07af5b5bd64cf027735db364a14298?s=150" class="img-circle" />
 	</a>
 	<h3 class="title">
-        <a href="/">titlz acdcjunior's</a>
+        <a href="/">acdcjunior's</a>
     </h3>
 </header>
 
 
 <div id="bio" class="text-center">
-	This is the bio
+	agile software, 'ssaporra.
 </div>
 
 
@@ -139,7 +139,7 @@
 
 		<div class="col-sm-9 col-sm-offset-3">
 			<div class="page-header">
-  <h1>acdcjunior's | agile, software, agile software, craftsmanship, code & whatnot. </h1>
+  <h1>acdcjunior's | agile software, 'ssaporra. </h1>
 </div>
 
 
@@ -161,7 +161,7 @@
             <div>
                 
                     
-                       aaaaa <p>Quando se fala de suporte a Subversion (SVN) no Eclipse, sabe-se que ele conta com dois principais plugins:</p>
+                       <p>Quando se fala de suporte a Subversion (SVN) no Eclipse, sabe-se que ele conta com dois principais plugins:</p>
 
 <ul>
 <li>Subversive</li>
@@ -171,49 +171,7 @@
 
 <p>O Subversive é mantido pela equipe que programa o eclipse. O Subclipse é mantido pela equipe que programa o SVN. Páreo duro.</p>
 
-<p>Indo direto ao ponto, os dois plugins são bem parecidos, e ambos podem ser instalados pelo Eclipse Marketplace (veja abaixo).</p>
-
-<p>Minha recomendação pessoal é o <strong>Subversive</strong>, por uma razão simples: sempre funcionou pra mim (ótimo argumento :) e tem integração fácil e sem defeitos com o <strong>M2E</strong>, o plugin do <strong>Maven</strong> para o eclipse.</p>
-
-<p><br /></p>
-
-<h3 id="instalando_o_subversive">Instalando o Subversive</h3>
-
-<p><br /></p>
-
-<p>Utilize o Eclipse Marketplace: <strong><code>Menu -&gt; Help -&gt; Eclipse Marketplace</code></strong> Digite <code>svn</code> na caixa de busca. O Subversive deve aparecer como uma das primeiras opções.</p>
-
-<p><br /></p>
-
-<h3 id="conectores_os_drivers_para_o_svn">Conectores, os “drivers” para o SVN</h3>
-
-<p><br /></p>
-
-<p>O Subversive precisará de uma implementação do SVN para que ele possa se contectar com os repositórios.</p>
-
-<p>Vá em: <strong><code>Menu -&gt; Help -&gt; Update</code></strong></p>
-
-<p>Depois, selecione a URL do subersive no combo <em>Work with</em>, selecione algumas implementacoes e instale (conforme figura abaixo).</p>
-
-<p><img src="http://oi43.tinypic.com/314f3mh.jpg" alt="subversive svn connectors" /></p>
-
-<p><br /></p>
-
-<h3 id="integrando_com_o_m2e_maven">Integrando com o M2E (Maven)</h3>
-
-<p><br /></p>
-
-<p>A funcionalidade mais interessante, porém, é a integração com o M2E, o que permite que você faça o checkout direto de uma pasta no SVN como projeto Maven:</p>
-
-<p><img src="http://1.bp.blogspot.com/-e9bVp1G2Qm8/UuHHuo_LM9I/AAAAAAAAAwY/jkuqW5gL7hw/s1600/checkout+as+maven+project.png" alt="Check out as Maven Project" /></p>
-
-<p>Para adicionar essa possibilidade, siga: <strong><code>Window -&gt; Preferences -&gt; Maven -&gt; Discovery</code></strong></p>
-
-<p>Uma vez lá, selecione e instale o <strong>m2e-subversive</strong>, conforme figura abaixo.</p>
-
-<p><img src="http://3.bp.blogspot.com/-p5w8n-ZpvkY/UuHFx4qimkI/AAAAAAAAAwM/TztSLRlycFg/s1600/subversive+connectors.png" alt="instalando m2e-subversive connector" /></p>
-
-<p>Após isso a opção <em>Check out as Maven Project</em> estará habilitada.</p>
+<p>Indo direto ao ponto, os dois plugins são bem parecidos, e ambos podem ser instalados pelo Eclipse Marketplace (veja a seguir).</p>
                     
                 
             </div>
@@ -238,19 +196,11 @@
             <div>
                 
                     
-                       aaaaa <p>Você precisa executar um trecho de código no <code>@Before</code> de varias classes de teste? Você precisa executar um trecho de código no <code>@After</code> de varias classes de teste?</p>
+                       <p>Você precisa executar um trecho de código no <code>@Before</code> de varias classes de teste? Você precisa executar um trecho de código no <code>@After</code> de varias classes de teste?</p>
 
 <p>Para evitar a duplicacao de codigo decorrente dessa necessidade, antigamente criavamos uma superclasse abstrata de testes, colocavamos nela os metodos <code>@Before</code> e <code>@After</code>, e faziamos todas as outras classes de teste estenderem essa superclasse.</p>
 
 <p>Pois bem, desde a versao 4.7 o JUnit disponibiliza uma anotacao <code>@Rule</code> que pode nos ajudar a contornar este problema: reutilizar codigo tipico de <code>@Before</code> e <code>@After</code> sem necessidade de heranca (e o melhor, voce pode ter varias <code>@Rule</code> em uma classe de teste, o que a heranca nao permite).</p>
-
-<p>Chega de blablabla e vamos ao exemplo.</p>
-
-<p>Classe que implementa a @Rule:</p>
-<script src='https://gist.github.com/7812740.js'><![CDATA[ ]]></script>
-<p>e uma classe de testes que usa @Rule acima:</p>
-<script src='https://gist.github.com/7812834.js'><![CDATA[ ]]></script>
-<p>É isso! Happy testing!</p>
                     
                 
             </div>
@@ -262,62 +212,25 @@
 
             <span class="post-date">
                 
-                January
-                18th,
-                
-                2014
-            </span>
-
-            <h2>
-                <a href="/java/2014/01/18/instalacao-maven.html">Maven 3: Download e Instalação (Windows)</a>
-            </h2>
-
-            <div>
-                
-                    
-                       aaaaa <p>Gerenciamento de dependencias e builds sempre foi uma coisa complexa e chata de se fazer, especialmente quando voce deseja distribuir sua aplicação.</p>
-
-<p>Por solucionar este problema, Maven é uma daquelas ferramentas quase que essenciais no desenvolvimento Java.</p>
-
-<p>A seguir explico de forma sucinta como instalá-lo no Windows. Os passos abaixo devem funcionar para qualquer versao recente (Windows XP, Windows Vista, Windows 7, Windows 8).</p>
-                    
-                
-            </div>
-
-        </article>
-
-
-        <article class="home">
-
-            <span class="post-date">
-                
-                November
-                15th,
+                September
+                17th,
                 
                 2013
             </span>
 
             <h2>
-                <a href="/general/setup/demo/2013/11/15/configuration.html">Configuration</a>
+                <a href="/java/2013/09/17/instalacao-maven.html">Maven 3: Download e Instalação (Windows)</a>
             </h2>
 
             <div>
                 
-                  <p>In your config file change these settings</p>
+                    
+                       <p>lib exigia que procurássemos e baixássemos inumeros .JARs na versao exata necessitada.</p>
 
-<pre><code>
-title: dbyll
-author:
-  name: yourname
-  email: youremail
-  github: asd123
-  twitter: asd123
-  pinterest: asd123
-  linkedin: asd123
-  resume: asd123
-  bio: Your stylish,  minimalist theme!
-  email_md5: md5ofemail
-</code></pre>
+<p>Por solucionar este problema, Maven se tornou uma ferramenta quase que essencial no desenvolvimento Java.</p>
+
+<p>A seguir explico de forma sucinta como instalá-lo no Windows. Os passos abaixo devem funcionar para qualquer versao recente (Windows XP, Windows Vista, Windows 7, Windows 8).</p>
+                    
                 
             </div>
 
@@ -347,7 +260,6 @@ author:
 
 
 
-
 			<!-- footer.html -->
 <footer>
  <hr/>
@@ -370,10 +282,11 @@ author:
 	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-	
-	  ga('create', 'UA-???????-2', 'acdcjunior.github.io');
+
+	  ga('create', 'UA-50217609-2', 'acdcjunior.github.io');
 	  ga('send', 'pageview');
-	
+
+
 	</script>
    </body>
 

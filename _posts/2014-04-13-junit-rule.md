@@ -13,6 +13,7 @@ colocavamos nela os metodos `@Before` e `@After`, e faziamos todas as outras cla
 Pois bem, desde a versao 4.7 o JUnit disponibiliza uma anotacao `@Rule` que pode nos ajudar a contornar este problema:
 reutilizar codigo tipico de `@Before` e `@After` sem necessidade de heranca (e o melhor, voce pode ter varias `@Rule` em
 uma classe de teste, o que a heranca nao permite).
+<!--more-->
 
 Chega de blablabla e vamos ao exemplo.
 
