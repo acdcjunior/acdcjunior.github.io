@@ -3,11 +3,8 @@ layout: post
 title: 'Maven 3: Download e Instalação (Windows)'
 categories: [java]
 tags: [maven, tools, windows, java, code]
-comments: true
 ---
-
-Gerenciamento de dependencias e builds sempre foi uma coisa complexa e chata de se fazer: Fazer funcionar qualquer
-lib exigia que procurássemos e baixássemos inumeros .JARs na versao exata necessitada.
+Gerenciamento de dependencias e builds sempre foi uma coisa complexa e chata de se fazer: Fazer funcionar qualquer lib exigia que procurássemos e baixássemos inumeros .JARs na versao exata necessitada.
 
 Por solucionar este problema, Maven se tornou uma ferramenta quase que essencial no desenvolvimento Java.
 

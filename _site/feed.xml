@@ -7,6 +7,114 @@
 		<atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
 		
 			<item>
+				<title>Poo Javascript</title>
+				<description>&lt;p&gt;http://jsperf.com/method-declaration-inside-vs-prototype http://javascript.crockford.com/private.html&lt;/p&gt;
+
+&lt;p&gt;Apesar da keyword &lt;code&gt;class&lt;/code&gt; ser reservada em JavaScript, ela não serve para declarar classes&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+
+&lt;p&gt;A declaração de objetos, porém, pode ser alcançada através do uso das &lt;code&gt;function&lt;/code&gt;.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;
+/* REGISTRE O NAMESPACE */
+var br = br || {};
+br.com = br.com || {};
+br.com.namespace = br.com.namespace || {};
+
+(function(br) {
+
+	/**
+	* Construtor - Deve ser a primeira declaracao
+	* @constructor
+	*/
+	br.com.namespace.Pessoa = function(nome, idade, salario) {
+		this.nome = nome;
+		this.idade = idade;
+		this.salario = salario;
+		this.calcularAposentadoria();
+	};
+	
+	
+	// Campos &amp;quot;STATIC&amp;quot; ----------------------------------------------
+	
+	// Campos &amp;quot;STATIC&amp;quot; e &amp;quot;PUBLIC&amp;quot;
+	br.com.namespace.Pessoa.tipo = &amp;quot;Mamífero&amp;quot;;
+	br.com.namespace.Pessoa.emPaz = true;
+	
+	// Campos &amp;quot;STATIC&amp;quot; e &amp;quot;PRIVATE&amp;quot;
+	var populacaoAtual = 2500501; // Variaveis e acessiveis somente neste escopo
+	var IDADE_ADULTA = 18; // boas para constantes internas da classe
+
+
+	// Funcoes &amp;quot;STATIC&amp;quot; ---------------------------------------------
+	
+	// Funcao &amp;quot;STATIC&amp;quot; e &amp;quot;PUBLIC&amp;quot;
+	br.com.namespace.Pessoa.getPopulacaoProjetada = function() {
+		return populacaoAtual * calculaProjecao();
+	};
+	
+	// Funcao &amp;quot;STATIC&amp;quot; e &amp;quot;PRIVATE&amp;quot;
+    function calculaProjecao() {
+        return populacaoAtual / 3.14;
+    }
+	
+	
+	// Campos e funcoes DE INSTANCIA -------------------------------
+
+    // Campos de instancia e &amp;quot;PUBLIC&amp;quot; (prototype)
+    br.com.namespace.Pessoa.prototype.nome = null;
+	br.com.namespace.Pessoa.prototype.idade = null;
+	br.com.namespace.Pessoa.prototype._salario = null;
+
+    // Funcoes de instancia e &amp;quot;PUBLIC&amp;quot;
+	br.com.namespace.Pessoa.prototype.getNome = function() {
+		return this.nome;
+	};
+	br.com.namespace.Pessoa.prototype.isAdulto = function() {
+		return this.idade &amp;gt; IDADE_ADULTA;
+	};
+	br.com.namespace.Pessoa.prototype.calcularAposentadoria = function() {
+	    if (this.salario &amp;gt; 5000) {
+		    this.aposentadoria = this.idade + 10;
+		} else {
+		    this.aposentadoria = this.idade + 5;
+		}
+	};
+	
+	// Campos e funcoes de instancia e &amp;quot;PRIVATE&amp;quot;
+	// Nao eh possivel obter funcoes ou campos de instancia privados sem uma grande penalidade de
+	// performance. Uma convencao bastante seguida é o uso do prefixo &amp;quot;_&amp;quot; em campos e funcoes
+	// publicas para denotar que a intencao era que eles fossem somente usados internamente.
+	// Para criar campos e funcoes privados, a criacao teria que ser feita durante a declaracao da funcao,
+	// fazendo com que os campos/funcoes fossem &amp;quot;redeclarados&amp;quot; a cada instanciacao da classe - declaracoes que,
+	// feitas via prototype, seriam feitas apenas uma vez. A redeclaracao torna a instanciacao em media 8 a 10
+	// vezes mais lenta. Veja teste em: http://jsperf.com/method-declaration-inside-vs-prototype
+
+})(br);
+
+// Exemplo de uso
+var joao = new br.namespace.Pessoa(&amp;quot;Joao Silva&amp;quot;, 30, 5000); // use &amp;quot;new namespace.NomeDaClasse(...)&amp;quot; para instanciar
+var maria = new br.namespace.Pessoa(&amp;quot;Maria Santos&amp;quot;, 15, 2000);
+
+if (joao.isAdulto()) {
+    console.log(joao.getNome() + &amp;quot; é adulto.&amp;quot;);
+else {
+    console.log(joao.getNome() + &amp;quot; não é adulto.&amp;quot;);
+}
+if (maria.isAdulto()) {
+    console.log(joao.getNome() + &amp;quot; é adulto.&amp;quot;);
+else {
+    console.log(joao.getNome() + &amp;quot; não é adulto.&amp;quot;);
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&quot;footnotes&quot;&gt;&lt;hr /&gt;&lt;ol&gt;&lt;li id=&quot;fn:1&quot;&gt;
+&lt;p&gt;Embora não sirva pra nada hoje, nada impede que ela seja usada no futuro, em uma versão atualizada do JavaScript. &lt;a href=&quot;#fnref:1&quot; rev=&quot;footnote&quot;&gt;↩&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;&lt;/ol&gt;&lt;/div&gt;</description>
+				<pubDate>Thu, 01 May 2014 00:00:00 +0100</pubDate>
+				<link>/2014/05/01/poo-javascript.html</link>
+				<guid isPermaLink="true">/2014/05/01/poo-javascript.html</guid>
+			</item>
+		
+			<item>
 				<title>SVN no Eclipse: Subversive vs. Subclipse e integração com o Maven (M2E connector)</title>
 				<description>&lt;p&gt;Quando se fala de suporte a Subversion (SVN) no Eclipse, sabe-se que ele conta com dois principais plugins:&lt;/p&gt;
 
@@ -61,7 +169,7 @@
 &lt;p&gt;&lt;img src=&quot;http://3.bp.blogspot.com/-p5w8n-ZpvkY/UuHFx4qimkI/AAAAAAAAAwM/TztSLRlycFg/s1600/subversive+connectors.png&quot; alt=&quot;instalando m2e-subversive connector&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Após isso a opção &lt;em&gt;Check out as Maven Project&lt;/em&gt; estará habilitada.&lt;/p&gt;</description>
-				<pubDate>Tue, 15 Apr 2014 00:00:00 -0300</pubDate>
+				<pubDate>Tue, 15 Apr 2014 00:00:00 +0100</pubDate>
 				<link>/tutorial/ide/2014/04/15/subversive.html</link>
 				<guid isPermaLink="true">/tutorial/ide/2014/04/15/subversive.html</guid>
 			</item>
@@ -81,16 +189,14 @@
 &lt;p&gt;e uma classe de testes que usa @Rule acima:&lt;/p&gt;
 &lt;script src='https://gist.github.com/7812834.js'&gt;&lt;![CDATA[ ]]&gt;&lt;/script&gt;
 &lt;p&gt;É isso! Happy testing!&lt;/p&gt;</description>
-				<pubDate>Sun, 13 Apr 2014 00:00:00 -0300</pubDate>
+				<pubDate>Sun, 13 Apr 2014 00:00:00 +0100</pubDate>
 				<link>/java/junit/2014/04/13/junit-rule.html</link>
 				<guid isPermaLink="true">/java/junit/2014/04/13/junit-rule.html</guid>
 			</item>
 		
 			<item>
 				<title>Maven 3: Download e Instalação (Windows)</title>
-				<description>&lt;p&gt;lib exigia que procurássemos e baixássemos inumeros .JARs na versao exata necessitada.&lt;/p&gt;
-
-&lt;p&gt;Por solucionar este problema, Maven se tornou uma ferramenta quase que essencial no desenvolvimento Java.&lt;/p&gt;
+				<description>&lt;p&gt;Por solucionar este problema, Maven se tornou uma ferramenta quase que essencial no desenvolvimento Java.&lt;/p&gt;
 
 &lt;p&gt;A seguir explico de forma sucinta como instalá-lo no Windows. Os passos abaixo devem funcionar para qualquer versao recente (Windows XP, Windows Vista, Windows 7, Windows 8). &lt;!--more--&gt;&lt;/p&gt;
 
@@ -151,7 +257,7 @@
 &lt;p&gt;&lt;img src=&quot;http://1.bp.blogspot.com/-LVaMRDTTJgY/UqY0niedtEI/AAAAAAAAAus/1kya8KGIZck/s1600/maven3.png&quot; alt=&quot;mvn version em execução e seu resultado esperado&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;A partir de agora o comando &lt;code&gt;mvn&lt;/code&gt; estará disponível a partir de qualquer pasta.&lt;/p&gt;</description>
-				<pubDate>Tue, 17 Sep 2013 00:00:00 -0300</pubDate>
+				<pubDate>Tue, 17 Sep 2013 00:00:00 +0100</pubDate>
 				<link>/java/2013/09/17/instalacao-maven.html</link>
 				<guid isPermaLink="true">/java/2013/09/17/instalacao-maven.html</guid>
 			</item>

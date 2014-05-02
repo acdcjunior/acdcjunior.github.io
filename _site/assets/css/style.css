@@ -7,7 +7,7 @@ body{
 .sidebar {
 	position: fixed;
 	top: 0px;
-	padding-top: 10%;
+	padding-top: 8%;
 }
 
 .sidebar-header {
@@ -106,4 +106,12 @@ footer {
 #nav-menu .dropdown-menu {
     left: inherit;
     right: 0px;
+}
+
+.img-circle {
+-webkit-filter: grayscale(100%);
+-moz-filter: grayscale(100%);
+-o-filter: grayscale(100%);
+-ms-filter: grayscale(100%);
+filter: grayscale(100%);
 }
