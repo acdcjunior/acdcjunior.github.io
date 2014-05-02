@@ -46,10 +46,20 @@
 </div>
 
 <div class="text-center" style="margin-top: 10%">
-Tags
 </div>
 <div class="text-center" style="padding: 0% 20% 0% 20%">
-   tag cloud!
+Tags
+    <script type="text/javascript">
+      /*!
+       * Create an array of word objects, each representing a word in the cloud
+       */
+      var word_array = [
+		{% for tag in site.tags %}
+			{text: "{{ tag | first }}", weight: {{ tag | last | size | times: 1000 | divided_by: site.tags.size | minus: 60 }}, link: "{{ site.BASE_PATH }}/tags.html#{{ tag | first | slugize }}-ref"},
+		{% endfor %}
+      ];
+    </script>
+	<div id="wordcloud"></div>
 </div>
 
 <div class="text-center" style="margin-top: 10%">

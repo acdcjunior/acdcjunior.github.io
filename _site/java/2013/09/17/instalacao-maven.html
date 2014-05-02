@@ -128,26 +128,50 @@
 </div>
 
 <div class="text-center" style="margin-top: 10%">
-Tags
 </div>
 <div class="text-center" style="padding: 0% 20% 0% 20%">
-   <a style='font-size: 70%' href='/tags.html#annotation'>annotation</a>
-<a style='font-size: 70%' href='/tags.html#anotacao'>anotacao</a>
-<a style='font-size: 170%' href='/tags.html#code'>code</a>
-<a style='font-size: 70%' href='/tags.html#eclipse'>eclipse</a>
-<a style='font-size: 170%' href='/tags.html#java'>java</a>
-<a style='font-size: 70%' href='/tags.html#junit'>junit</a>
-<a style='font-size: 70%' href='/tags.html#m2e'>m2e</a>
-<a style='font-size: 170%' href='/tags.html#maven'>maven</a>
-<a style='font-size: 70%' href='/tags.html#plugin'>plugin</a>
-<a style='font-size: 70%' href='/tags.html#rule'>rule</a>
-<a style='font-size: 70%' href='/tags.html#subclipse'>subclipse</a>
-<a style='font-size: 70%' href='/tags.html#subversive'>subversive</a>
-<a style='font-size: 70%' href='/tags.html#svn'>svn</a>
-<a style='font-size: 70%' href='/tags.html#tests'>tests</a>
-<a style='font-size: 70%' href='/tags.html#tools'>tools</a>
-<a style='font-size: 70%' href='/tags.html#windows'>windows</a>
-
+Tags
+    <script type="text/javascript">
+      /*!
+       * Create an array of word objects, each representing a word in the cloud
+       */
+      var word_array = [
+		
+			{text: "maven", weight: 65, link: "/tags.html#maven-ref"},
+		
+			{text: "tools", weight: 2, link: "/tags.html#tools-ref"},
+		
+			{text: "windows", weight: 2, link: "/tags.html#windows-ref"},
+		
+			{text: "java", weight: 65, link: "/tags.html#java-ref"},
+		
+			{text: "code", weight: 65, link: "/tags.html#code-ref"},
+		
+			{text: "tests", weight: 2, link: "/tags.html#tests-ref"},
+		
+			{text: "junit", weight: 2, link: "/tags.html#junit-ref"},
+		
+			{text: "rule", weight: 2, link: "/tags.html#rule-ref"},
+		
+			{text: "anotacao", weight: 2, link: "/tags.html#anotacao-ref"},
+		
+			{text: "annotation", weight: 2, link: "/tags.html#annotation-ref"},
+		
+			{text: "svn", weight: 2, link: "/tags.html#svn-ref"},
+		
+			{text: "eclipse", weight: 2, link: "/tags.html#eclipse-ref"},
+		
+			{text: "subversive", weight: 2, link: "/tags.html#subversive-ref"},
+		
+			{text: "subclipse", weight: 2, link: "/tags.html#subclipse-ref"},
+		
+			{text: "plugin", weight: 2, link: "/tags.html#plugin-ref"},
+		
+			{text: "m2e", weight: 2, link: "/tags.html#m2e-ref"},
+		
+      ];
+    </script>
+	<div id="wordcloud"></div>
 </div>
 
 <div class="text-center" style="margin-top: 10%">
@@ -359,7 +383,7 @@ Recent Posts
 <div class="social">
 	<div style="float: right">	<a href="https://twitter.com/share" class="twitter-share-button" data-via="acdcjunior">Tweet</a> </div>
 	<div style="float: right">	<p><g:plusone size="medium"></g:plusone></p> </div>
-	<div style="float: right">	<div class="fb-share-button" data-href="/java/2013/09/17/instalacao-maven.html" data-type="button_count"></div> </div>
+	<div style="float: right; margin-right: 30px;">	<div class="fb-share-button" data-href="/java/2013/09/17/instalacao-maven.html" data-type="button_count"></div> </div>
 </div>
 		
 <div class="comments">
@@ -415,6 +439,8 @@ Recent Posts
     
 	<script type="text/javascript" src="/assets/resources/jquery/jquery.min.js"></script>
 	<script type="text/javascript" src="/assets/resources/bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="/assets/js/jqcloud-1.0.4.min.js"></script>
+    <script type="text/javascript"> $(function() { $("#wordcloud").jQCloud(word_array); }); </script>
 	<script type="text/javascript" src="/assets/js/app.js"></script>
 	<script>
 	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

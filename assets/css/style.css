@@ -115,3 +115,19 @@ footer {
 -ms-filter: grayscale(100%);
 filter: grayscale(100%);
 }
+
+      #wordcloud {
+        background: #eee;
+        font-family: Helvetica, Arial, sans-serif;
+        margin: 30px auto;
+        width: 300px;
+        height: 75px;
+        border: none;
+      }
+      #wordcloud span.w10, #wordcloud span.w9, #wordcloud span.w8, #wordcloud span.w7 {
+        text-shadow: 0px 1px 1px #ccc;
+		font-weight: bold;
+      }
+      #wordcloud span.w3, #wordcloud span.w2, #wordcloud span.w1 {
+        text-shadow: 0px 1px 1px #fff;
+      }
