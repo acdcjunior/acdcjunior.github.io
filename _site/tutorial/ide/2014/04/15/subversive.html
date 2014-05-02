@@ -156,10 +156,6 @@ Recent Posts
 <div class="text-center" style="padding: 0% 10% 0% 10%">
 	
 		<div style="border-top: solid black 1px">
-		<a href="/2014/05/01/poo-javascript.html">Poo Javascript</a>  
-	   </div>
-	
-		<div style="border-top: solid black 1px">
 		<a href="/tutorial/ide/2014/04/15/subversive.html">SVN no Eclipse: Subversive vs. Subclipse e integração com o Maven (M2E connector)</a>  
 	   </div>
 	
@@ -187,7 +183,8 @@ Recent Posts
 		</div>
 
 		<div class="col-sm-9 col-sm-offset-3">
-			<article>
+			
+<article>
 	<div class="page-header">
 	  <h1>SVN no Eclipse: Subversive vs. Subclipse e integração com o Maven (M2E connector) </h1>
 	</div>
@@ -338,17 +335,11 @@ Recent Posts
 
 		<hr>
 		
-<div class="social">
-	<div class="twitter">
-		<a href="https://twitter.com/share" class="twitter-share-button" data-via="erjjones">Tweet</a>
-		<!-- Put this just before the closing body tag -->
+		
+<div class="social-setup">
+		<!-- TWITTER -->
 		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-	</div>
-	<div class="google-plus">
-		<!-- Google + -->
-		<p><g:plusone size="medium"></g:plusone></p>
-		 
-		<!-- Add this just before the closing body tag of your web page -->	
+		<!-- g+ -->	
 		<script type="text/javascript">
 		  (function() {
 			var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
@@ -356,7 +347,30 @@ Recent Posts
 			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
 		  })();
 		</script>
-	</div>
+		<!-- facebook -->
+		<script>
+		  window.fbAsyncInit = function() {
+			FB.init({
+			  appId      : '705202182877078',
+			  xfbml      : false,
+			  version    : 'v2.0',
+			  status: false
+			});
+		  };
+		</script>
+		<div id="fb-root"></div>
+		<script>(function(d, s, id) {
+		  var js, fjs = d.getElementsByTagName(s)[0];
+		  if (d.getElementById(id)) return;
+		  js = d.createElement(s); js.id = id;
+		  js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.0";
+		  fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));</script>
+</div>
+<div class="social">
+	<div style="float: right">	<a href="https://twitter.com/share" class="twitter-share-button" data-via="acdcjunior">Tweet</a> </div>
+	<div style="float: right">	<p><g:plusone size="medium"></g:plusone></p> </div>
+	<div style="float: right">	<div class="fb-share-button" data-href="/tutorial/ide/2014/04/15/subversive.html" data-type="button_count"></div> </div>
 </div>
 		
 <div class="comments">
@@ -381,7 +395,7 @@ Recent Posts
 		  <li class="previous"><a href="//java/junit/2014/04/13/junit-rule.html" title="Exemplos de @Rule do JUnit (@Rule annotation example)">&larr; Previous</a></li>
 		  
 		  
-		  <li class="next"><a href="//2014/05/01/poo-javascript.html" title="Poo Javascript">Next &rarr;</a></li>
+			<li class="next disabled"><a>Next &rarr;</a>
 		  
 		</ul>
 
