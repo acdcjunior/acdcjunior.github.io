@@ -16,8 +16,6 @@ Frequentemente, o código fica amarrado demais à interface, tornando o teste im
 
 
 
-> Written with [StackEdit](https://stackedit.io/).
-
 Veja mais em:
 - [SegregatedDOM][2] por Martin Fowler, 16 Jan 2013
 - [Keeping jQuery in check: Segregated DOM makes for a maintainable JavaScript codebase][3] por Pete Hodgson, 16 Jan 2013
