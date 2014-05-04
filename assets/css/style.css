@@ -116,18 +116,49 @@ footer {
 filter: grayscale(100%);
 }
 
-      #wordcloud {
-        background: #eee;
-        font-family: Helvetica, Arial, sans-serif;
-        margin: 30px auto;
-        width: 150px;
-        height: 75px;
-        border: none;
-      }
-      #wordcloud span.w10, #wordcloud span.w9, #wordcloud span.w8, #wordcloud span.w7 {
-        text-shadow: 0px 1px 1px #ccc;
-		font-weight: bold;
-      }
-      #wordcloud span.w3, #wordcloud span.w2, #wordcloud span.w1 {
-        text-shadow: 0px 1px 1px #fff;
-      }
+/*****************************************************************************/
+/*
+/* Tags
+/*
+/*****************************************************************************/
+
+.tag-box {
+  list-style: none;
+  margin: 0;
+  padding: 4px 0;
+  overflow: hidden;
+  *zoom: 1;
+}
+
+.tag-box:before, .tag-box:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+
+.tag-box:after {
+  clear: both;
+}
+
+.tag-box.inline li {
+  float: left;
+  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: 2.5;
+}
+
+.tag-box a {
+  padding: 4px 6px;
+  margin: 2px;
+  background-color: #e6e6e6;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.tag-box a span {
+  vertical-align: super;
+  font-size: 10px;
+  font-size: 0.625rem;
+}
