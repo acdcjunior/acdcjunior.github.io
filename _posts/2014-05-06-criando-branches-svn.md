@@ -10,7 +10,7 @@ Como eu esqueço sempre, esse é apenas um "reminder" sobre como criar branches 
 ### Criando Branches no SVN:
 
 - Faça checkout do `REPOSITORIO` na pasta `X`;
-- Clique com o botão direito: `TortoiseSVN` -> `Branch/tag`;
+- Clique com o botão direito: `TortoiseSVN` -> `Branch/tag...`;
 - Digite em "`to path:`" o nome da nova branch;
 - Fim!
 
