@@ -1,8 +1,8 @@
 ---
 layout: post
 title: 'Criando Branches no SVN via TortoiseSVN'
-categories: [tutorial]
-tags: [svn, tortoisesvn, configuration]
+maintag: 'svn'
+tags: [svn, tortoisesvn]
 ---
 Como eu esqueço sempre, esse é apenas um lembrete sobre como criar branches no SVN.
 <!--more-->
