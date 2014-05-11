@@ -8,6 +8,8 @@ pygments: true
 excerpt_separator: <!--more-->
 timezone: America/Sao_Paulo
 markdown: kramdown
+permalink: /:title
+
 
 title: acdcjunior's
 description: descriz
