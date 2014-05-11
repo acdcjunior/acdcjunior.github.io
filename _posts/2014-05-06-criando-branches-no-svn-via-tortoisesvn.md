@@ -4,7 +4,7 @@ title: 'Criando Branches no SVN via TortoiseSVN'
 categories: [tutorial]
 tags: [svn, tortoisesvn, configuration]
 ---
-Como eu esqueço sempre, esse é apenas um "reminder" sobre como criar branches no SVN.
+Como eu esqueço sempre, esse é apenas um lembrete sobre como criar branches no SVN.
 <!--more-->
 
 ### Criando Branches no SVN:
@@ -14,7 +14,7 @@ Como eu esqueço sempre, esse é apenas um "reminder" sobre como criar branches 
 - Digite em "`to path:`" o nome da nova branch;
 - Fim!
 
-Note que a pasta `X` ainda esta apontando para `REPOSITORIO`, no local que você originalmente fez checkout.
+Note que a pasta `X` ainda esta apontando para `REPOSITORIO`, local que você originalmente fez checkout.
 
-Você tem que fazer um switch para que `X` aponte para o branch recém-criado!
+Você tem que fazer um *switch* para que `X` aponte para o branch recém-criado!
 
