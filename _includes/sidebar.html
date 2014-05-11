@@ -10,17 +10,19 @@
     </h3>
 </header>
 
-{% if site.author.bio %}
-<div id="bio" class="text-center">
-	{{ site.author.bio }}
-</div>
+{% if comment %}
+	{% if site.author.bio %}
+	<div id="bio" class="text-center">
+		{{ site.author.bio }}
+	</div>
+	{% endif %}
 {% endif %}
 
 <div id="contact-list" class="text-center">
 	<ul class="list-unstyled list-inline">
 		{% if site.author.github %}
 		<li>
-			<a class="btn btn-default btn-sm" href="https://github.com/{{ site.author.github }}">
+			<a data-class="btn btn-default btn-sm" href="https://github.com/{{ site.author.github }}">
 				<!-- i class="fa fa-github-alt fa-lg"></i -->
 				<img src="{{ site.BASE_PATH }}/assets/ico/gh.png" />
 			</a>
@@ -28,7 +30,7 @@
 		{% endif %}
 		{% if site.author.twitter %}
 		<li>
-			<a class="btn btn-default btn-sm" href="https://twitter.com/{{ site.author.twitter }}">
+			<a data-class="btn btn-default btn-sm" href="https://twitter.com/{{ site.author.twitter }}">
 				<!-- i class="fa fa-twitter fa-lg"></i -->
 				<img src="{{ site.BASE_PATH }}/assets/ico/tw.png" />
 			</a>
@@ -36,33 +38,39 @@
 		{% endif %}
 		{% if site.author.email %}
 		<li>
-			<a class="btn btn-default btn-sm" href="mailto:{{ site.author.email }}">
+			<a data-class="btn btn-default btn-sm" href="mailto:{{ site.author.email }}">
 				<i class="fa fa-envelope fa-lg"></i>
 			</a>
 		</li>
 		{% endif %}
 		<li>
-			<a class="btn btn-default btn-sm" href="{{ site.BASE_PATH }}/{{ site.rss_path }}">
-				<!-- i class="fa fa-rss fa-lg"></i -->
-				<img src="{{ site.BASE_PATH }}/assets/ico/rss.png" />
-			</a>
-		</li>		<li>
-			<a class="btn btn-default btn-sm" href="http://stackoverflow.com/users/1850609/acdcjunior">
+			<a data-class="btn btn-default btn-sm" href="http://stackoverflow.com/users/1850609/acdcjunior">
 				<!-- i class="fa fa-rss fa-lg"></i -->
 				<img src="{{ site.BASE_PATH }}/assets/ico/so.png" />
+			</a>
+		</li>
+		<li>
+			<a rel="author" href="https://www.google.com/+acdcjunior" ><img src="{{ site.BASE_PATH }}/assets/ico/gp.png" alt="acdcjunior on google plus" /></a>
+		</li>
+	</ul>
+	<ul class="list-unstyled list-inline">
+		<li>
+			<a data-class="btn btn-default btn-sm" href="{{ site.BASE_PATH }}/{{ site.rss_path }}">
+				<!-- i class="fa fa-rss fa-lg"></i -->
+				<img src="{{ site.BASE_PATH }}/assets/ico/rss.png" />
 			</a>
 		</li>
 	</ul>
 </div>
 
-<div class="text-center" style="margin-top: 10%">
+<div class="text-center sidebar-h">
 {% capture site_tags %}{% for tag in site.tags %}{{ tag | first }}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
 <!-- site_tags: {{ site_tags }} -->
 {% assign tag_words = site_tags | split:',' | sort %}
 <!-- tag_words: {{ tag_words }} -->
 
 <div id="tags">
-  <h3>Tags</h3>
+  <h3>tag cloud</h3>
   <ul class="tag-box inline">
   {% for item in (0..site.tags.size) %}{% unless forloop.last %}
     {% capture this_word %}{{ tag_words[item] | strip_newlines }}{% endcapture %}
@@ -73,19 +81,32 @@
 
 </div>
 
-<div class="text-center" style="margin-top: 10%">
-<h3>Recent/Últimos Posts</h3>
+<div class="text-center sidebar-h">
+	<h3>recent posts</h3>
 </div>
-<div class="text-center" style="padding: 0% 10% 0% 10%">
+<div class="text-center sidebar-content">
+	<ul>
 	{% for post in site.posts limit:4 %}
-		<div style="border-top: solid black 1px; text-align: left">
-		<a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a>  
-	   </div>
+		<li style="text-align: left">
+			<a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a>  
+		</li>
 	{% endfor %}  
+	</ul>
+</div>
+
+<div class="text-center sidebar-h">
+	<h3>blogroll</h3>
+</div>
+<div class="text-center sidebar-content">
+	<ul style="text-align: left">
+		<li><a href="http://blog.8thlight.com/uncle-bob/archive.html" target="_blank">Uncle Bob <img src="{{ site.BASE_PATH }}/assets/ico/external.gif" alt="This link opens in a new tab/window"></a></li>
+		<li><a href="http://codinghorror.com" title="Coding Horror ny Jeff Atwood" target="_blank">Coding Horror <img src="{{ site.BASE_PATH }}/assets/ico/external.gif" alt="This link opens in a new tab/window"></a></li>
+		<li><a href="http://www.bitnative.com/" title="BitNative by Cory House" target="_blank">BitNative <img src="{{ site.BASE_PATH }}/assets/ico/external.gif" alt="This link opens in a new tab/window"></a></li>
+	</ul>
 </div>
 
 {% if comment %}
-<div class="text-center" style="margin-top: 10%">
+<div class="text-center sidebar-h">
 	<a href="http://stackoverflow.com/users/1850609/acdcjunior">
 	<img style="width: 208px" src="http://stackexchange.com/users/flair/2077773.png" width="208" height="58"
 	alt="profile for acdcjunior on Stack Overflow and others" title="profile for acdcjunior on Stack Overflow and others">

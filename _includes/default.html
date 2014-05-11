@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html>
+<!--[if lt IE 9 ]> <html class="ieOLD"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html><!--<![endif]-->
 <head>
 {% include header.html %}
 </head>
@@ -28,8 +29,7 @@
 		      <i class="fa fa-envelope"></i>
 		    </a>
 		    {% endif %}
-			<a class="navbar-brand" href="{{ site.BASE_PATH }}/">
-				<img src="http://www.gravatar.com/avatar/{{site.author.email_md5}}?s=35" class="img-circle" />
+			<a class="navbar-brand mobile-title" href="{{ site.BASE_PATH }}/">
 				{{ site.title }}
 			</a>
 		  </div>
@@ -62,7 +62,7 @@
 			{% include sidebar.html %}
 		</div>
 
-		<div class="col-sm-9 col-sm-offset-3">
+		<div class="col-sm-9 col-sm-offset-3 blog-content">
 			{{ content }}
 
 			{% include footer.html %}
