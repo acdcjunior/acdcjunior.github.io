@@ -3,6 +3,7 @@ layout: post
 title: 'Exemplos de @Rule do JUnit (@Rule annotation example)'
 maintag: 'junit'
 tags: [junit, tests, java]
+lang: 'pt_BR' # _
 ---
 Você precisa executar um trecho de código no `@Before` de varias classes de teste?
 Você precisa executar um trecho de código no `@After` de varias classes de teste?
