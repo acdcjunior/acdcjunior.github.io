@@ -17,15 +17,16 @@ Indo direto ao ponto, os dois plugins são bem parecidos, e ambos podem ser inst
 <!--more-->
 Minha recomendação pessoal é o **Subversive**, por uma razão simples: sempre funcionou pra mim (ótimo argumento :) e tem integração fácil e sem defeitos com o **M2E**, o plugin do **Maven** para o eclipse.
 
+<br>
 
 ###Instalando o Subversive
-<br>
 Utilize o Eclipse Marketplace: **`Menu -> Help -> Eclipse Marketplace`**
 Digite `svn` na caixa de busca. O Subversive deve aparecer como uma das primeiras opções.
 
 
-##Conectores, os "drivers" para o SVN
 <br>
+
+###Conectores, os "drivers" para o SVN
 O Subversive precisará de uma implementação do SVN para que ele possa se contectar com os repositórios.
 
 Vá em: **`Menu -> Help -> Update`**
@@ -34,9 +35,9 @@ Depois, selecione a URL do subersive no combo *Work with*, selecione algumas imp
 
 ![subversive svn connectors][1]
 
+<br>
 
 ###Integrando com o M2E (Maven)
-<br>
 A funcionalidade mais interessante, porém, é a integração com o M2E, o que permite que você faça o checkout direto de uma pasta no SVN como projeto Maven:
 
 ![Check out as Maven Project][2]
