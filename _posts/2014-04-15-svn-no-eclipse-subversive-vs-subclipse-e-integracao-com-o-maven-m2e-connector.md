@@ -31,7 +31,7 @@ O Subversive precisará de uma implementação do SVN para que ele possa se cont
 
 Vá em: **`Menu -> Help -> Update`**
 
-Depois, selecione a URL do subersive no combo *Work with*, selecione algumas implementacoes e instale (conforme figura abaixo).
+Depois, selecione a URL do subversive no combo *Work with*, selecione algumas implementacoes e instale (conforme figura abaixo).
 
 ![subversive svn connectors][1]
 
