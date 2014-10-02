@@ -59,6 +59,6 @@ Após isso a opção *Check out as Maven Project...* estará habilitada:
 ![Check out as Maven Project][2]
 
 
-  [1]: http://oi43.tinypic.com/314f3mh.jpg
+  [1]: /assets/posts/svn-connectors-wizard.jpg
   [2]: http://1.bp.blogspot.com/-e9bVp1G2Qm8/UuHHuo_LM9I/AAAAAAAAAwY/jkuqW5gL7hw/s1600/checkout+as+maven+project.png
-  [3]: /assets/posts/svn-connectors-wizard.jpg
+  [3]: http://3.bp.blogspot.com/-p5w8n-ZpvkY/UuHFx4qimkI/AAAAAAAAAwM/TztSLRlycFg/s1600/subversive+connectors.png
