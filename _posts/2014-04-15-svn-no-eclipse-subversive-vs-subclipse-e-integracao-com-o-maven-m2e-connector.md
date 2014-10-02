@@ -38,17 +38,15 @@ Depois, selecione a URL do subversive no combo *Work with*, selecione algumas im
 <br>
 
 ###Integrando com o M2E (Maven)
-A funcionalidade mais interessante, porém, é a integração com o M2E, o que permite que você faça o checkout direto de uma pasta no SVN como projeto Maven:
-
-![Check out as Maven Project][2]
-
-Para adicionar essa possibilidade, siga: **`Window -> Preferences -> Maven -> Discovery`**
+A funcionalidade mais interessante, porém, é a integração com o M2E, o que permite que você faça o checkout direto de uma pasta no SVN como projeto Maven. Para adicionar essa possibilidade, siga: **`Window -> Preferences -> Maven -> Discovery -> Open Catalog`**
 
 Uma vez lá, selecione e instale o **m2e-subversive**, conforme figura abaixo.
 
 ![instalando m2e-subversive connector][3]
 
-Após isso a opção *Check out as Maven Project...* estará habilitada.
+Após isso a opção *Check out as Maven Project...* estará habilitada:
+
+![Check out as Maven Project][2]
 
 
   [1]: http://oi43.tinypic.com/314f3mh.jpg
