@@ -58,6 +58,10 @@ Após isso a opção *Check out as Maven Project...* estará habilitada:
 
 ![Check out as Maven Project][2]
 
+--
+
+Para maiores detalhes sobre a instalação do subversive, é possível consultar a [página oficial](http://www.eclipse.org/subversive/installation-instructions.php).
+
 
   [1]: /assets/posts/svn-connectors-wizard.jpg
   [2]: http://1.bp.blogspot.com/-e9bVp1G2Qm8/UuHHuo_LM9I/AAAAAAAAAwY/jkuqW5gL7hw/s1600/checkout+as+maven+project.png
