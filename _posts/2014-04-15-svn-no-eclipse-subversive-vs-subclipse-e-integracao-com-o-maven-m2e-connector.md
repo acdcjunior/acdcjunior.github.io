@@ -31,19 +31,23 @@ O Subversive precisará de uma implementação do SVN para que ele possa se cont
 
 Assim que você instala o Subversive, ele pede para reiniciar. Após o reinicio do eclipse, da primeira vez que você utilizar qualquer funcionalidade do Subversive (abrindo o menu **`Window -> Preferences -> Team -> SVN`** por exemplo) se não existir nenhum conector instalado (o que é o esperado, já que você instalou o Subversive agora), a janela "Connector discovery" é automaticamente chamada.
 
-Caso essa janela nao apareça, nao tema, é possível instalar os connectors via update site:
+![subversive svn connectors discovery wizard][4]
+
+Caso essa janela não apareça, não tema, é possível instalar os connectors via update site:
 
 Vá em: **`Menu -> Help -> Install New Software...`**
 
 Adicione, se nao existir, a URL do subversive:
-- Subversive SVN Connectors
-- http://community.polarion.com/projects/subversive/download/eclipse/4.0/luna-site/
+
+> Subversive SVN Connectors - [http://community.polarion.com/projects/subversive/download/eclipse/4.0/luna-site/](http://community.polarion.com/projects/subversive/download/eclipse/4.0/luna-site/)
  
 Se desejar outras URLs mais atualizadas ou de outras versões, visite o site da [Polarion](http://www.polarion.com/products/svn/subversive/download.php?utm_source=eclipse.org&utm_medium=link&utm_campaign=subversive)
 
-Depois, selecione a URL do Subversive no combo *Work with*, selecione algumas implementacoes e instale (conforme figura abaixo).
+Depois de adicionar, selecione a URL do Subversive no combo *Work with*, marque algumas implementacoes e instale (conforme figura abaixo).
 
-![subversive svn connectors][1]
+![subversive svn connectors via update site][1]
+
+A partir daí é só `Next`, `Next`... até `Finish`.
 
 <br>
 
@@ -63,6 +67,7 @@ Após isso a opção *Check out as Maven Project...* estará habilitada:
 Para maiores detalhes sobre a instalação do subversive, é possível consultar a [página oficial](http://www.eclipse.org/subversive/installation-instructions.php).
 
 
-  [1]: /assets/posts/svn-connectors-wizard.jpg
+  [1]: /assets/posts/subversive_connectors_update.jpg
   [2]: http://1.bp.blogspot.com/-e9bVp1G2Qm8/UuHHuo_LM9I/AAAAAAAAAwY/jkuqW5gL7hw/s1600/checkout+as+maven+project.png
   [3]: http://3.bp.blogspot.com/-p5w8n-ZpvkY/UuHFx4qimkI/AAAAAAAAAwM/TztSLRlycFg/s1600/subversive+connectors.png
+  [4]: /assets/posts/subversive_connectors_discovery.png
