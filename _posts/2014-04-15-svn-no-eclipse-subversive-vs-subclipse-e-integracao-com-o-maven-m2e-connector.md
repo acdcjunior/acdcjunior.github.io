@@ -26,12 +26,22 @@ Digite `svn` na caixa de busca. O Subversive deve aparecer como uma das primeira
 
 <br>
 
-###Conectores, os "drivers" para o SVN
+###*Connectors*, os "drivers" para o SVN
 O Subversive precisará de uma implementação do SVN para que ele possa se contectar com os repositórios.
 
-Vá em: **`Menu -> Help -> Update`**
+Assim que você instala o Subversive, ele pede para reiniciar. Após o reinicio do eclipse, da primeira vez que você utilizar qualquer funcionalidade do Subversive (abrindo o menu **`Window -> Preferences -> Team -> SVN`** por exemplo) se não existir nenhum conector instalado (o que é o esperado, já que você instalou o Subversive agora), a janela "Connector discovery" é automaticamente chamada.
 
-Depois, selecione a URL do subversive no combo *Work with*, selecione algumas implementacoes e instale (conforme figura abaixo).
+Caso essa janela nao apareça, nao tema, é possível instalar os connectors via update site:
+
+Vá em: **`Menu -> Help -> Install New Software...`**
+
+Adicione, se nao existir, a URL do subversive:
+- Subversive SVN Connectors
+- http://community.polarion.com/projects/subversive/download/eclipse/4.0/luna-site/
+ 
+Se desejar outras URLs mais atualizadas ou de outras versões, visite o site da [Polarion](http://www.polarion.com/products/svn/subversive/download.php?utm_source=eclipse.org&utm_medium=link&utm_campaign=subversive)
+
+Depois, selecione a URL do Subversive no combo *Work with*, selecione algumas implementacoes e instale (conforme figura abaixo).
 
 ![subversive svn connectors][1]
 
@@ -51,4 +61,4 @@ Após isso a opção *Check out as Maven Project...* estará habilitada:
 
   [1]: http://oi43.tinypic.com/314f3mh.jpg
   [2]: http://1.bp.blogspot.com/-e9bVp1G2Qm8/UuHHuo_LM9I/AAAAAAAAAwY/jkuqW5gL7hw/s1600/checkout+as+maven+project.png
-  [3]: http://3.bp.blogspot.com/-p5w8n-ZpvkY/UuHFx4qimkI/AAAAAAAAAwM/TztSLRlycFg/s1600/subversive+connectors.png
+  [3]: /assets/posts/svn-connectors-wizard.jpg
