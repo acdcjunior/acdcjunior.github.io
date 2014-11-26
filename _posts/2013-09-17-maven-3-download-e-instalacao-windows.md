@@ -5,16 +5,16 @@ maintag: 'maven'
 tags: [maven, java]
 lang: 'pt_BR' # _
 ---
-Gerenciamento de dependencias e builds sempre foi uma coisa complexa e chata de se fazer: Fazer funcionar qualquer lib exigia que procurássemos e baixássemos inumeros .JARs na versao exata necessitada.
+Gerenciamento de dependencias e builds sempre foi uma coisa complexa e chata de se lidar: Fazer funcionar qualquer lib exigia que procurássemos e baixássemos inumeros `.JAR`s na versão exata necessitada.
 
 Por solucionar este problema, Maven se tornou uma ferramenta quase que essencial no desenvolvimento Java.
 
-A seguir explico de forma sucinta como instalá-lo no Windows. Os passos abaixo devem funcionar para qualquer versao recente (Windows XP, Windows Vista, Windows 7, Windows 8).
+A seguir explico de forma sucinta como instalá-lo no Windows. Os passos abaixo devem funcionar para qualquer versão recente (Windows XP, Windows Vista, Windows 7, Windows 8).
 <!--more-->
 
 ###Instalação e configuração
 
-- Baixe a versao binaria em http://maven.apache.org/download.cgi;
+- Baixe a versao binária em [http://maven.apache.org/download.cgi](http://maven.apache.org/download.cgi);
 	- Neste exemplo, usei a [versao 3.1.1][1].
 - Descompacte numa pasta qualquer;
 	- Exemplo: `C:\des\apache-maven-3.1.1`
@@ -26,6 +26,7 @@ A seguir explico de forma sucinta como instalá-lo no Windows. Os passos abaixo 
     - Se necessitar, [baixe a versao atual da JDK][4], instale e crie a variavel mencionada.
 
 <br>
+
 ###Verificando se funcionou
 
 Para certificar-se de que tudo deu certo:
