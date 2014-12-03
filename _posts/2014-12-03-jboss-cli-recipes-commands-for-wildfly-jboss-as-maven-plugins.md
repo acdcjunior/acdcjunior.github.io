@@ -8,15 +8,15 @@ lang: 'en_US'
 Ever wanted to use the `afterDeployment`or `beforeDeployment`tags of wildfly (or jboss-as) maven plugins?
 
 Example:
-```
-<configuration>
-	<afterDeployment>
-		<commands>
-			<command>/subsystem=security/security-domain="unused-domain":remove</command>
-		</commands>
-	</afterDeployment>
-</configuration>
-```
+
+	<configuration>
+		<afterDeployment>
+			<commands>
+				<command>/subsystem=security/security-domain="unused-domain":remove</command>
+			</commands>
+		</afterDeployment>
+	</configuration>
+
 The tags there are follow the format `command`, which are **JBoss "CLI Recipes"**.
 
 Those recipes are *way* undocumented (that's pretty much the reason I write this).  As a starting point, you can find several examples here: https://docs.jboss.org/author/display/AS71/CLI+Recipes
@@ -30,6 +30,7 @@ Just go to your WildFly/JBoss instalation's `bin/` folder and run `jboss-cli(.ba
 They commands/recipes follow the format `/child-node-type=name:command(args)`
 
 Where `:command` can be:
+
 - `:add`
 - `:read-resouce`
 - `:remove`
