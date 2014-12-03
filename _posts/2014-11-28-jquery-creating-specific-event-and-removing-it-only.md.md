@@ -21,6 +21,7 @@ function letESCKeyCloseMyModal() {
     });
 }
 ```
+
 later on:
 
 ```javascript
@@ -40,11 +41,13 @@ Our code above could then do the binding just like:
 ```javascript
 $(document).on("keyup.escKeyClosesModal", function(e) { ... });
 ```
+
 And the removal:
 
 ```javascript
 $(document).off("keyup.escKeyClosesModal");
 ```
+
 All clean. Awesome.
 
 See demo here: http://jsfiddle.net/acdcjunior/79ms0xp6/
