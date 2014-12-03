@@ -25,9 +25,9 @@ They have lots of commands you can try.
 
 ###How to try the commands/recipes out out?
 
-Just go to your WildFly/JBoss instalation's `bin/` folder and run `jboss-cli(.bat)`. Your server instance must be online.
+To start the CLI (Command Line Interface), go to your WildFly/JBoss instalation's `bin/` folder and run `jboss-cli(.bat)`. Your server instance must be online.
 
-They commands/recipes follow the format `/child-node-type=name:command(args)`
+The commands/recipes follow the format `/child-node-type=name:command(args)`
 
 Where `:command` can be:
 
