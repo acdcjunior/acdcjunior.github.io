@@ -8,7 +8,7 @@ lang: 'en_US'
 Say you want to add some specific event and want to unbind just it (and not others) later.
 <!--more-->
 
-A an example, consider you binding the <kbd>ESC</kbd> key to a function that closes a modal you are about to open:
+As an example, consider you binding the <kbd>ESC</kbd> key to a function that closes a modal you are about to open:
 
 {% gist b88f2a355f51584121c9 regularKeyUpBinding.js %}
 
