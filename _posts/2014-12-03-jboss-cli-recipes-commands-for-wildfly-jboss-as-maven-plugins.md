@@ -23,6 +23,8 @@ Is is quite difficult to find documentation for those recipes (that's pretty muc
 
 They have lots of commands you can try.
 
+Make sure you also check [http://jtips.info/index.php?title=WildFly/cli](http://jtips.info/index.php?title=WildFly/cli).
+
 ###How to try the commands/recipes out out?
 
 To start the CLI (Command Line Interface), go to your WildFly/JBoss instalation's `bin/` folder and run `jboss-cli(.bat)`. Your server instance must be online.
