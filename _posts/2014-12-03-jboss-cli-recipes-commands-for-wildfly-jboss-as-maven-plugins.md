@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'JBoss CLI Recipes (commands): Useful for Wildfly/JBoss-AS Maven Plugins'
+title: 'JBoss CLI Examples: Useful for Wildfly/JBoss-AS Maven Plugins'
 maintag: 'jboss'
 tags: [jboss, wildfly, cli recipes, maven, java]
 lang: 'en_US'
@@ -17,19 +17,19 @@ Example:
 		</afterDeployment>
 	</configuration>
 
-The tags there are follow the format `command`, which are **JBoss "CLI Recipes"**.
+The tags there are follow the format `command`, which are **JBoss "CLI"** (Command Line Interface) commands.
 
-Is is quite difficult to find documentation for those recipes (that's pretty much the reason I write this).  As a starting point, you can find several examples in [WildFly CLI Recipes page](https://docs.jboss.org/author/display/WFLY8/CLI+Recipes).
+Is is quite difficult to find documentation for those commands (that's pretty much the reason I write this).  As a starting point, you can find several recipes/examples in [WildFly CLI Recipes page](https://docs.jboss.org/author/display/WFLY8/CLI+Recipes).
 
 They have lots of commands you can try.
 
-Make sure you also check [http://jtips.info/index.php?title=WildFly/cli](http://jtips.info/index.php?title=WildFly/cli).
+Make sure you also check [http://jtips.info/index.php?title=WildFly/cli](http://jtips.info/index.php?title=WildFly/cli) - lots of examples there as well.
 
-###How to try the commands/recipes out out?
+###How to try the commands/recipes out?
 
 To start the CLI (Command Line Interface), go to your WildFly/JBoss instalation's `bin/` folder and run `jboss-cli(.bat)`. Your server instance must be online.
 
-The commands/recipes follow the format `/child-node-type=name:command(args)`
+The commands ussually, but not always, follow the format `/child-node-type=name:command(args)`
 
 Where `:command` can be:
 
