@@ -19,7 +19,7 @@ Example:
 
 The tags there are follow the format `command`, which are **JBoss "CLI Recipes"**.
 
-Those recipes are *way* undocumented (that's pretty much the reason I write this).  As a starting point, you can find several examples here: https://docs.jboss.org/author/display/AS71/CLI+Recipes
+Is is quite difficult to find documentation for those recipes (that's pretty much the reason I write this).  As a starting point, you can find several examples in [WildFly CLI Recipes page](https://docs.jboss.org/author/display/WFLY8/CLI+Recipes).
 
 They have lots of commands you can try.
 
