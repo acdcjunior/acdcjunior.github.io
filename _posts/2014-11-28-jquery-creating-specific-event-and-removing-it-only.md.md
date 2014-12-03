@@ -22,11 +22,7 @@ function letESCKeyCloseMyModal() {
 }
 ```
 
-{% gist 136ad068eb5d8c2e4eb76582cd824925106ec7d0 %}
-
-or
-
-{% gist b88f2a355f51584121c9 %}
+{% gist b88f2a355f51584121c9 regularKeyUpBinding.js %}
 
 later on:
 
