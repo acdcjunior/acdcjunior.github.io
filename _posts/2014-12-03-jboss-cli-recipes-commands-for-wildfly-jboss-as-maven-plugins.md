@@ -33,9 +33,10 @@ The commands/recipes follow the format `/child-node-type=name:command(args)`
 
 Where `:command` can be:
 
-- `:add`
 - `:read-resouce`
+- `:add`
 - `:remove`
+- `:write-attribute(name=ATTRIBUTE_NAME,value=ATTRIBUTE_VALUE)`
 - others... (I don't know them all, but there are others for sure, depending on the node type)
 
 
