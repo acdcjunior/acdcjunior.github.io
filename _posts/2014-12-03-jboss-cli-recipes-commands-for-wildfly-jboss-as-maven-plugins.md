@@ -8,20 +8,13 @@ lang: 'en_US'
 Ever wanted to use the `afterDeployment`or `beforeDeployment`tags of wildfly (or jboss-as) maven plugins?
 
 Example:
-
-	<configuration>
-		<afterDeployment>
-			<commands>
-				<command>/subsystem=security/security-domain="unused-domain":remove</command>
-			</commands>
-		</afterDeployment>
-	</configuration>
+{% gist dbd01dad9497b137ea61 %}
 
 The tags there are follow the format `command`, which are **JBoss "CLI"** (Command Line Interface) commands.
 
-Is is quite difficult to find documentation for those commands (that's pretty much the reason I write this).  As a starting point, you can find several recipes/examples in [WildFly CLI Recipes page](https://docs.jboss.org/author/display/WFLY8/CLI+Recipes).
+###Example Commands
 
-They have lots of commands you can try.
+Is is quite difficult to find documentation for those commands (that's pretty much the reason I write this).  As a starting point, you can find several recipes/examples in [WildFly CLI Recipes page](https://docs.jboss.org/author/display/WFLY8/CLI+Recipes), they have lots of commands you can try.
 
 Make sure you also check [http://jtips.info/index.php?title=WildFly/cli](http://jtips.info/index.php?title=WildFly/cli) - lots of examples there as well.
 
@@ -40,30 +33,10 @@ Where `:command` can be:
 - others... (I don't know them all, but there are others for sure, depending on the node type)
 
 
-##The most useful command: `/:read-children-types`
+###If you're lost: `/:read-children-types`
 
-	[standalone@localhost:9990 /] /:read-children-names(child-type=subsystem)
-	{
-	    "outcome" => "success",
-	    "result" => [
-	        "batch",
-	        "datasources",
-	        ...
-	        "logging",
-	        ...
-	        "security",
-	        "transactions",
-	        ...
-	    ],
-	    "response-headers" => {"process-state" => "reload-required"}
-	}
-	[standalone@localhost:9990 /] /:read-children-names(child-type=management)
-	{
-	    "outcome" => "failed",
-	    "failure-description" => "JBAS014793: No known child type named management",
-	    "rolled-back" => true,
-	    "response-headers" => {"process-state" => "reload-required"}
-	}
+Pretty much the most useful command: `/:read-children-types`. It shows al kind of nodes you can work with, and from there on, dive! Here's how it could go:
+
 	[standalone@localhost:9990 /] /:read-children-types
 	{
 	    "outcome" => "success",
@@ -81,8 +54,27 @@ Where `:command` can be:
 	    "response-headers" => {"process-state" => "reload-required"}
 	}
 
-And then you can take any `children-type` and list:
+And then you can take any `children-type`, say `"subsystem"` and list:
+
+	[standalone@localhost:9990 /] /:read-children-names(child-type=subsystem)
+	{
+	    "outcome" => "success",
+	    "result" => [
+	        "batch",
+	        "datasources",
+	        ...
+	        "logging",
+	        ...
+	        "security",
+	        "transactions",
+	        ...
+	    ],
+	    "response-headers" => {"process-state" => "reload-required"}
+	}
+	
+Or `"core-service"`:
 
 	[standalone@localhost:9990 /] /:read-children-names(child-type=core-service)
-
+        ...
+        
 And son on!
