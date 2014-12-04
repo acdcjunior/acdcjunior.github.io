@@ -35,7 +35,7 @@ Where `:command` can be:
 
 ###If you're lost: `/:read-children-types`
 
-Pretty much the most useful command: `/:read-children-types`. It shows al kind of nodes you can work with, and from there on, dive! Here's how it could go:
+Pretty much one of the most useful commands: `/:read-children-types`. It shows all kind of nodes you can work with, and from there on, dive! Here's how it could go:
 
 	[standalone@localhost:9990 /] /:read-children-types
 	{
