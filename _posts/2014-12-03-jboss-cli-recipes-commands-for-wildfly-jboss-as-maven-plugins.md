@@ -75,6 +75,6 @@ And then you can take any `children-type`, say `"subsystem"` and list:
 Or `"core-service"`:
 
 	[standalone@localhost:9990 /] /:read-children-names(child-type=core-service)
-        ...
+	...
         
 And son on!
