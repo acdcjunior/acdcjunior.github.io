@@ -77,4 +77,4 @@ Or `"core-service"`:
 	[standalone@localhost:9990 /] /:read-children-names(child-type=core-service)
 	...
         
-And son on!
+And son on! After finding the node you want to change, pick a command and touché!
