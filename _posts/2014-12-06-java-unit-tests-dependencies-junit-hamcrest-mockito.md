@@ -24,6 +24,3 @@ Some possible questions:
 
 - ["Why `mockito-core` and not `mockito-all`?"](https://code.google.com/p/mockito/wiki/DeclaringMockitoDependency)
  - Basically `mockito-all` is sort of an über-jar, containinig all its dependencies (such as Hamcrest), embedded. As we want to fine tune its dependencies (that's what the `<exclude>` tag is!), then `-core` is the way to go.
-
-
-> Written with [StackEdit](https://stackedit.io/).
