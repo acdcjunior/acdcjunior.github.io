@@ -9,7 +9,7 @@ Pretty much every Java project I have uses these dependencies: JUnit + Hamcrest 
 
 <!-- more -->
 
-So from time to time the snippet below proves needed. I'll try to keep their versions up to date.
+So from time to time the snippet below proves needed.
 
 {% gist e333d02f5afb830aea88 %}
 
@@ -25,3 +25,6 @@ Some possible questions:
 
 - ["Why `mockito-core` and not `mockito-all`?"](https://code.google.com/p/mockito/wiki/DeclaringMockitoDependency)
  - Basically `mockito-all` is sort of an über-jar, containinig all its dependencies (such as Hamcrest), embedded. As we want to fine tune its dependencies (that's what the `<exclude>` tag is!), then `-core` is the way to go.
+
+As soon as any question arises, I'll place it here. I'll also try to keep the versions up to date.
+See ya!
