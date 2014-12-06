@@ -1,13 +1,14 @@
 ---
 layout: post
-title: 'Java Unit Tests dependencies Snippet'
+title: 'Java Unit Tests Maven dependencies snippet'
 maintag: 'test'
 tags: [test, junit, hamcrest, mockito, maven, java]
 lang: 'en_US'
 ---
-
 Pretty much every Java project I have uses these dependencies: JUnit + Hamcrest + Mockito.
+
 <!-- more -->
+
 So from time to time the snippet below proves needed. I'll try to keep their versions up to date.
 
 {% gist e333d02f5afb830aea88 %}
