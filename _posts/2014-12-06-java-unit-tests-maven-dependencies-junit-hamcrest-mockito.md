@@ -7,9 +7,9 @@ lang: 'en_US'
 ---
 Pretty much every Java project I have uses these dependencies: JUnit + Hamcrest + Mockito.
 
-<!-- more -->
+So from time to time this `pom.xml` excerpt snippet containing them proves needed.
 
-So from time to time the snippet below proves needed.
+<!-- more -->
 
 {% gist e333d02f5afb830aea88 %}
 
@@ -17,7 +17,7 @@ The snippet avoids having multiple hamcrest versions on the classpath (as JUnit 
 
 Latest versions can be checked at the [The Maven Central Repository Search Engine](http://search.maven.org/):
 
-- JUnit: [junit](http://search.maven.org/#search%7Cgav%7C1%7Cg%3A%22junit%22%20AND%20a%3A%22junit%22);
+- JUnit: [`junit`](http://search.maven.org/#search%7Cgav%7C1%7Cg%3A%22junit%22%20AND%20a%3A%22junit%22);
 - Hamcrest: [`hamcrest-all`](http://search.maven.org/#search%7Cgav%7C1%7Cg%3A%22org.hamcrest%22%20AND%20a%3A%22hamcrest-all%22);
 - Mockito: [`mockito-core`](http://search.maven.org/#search%7Cgav%7C1%7Cg%3A%22org.mockito%22%20AND%20a%3A%22mockito-core%22).
 
