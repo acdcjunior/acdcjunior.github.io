@@ -28,6 +28,6 @@ Some possible questions:
 
 <br>
 
-As soon as any question arises, I'll place it here. I'll also try to keep the versions up to date.
+Should any other questions arise, I'll address them here. I'll also try to keep the snippet's versions up to date.
 
 See ya!
