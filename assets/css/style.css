@@ -164,7 +164,6 @@ filter: grayscale(100%);
 
 .tag-box.inline li {
   float: left;
-  font-size: 14px;
   font-size: 0.875rem;
   line-height: 2.5;
 }
@@ -181,12 +180,11 @@ filter: grayscale(100%);
 
 .tag-box a span {
   vertical-align: super;
-  font-size: 10px;
   font-size: 0.625rem;
 }
 
 .sidebar-content {
-	padding: 0% 10% 0% 10%;
+	padding: 0 10% 0 10%;
 }
 .sidebar-h { 
 	margin-top: 10%;
