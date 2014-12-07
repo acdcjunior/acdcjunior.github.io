@@ -5,6 +5,7 @@ maintag: 'jsf'
 tags: [jsf, primefaces, jaas, tomcat, maven, tomcat7:run, template, layout]
 lang: 'en_US'
 ---
+Just a demo app. What you'll find:
 
 - JSF 2.2
 - Primefaces 5.1
