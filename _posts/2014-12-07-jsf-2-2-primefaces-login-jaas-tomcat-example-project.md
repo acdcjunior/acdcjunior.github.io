@@ -75,4 +75,13 @@ In Tomcat, the users are picket up from `tomcat-users.xml`. In JBoss, they come 
 
 and uses the `ApplicationRealm`.
 
-So hang in there, I'll update this post as soon as I get to it :D
+Also take a look at the [`HttpServletRequest#login(String, String)`](https://docs.oracle.com/javaee/7/api/javax/servlet/http/HttpServletRequest.html#login(java.lang.String, java.lang.String)) docs:
+
+> Validate the provided username and password in the password validation realm used by the web container login mechanism configured for the ServletContext.
+
+"Realm" is then a keyword in this quest.
+
+
+...
+
+So, anyway, hang in there, I'll update this post as soon as I get to it :D
