@@ -2,7 +2,7 @@
 layout: post
 title: 'JSF 2.2 Primefaces JAAS Tomcat Example - With Authentication, Template Layout and `tomcat7:run` enabled.'
 maintag: 'jsf'
-tags: [jsf, primefaces, jaas, tomcat, maven, tomcat7:run, template, layout]
+tags: [jsf, primefaces, jaas, tomcat, maven, 'tomcat7:run', template, layout]
 lang: 'en_US'
 ---
 Just a demo app. What you'll find:
