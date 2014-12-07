@@ -24,7 +24,7 @@ Latest versions can be checked at the [The Maven Central Repository Search Engin
 Some possible questions:
 
 - ["Why `mockito-core` and not `mockito-all`?"](https://code.google.com/p/mockito/wiki/DeclaringMockitoDependency)
- - Basically `mockito-all` is sort of an über-jar, containinig all its dependencies (such as Hamcrest), embedded. As we want to fine tune its dependencies (that's what the `<exclude>` tag is!), then `-core` is the way to go.
+    - Basically `mockito-all` is sort of a [*fat jar*](https://www.google.com.br/search?q=fat%20jar), containing all its dependencies (such as Hamcrest), embedded. As we want to fine tune its dependencies (that's what the `<exclude>` tag is!), then `-core` is the way to go.
 
 <br>
 
