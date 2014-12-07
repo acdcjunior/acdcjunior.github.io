@@ -78,7 +78,8 @@ article.home div a, article.home pre a { color: #2c3e50; }
 article.home div a:hover, article.home pre a:hover { color: #2c3e50; text-decoration: none; }
 
 .blog-content h1, .blog-content h2, .blog-content h3, .blog-content h4, .blog-content h5, .blog-content h6 {
-	margin-top: 30px;
+	margin-top: 45px;
+	margin-bottom: 20px;
 }
 
 h1,h2,h3,h4,h5,h6 {

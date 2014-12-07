@@ -15,6 +15,8 @@ Just a demo app. What you'll find:
 
 ##Download/run the example project:
 
+Without delay, these are the steps needed to run the example project:
+
 - **Download the [project source code](https://github.com/acdcjunior/acdcjunior-github-io-example-projects/archive/master.zip);**
   - Unzip it and head to this project's folder:  `cd jsf-primefaces-jaas-tomcat-example`;
 - **Run it using: `mvn tomcat7:run`**
