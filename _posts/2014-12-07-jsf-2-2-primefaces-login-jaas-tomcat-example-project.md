@@ -13,7 +13,7 @@ Just a demo app. What you'll find:
 - Tomcat Maven Plugin
 - Declarative and Programatic Authentication using JAAS
 
-<!-- more -->
+<!--more-->
 
 ##Download/run the example project:
 
