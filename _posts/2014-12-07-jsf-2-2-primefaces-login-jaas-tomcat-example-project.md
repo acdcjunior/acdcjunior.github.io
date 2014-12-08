@@ -81,6 +81,29 @@ Also take a look at the [`HttpServletRequest#login(String, String)`](https://doc
 
 "Realm" is then a keyword in this quest.
 
+Quoting [Apache Tomcat 8 Configuration Reference - The Realm Component](http://tomcat.apache.org/tomcat-8.0-doc/config/realm.html):
+
+> A Realm element represents a "database" of usernames, passwords, and roles (similar to Unix groups) assigned to those users.
+
+What we're doing is authenticating with a Realm provided by Tomcat - it provides a default JAAS Realm implementation.
+[The JAAS Specification describes the result of a successful login as a javax.security.auth.Subject instance](https://tomcat.apache.org/tomcat-8.0-doc/api/org/apache/catalina/realm/JAASRealm.html).
+
+Quoting [Apache Tomcat 8 - Realm Configuration HOW-TO](http://tomcat.apache.org/tomcat-8.0-doc/realm-howto.html):
+
+> What is a Realm?
+
+> A Realm is a "database" of usernames and passwords that identify valid users of a web application (or set of web applications), plus an enumeration of the list of roles associated with each valid user. You can think of roles as similar to groups in Unix-like operating systems, because access to specific web application resources is granted to all users possessing a particular role (rather than enumerating the list of associated usernames). A particular user can have any number of roles associated with their username.
+
+> Although the Servlet Specification describes a portable mechanism for applications to declare their security requirements (in the web.xml deployment descriptor), there is no portable API defining the interface between a servlet container and the associated user and role information. In many cases, however, it is desirable to "connect" a servlet container to some existing authentication database or mechanism that already exists in the production environment. Therefore, Tomcat defines a Java interface (org.apache.catalina.Realm) that can be implemented by "plug in" components to establish this connection. Six standard plug-ins are provided, supporting connections to various sources of authentication information:
+
+> - JDBCRealm - Accesses authentication information stored in a relational database, accessed via a JDBC driver.
+> - DataSourceRealm - Accesses authentication information stored in a relational database, accessed via a named JNDI JDBC DataSource.
+> - JNDIRealm - Accesses authentication information stored in an LDAP based directory server, accessed via a JNDI provider.
+> - UserDatabaseRealm - Accesses authentication information stored in an UserDatabase JNDI resource, which is typically backed by an XML document (conf/tomcat-users.xml).
+> - MemoryRealm - Accesses authentication information stored in an in-memory object collection, which is initialized from an XML document (conf/tomcat-users.xml).
+> - **JAASRealm** - Accesses authentication information through the Java Authentication & Authorization Service (JAAS) framework.
+
+> **It is also possible to write your own Realm implementation, and integrate it with Tomcat.**
 
 ...
 
