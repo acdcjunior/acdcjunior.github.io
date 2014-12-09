@@ -20,3 +20,7 @@ The principle is simple: try a function specific to the XPath version you want t
 {% gist e0ea8e8446e299dc4d46 SeleniumXPathVersion3.java %}
 
 The bad news are even XPath 2.0 support is very poor among browsers. I couldn't find any supporting it. Can you?
+
+<br>
+
+<sub>PS.: I do know those snippets are [coding by exception](http://en.wikipedia.org/wiki/Coding_by_exception). Trust me, though, other than making a table enumerating all `WebDriver`s XPath versions, there is no other way.</sub>
