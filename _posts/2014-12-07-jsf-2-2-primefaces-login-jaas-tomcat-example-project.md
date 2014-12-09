@@ -34,7 +34,10 @@ Versions used (the latest at the moment):
 
 - JSF 2.2
 - Primefaces 5.1
-- Servlet 3.0/3.1
+
+Other specs:
+
+- Servlet 3.0/3.1 - Because we're using Tomncat7 plugin, but could be Servlet 4.0, if you are deploying to Tomcat 8.
 
 
 ###User authentication
