@@ -9,7 +9,7 @@ Pretty much every Java project I have uses these dependencies: JUnit + Hamcrest 
 
 So from time to time this `pom.xml` excerpt snippet containing them proves needed.
 
-<!-- more -->
+<!--more-->
 
 {% gist e333d02f5afb830aea88 %}
 

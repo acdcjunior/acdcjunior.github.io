@@ -6,10 +6,11 @@ tags: [git]
 lang: 'pt_BR' # _
 ---
 Lembrete e breve descrição de alguns dos comandos de **git** que eu mais uso.
+<!--more-->
 
 #####Update - Atualizar o branch local com as mudanças do branch remoto:
 
-	git pull origin master
+    git pull origin master
 
 #####Mandar para branch remoto:
 

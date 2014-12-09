@@ -6,7 +6,7 @@ tags: [jboss, wildfly, cli recipes, maven, java]
 lang: 'en_US'
 ---
 Ever wanted to use the `afterDeployment`or `beforeDeployment`tags of wildfly (or jboss-as) maven plugins?
-<!-- more -->
+<!--more-->
 Example:
 {% gist dbd01dad9497b137ea61 %}
 
