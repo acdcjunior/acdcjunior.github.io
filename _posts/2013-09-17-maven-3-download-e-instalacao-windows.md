@@ -5,7 +5,7 @@ maintag: 'maven'
 tags: [maven, java]
 lang: 'pt_BR' # _
 ---
-Gerenciamento de dependencias e builds sempre foi uma coisa complexa e chata de se lidar: Fazer funcionar qualquer lib exigia que procurássemos e baixássemos inumeros `.JAR`s na versão exata necessitada.
+Gerenciamento de dependências e builds sempre foi uma coisa complexa e chata de se lidar: Fazer funcionar qualquer lib exigia que procurássemos e baixássemos inúmeros `.JAR`s na exata versão necessitada.
 
 Por solucionar este problema, Maven se tornou uma ferramenta quase que essencial no desenvolvimento Java.
 
