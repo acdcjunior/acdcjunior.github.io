@@ -2,7 +2,7 @@
 layout: post
 title: 'Querying a CouchDB view using PouchDB: A map/reduce "GROUP BY" example'
 maintag: 'pouchdb'
-tags: [pouchdb, couchdb, map, reduce, view, 'group by']
+tags: [pouchdb, couchdb, map, reduce, view]
 lang: 'en_US'
 ---
 If you are like me and do not read the docs before installing and running stuff, an example may help you.
