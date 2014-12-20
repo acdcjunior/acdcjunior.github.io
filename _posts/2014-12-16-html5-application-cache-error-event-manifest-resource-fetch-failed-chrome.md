@@ -28,6 +28,6 @@ What if you **are** online?
         NETWORK:
         *
     
-- If you do have the `NETWORK` section, and you are online, then your `.appcache` file may be currently cached by the browser. (Try opening the `.appcache` file URL directly in the browser, does the old version open?) The solution here is to either clean the cache yourself or to wait until the browser decides the previously downloaded file is expired :/
+- If you do have the `NETWORK` section, and you are online, then your `.appcache` file may be currently cached by the browser. (Try opening the `.appcache` file URL directly in the browser, does the old version open?) The solution here is to either clean the cache yourself or to wait until the browser decides the previously downloaded file has expired :/
 
 Good luck!
