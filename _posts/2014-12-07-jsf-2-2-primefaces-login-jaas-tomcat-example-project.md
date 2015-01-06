@@ -37,7 +37,7 @@ Versions used (the latest at the moment):
 
 Other specs:
 
-- Servlet 3.0/3.1 - Because we're using Tomncat7 plugin, but could be Servlet 4.0, if you are deploying to Tomcat 8.
+- Servlet 3.0/3.1 - Because we're using Tomcat7 plugin. If you want to use anything from Servlet 4.0, just deploy to a Tomcat 8, the app should work the same.
 
 
 ###User authentication
