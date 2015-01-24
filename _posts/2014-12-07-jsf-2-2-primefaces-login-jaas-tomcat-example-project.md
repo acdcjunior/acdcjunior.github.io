@@ -15,9 +15,9 @@ Just a demo app. What you'll find:
 
 <!--more-->
 
-##Download/run the example project:
+##Talk is cheap, show me the money (aka download/run the example project now):
 
-Without delay, here are the steps needed to run the example project:
+Here are the steps needed to run the example project:
 
 - **Download the [project source code](https://github.com/acdcjunior/acdcjunior-github-io-example-projects/archive/master.zip);**
   - Unzip it and head to this project's folder:  `cd jsf-primefaces-jaas-tomcat-example`;
@@ -55,13 +55,13 @@ Another dealbreaking requisite: We wanted our whole solution to work with simply
 - Download the source code
 - Run `mvn tomcat7:run`
 
-It is very important that the command is `:run` and not `run-war`: When using `:run` any **changes to `.xhtml` files are  picked up immediately**, making the developent much, much easier (also, with minimal IDE support, some code changes inside methods on Java classes may also be picked up).
+It is very important that the command is `:run` and not `run-war`: When using `:run` any **changes to `.xhtml` files are  picked up immediately**, making the developent much, much easier (also, with minimal IDE support, some code changes inside methods on Java classes may also be picked up - try running `mvn tomcat7:run` in debug mode).
 
 ###Layout
 
-Every real application uses a layout system based on templates, right? No one wants to set the same background and the same menubar on every page.
+Every real application uses a layout system based on templates, right? No one wants to place and place again the same background and the same menubar on every page.
 
-The example project uses the [PrimeFace's "full" `<p:layout>`](http://www.primefaces.org/showcase/ui/panel/layout/element.xhtml), with [`<ui:insert>`](https://docs.oracle.com/javaee/7/javaserver-faces-2-2/vdldocs-facelets/toc.htm) and [`<ui:composition>`](https://docs.oracle.com/javaee/7/javaserver-faces-2-2/vdldocs-facelets/ui/composition.html).
+The example project uses the [PrimeFace's "full" `<p:layout>`](http://www.primefaces.org/showcase/ui/panel/layout/element.xhtml), with [`<ui:insert>`](https://docs.oracle.com/javaee/7/javaserver-faces-2-2/vdldocs-facelets/toc.htm) and [`<ui:composition>`](https://docs.oracle.com/javaee/7/javaserver-faces-2-2/vdldocs-facelets/ui/composition.html). Check the `WEB-INF\template` folder.
 
 
 
