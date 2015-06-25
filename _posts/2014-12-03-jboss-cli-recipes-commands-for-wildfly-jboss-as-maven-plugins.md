@@ -14,7 +14,7 @@ The tags there are follow the format `command`, which are **JBoss "CLI"** (Comma
 
 ###Example Commands
 
-Is is quite difficult to find documentation for those commands (that's pretty much the reason I write this).  As a starting point, you can find several recipes/examples in [WildFly CLI Recipes page](https://docs.jboss.org/author/display/WFLY8/CLI+Recipes), they have lots of commands you can try.
+Is is quite difficult to find documentation for those commands (that's pretty much the reason I wrote this).  As a starting point, you can find several recipes/examples in [WildFly CLI Recipes page](https://docs.jboss.org/author/display/WFLY8/CLI+Recipes), they have lots of commands you can try.
 
 Make sure you also check [http://jtips.info/index.php?title=WildFly/cli](http://jtips.info/index.php?title=WildFly/cli) - lots of examples there as well.
 
@@ -22,7 +22,7 @@ Make sure you also check [http://jtips.info/index.php?title=WildFly/cli](http://
 
 To start the CLI (Command Line Interface), go to your WildFly/JBoss instalation's `bin/` folder and run `jboss-cli(.bat)`. Your server instance must be online.
 
-The commands ussually, but not always, follow the format `/child-node-type=name:command(args)`
+The commands usually, but not always, follow the format `/child-node-type=name:command(args)`
 
 Where `:command` can be:
 
@@ -35,7 +35,7 @@ Where `:command` can be:
 
 ###If you're lost: `/:read-children-types`
 
-Pretty much one of the most useful commands: `/:read-children-types`. It shows all kind of nodes you can work with, and from there on, dive! Here's how it could go:
+Pretty much one of **the most useful** commands: `/:read-children-types`. It shows all kind of nodes you can work with, and from there on, dive! Here's how it could go:
 
 	[standalone@localhost:9990 /] /:read-children-types
 	{
