@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'What XPath version does a given WebDriver supports?'
+title: 'What XPath version does a given WebDriver support?'
 maintag: 'selenium'
 tags: [selenium, xpath, java, webdriver]
 lang: 'en_US'
