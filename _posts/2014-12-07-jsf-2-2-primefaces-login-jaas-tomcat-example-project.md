@@ -30,7 +30,7 @@ Now to the features, goals and what you'll find on the example source code.
 
 ###Latest JSF stack
 
-Versions used (the latest at the moment):
+Versions used (the current at the time of the post, though not the latest anymore):
 
 - JSF 2.2
 - Primefaces 5.1
