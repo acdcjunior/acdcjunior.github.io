@@ -19,9 +19,9 @@ Just a demo app. What you'll find:
 
 Here are the steps needed to run the example project:
 
-- **Download the [project source code](https://github.com/acdcjunior/acdcjunior-github-io-example-projects/archive/master.zip);**
+- **Download the [project source code](https://github.com/acdcjunior/acdcjunior-github-io-example-projects/archive/master.zip)**
   - Unzip it and head to this project's folder:  `cd jsf-primefaces-jaas-tomcat-example`;
-- **Run it using: `mvn tomcat7:run`**P
+- **Run it using: `mvn tomcat7:run`**
   - Open your browser on: [http://127.0.0.1:8080/jsf-primefaces-jaas-tomcat-example/](http://127.0.0.1:8080/jsf-primefaces-jaas-tomcat-example/)
 
 There you go. Now begin developing! Any changes to the `.xhtml` files should be picked up automatically: no need to re-run the project.
@@ -59,7 +59,7 @@ It is very important that the command is `:run` and not `run-war`: When using `:
 
 ###Layout
 
-Every real application uses a layout system based on templates, right? No one wants to place and place again the same background and the same menubar on every page.
+Every real application uses a layout system based on templates, right? No one wants to place again and again the same background and the same menubar on every page.
 
 The example project uses the [PrimeFace's "full" `<p:layout>`](http://www.primefaces.org/showcase/ui/panel/layout/element.xhtml), with [`<ui:insert>`](https://docs.oracle.com/javaee/7/javaserver-faces-2-2/vdldocs-facelets/toc.htm) and [`<ui:composition>`](https://docs.oracle.com/javaee/7/javaserver-faces-2-2/vdldocs-facelets/ui/composition.html). Check the `WEB-INF/templates/` folder.
 
@@ -110,4 +110,4 @@ Quoting [Apache Tomcat 8 - Realm Configuration HOW-TO](http://tomcat.apache.org/
 
 ...
 
-So, anyway, hang in there, I'll update this post as soon as I get to it :D
+So, anyway, hang in there, I'll update this post whenever (hopefully some day) I get to it :D
