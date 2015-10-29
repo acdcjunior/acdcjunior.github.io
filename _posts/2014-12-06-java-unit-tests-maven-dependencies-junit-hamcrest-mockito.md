@@ -13,6 +13,8 @@ So from time to time this `pom.xml` excerpt snippet containing them proves neede
 
 {% gist e333d02f5afb830aea88 %}
 
+Last updated: 2015-10-29
+
 The snippet avoids having multiple hamcrest versions on the classpath (as JUnit or Mockito may reference a different Hamcrest version at a given point in time).
 
 Latest versions can be checked at the [The Maven Central Repository Search Engine](http://search.maven.org/):
