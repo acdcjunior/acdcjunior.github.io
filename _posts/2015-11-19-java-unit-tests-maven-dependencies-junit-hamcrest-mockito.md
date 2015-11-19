@@ -5,7 +5,7 @@ maintag: 'test'
 tags: [test, junit, hamcrest, mockito, maven, java]
 lang: 'en_US'
 ---
-### Last updated: 2015-10-29
+### Last updated: 2015-11-19
 
 Pretty much every Java project I have uses these dependencies: JUnit + Hamcrest + Mockito.
 
@@ -26,7 +26,7 @@ Latest versions of each lib can be checked at the [The Maven Central Repository 
 Some possible questions:
 
 - *"Why `hamcrest-junit` and not `hamcrest-all`?"*
-    - Hamcrest guys have recently changed the way they deal with their packages. Their goal was to decouple hamcrest from JUnit. The impact in our life is that we now use `hamcrest-junit` instead of `hamcrest-all`. See [Hamcrest-JUnit's repo](https://github.com/hamcrest/hamcrest-junit) for more details.
+    - Hamcrest folks have recently changed the way they handle releases. Their goal was to decouple Hamcrest from JUnit. The impact in our life is that we now use `hamcrest-junit` instead of `hamcrest-all`. See [Hamcrest-JUnit's repo](https://github.com/hamcrest/hamcrest-junit) for more details.
 
 - [*"Why `mockito-core` and not `mockito-all`?"*](https://code.google.com/p/mockito/wiki/DeclaringMockitoDependency)
     - Basically `mockito-all` is sort of a [*fat jar*](https://www.google.com.br/search?q=fat%20jar), containing all its dependencies (such as Hamcrest), embedded. As we want to fine tune its dependencies (that's what the `<exclude>` tag is!), then `-core` is the way to go.
