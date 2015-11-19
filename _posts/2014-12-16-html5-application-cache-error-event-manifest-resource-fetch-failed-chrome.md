@@ -33,7 +33,7 @@ What if you **are** online?
      - Open the MANIFEST file URL in a new tab. The old file is shown, right?
      - Now on this very tab, open developer tools (F12) and move to the *Network* tab. Now reload (F5).
      - Check the `Size`/`Content` column as Chrome says it downloaded the file "`(from cache)`". Nasty.
-  - *Not-so-useful workaround*: Some report that **restarting Chrome** will make the error go away. This is, of course, less than optimal, as we don't control our users' browsers, but at least it does give us some hope. Another fortunate detail is that if it is Chrome mobile, some seconds away from the app should reset it in iOS (I can't say for Android, though).
+  - *Not-so-useful workaround*: Some report that **restarting Chrome** will make the error go away. This is, of course, less than optimal, as we don't control our users' browsers, but at least it does give us some hope. Another fortunate detail is that if it is Chrome mobile, some seconds away from the app should reset it in iOS (I can't speak for Android, though).
 
 <br>
 
