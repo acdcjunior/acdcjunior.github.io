@@ -19,6 +19,8 @@ One cause is: You are offline. Solution: be online!
 
 What if you **are** online?
 
+If you are online, hopefully the tips below will help ya:
+
 - Did you add the `NETWORK` section of the `CACHE MANIFEST` file? It will tell the browser what files will be always downloaded.
 
         CACHE MANIFEST
