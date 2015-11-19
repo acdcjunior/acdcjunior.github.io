@@ -43,7 +43,7 @@ That's it. Good luck!
 
 <br>
 
-PS.: Still talking about Chrome, to clear the appcache/MANIFEST files, try this URL, it may be of help:
+PS.: Still talking about Chrome, to clear the appcache/MANIFEST files, try this URL, it may be of help (you have to copy-paste the URLs, Chrome won't open them upon clicking):
 
 > [chrome://appcache-internals/](chrome://appcache-internals/)
 
