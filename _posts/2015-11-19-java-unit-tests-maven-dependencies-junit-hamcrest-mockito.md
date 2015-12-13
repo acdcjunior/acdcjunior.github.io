@@ -5,7 +5,7 @@ maintag: 'test'
 tags: [test, junit, hamcrest, mockito, maven, java]
 lang: 'en_US'
 ---
-### Last updated: 2015-11-19
+### Last check/update: 2015-12-13
 
 Pretty much every Java project I have uses these dependencies: JUnit + Hamcrest + Mockito.
 
@@ -35,4 +35,4 @@ Some possible questions:
 
 Should any other questions arise, I'll address them here. I'll also try to keep the snippet's versions up to date.
 
-See ya!
+Cya!
