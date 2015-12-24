@@ -3,7 +3,7 @@ layout: post
 title: 'SVN no Eclipse: Subversive vs. Subclipse e integração com o Maven (M2E connector)'
 maintag: 'eclipse svn'
 tags: [svn, eclipse, subversive, subclipse, maven, m2e]
-lang: 'pt_BR' # _
+lang: 'pt_BR'
 ---
 Quando se fala de suporte a Subversion (SVN) no Eclipse, sabe-se que ele conta com dois principais plugins:
 
@@ -67,7 +67,7 @@ Após isso a opção *Check out as Maven Project...* estará habilitada:
 Para maiores detalhes sobre a instalação do subversive, é possível consultar a [página oficial](http://www.eclipse.org/subversive/installation-instructions.php).
 
 
-  [1]: /assets/posts/subversive_connectors_update.jpg
-  [2]: http://1.bp.blogspot.com/-e9bVp1G2Qm8/UuHHuo_LM9I/AAAAAAAAAwY/jkuqW5gL7hw/s1600/checkout+as+maven+project.png
-  [3]: http://3.bp.blogspot.com/-p5w8n-ZpvkY/UuHFx4qimkI/AAAAAAAAAwM/TztSLRlycFg/s1600/subversive+connectors.png
-  [4]: /assets/posts/subversive_connectors_discovery.png
+  [1]: /images/posts/subversive_connectors_update.jpg
+  [2]: /images/posts/checkout-as-maven-project.png
+  [3]: /images/posts/subversive-connectors.png
+  [4]: /images/posts/subversive_connectors_discovery.png
