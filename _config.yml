@@ -1,7 +1,7 @@
 title:            HMFAYSAL
 description:      "Omega: The Coolest Theme for Jekyll"
 logo:             omikron.png
-disqus_shortname: hmfaysal
+disqus_shortname: acdcjunior
 # Assign a default image for your site's header and footer
 default_bg:       default_bg1.jpg
 search:           true
@@ -70,7 +70,8 @@ paginate:    6
 paginate_path: "page:num"
 
 # https://github.com/mojombo/jekyll/wiki/Permalinks
-permalink:   /:categories/:title
+# permalink:   /:categories/:title
+permalink:   /:title.html
 
 kramdown:
   auto_ids: true
