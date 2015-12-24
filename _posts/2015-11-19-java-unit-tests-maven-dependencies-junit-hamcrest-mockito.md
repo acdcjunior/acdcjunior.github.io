@@ -7,18 +7,30 @@ tags: [test, junit, hamcrest, mockito, maven, java]
 lang: 'en_US'
 description: Test dependencies are very common. Here they go.
 category: Test
-headline: Awesome snippet, begin testing ASAP.
-imagefeature: picture-38.jpg
+headline: Awesome snippet, let's begin testing ASAP!
 comments: true
 modified: 2015-12-13
 share: true
 mathjax: false
+
+# tags:
+#  - alternate
+#  - way
+
+# imagefeature: picture-38.jpg
+image:
+  feature: "picture-38.jpg"
+  credit: example.com
+  creditlink: "http://example.com/blog/stuff/"
+
 # link: http://some-link-for-a-link-post
+featured: true
+published: true
 ---
 
-Pretty much every Java project I have uses these dependencies: JUnit + Hamcrest + Mockito.
 
-### Last check/update: 2015-12-13
+
+Pretty much every Java project I have uses these dependencies: JUnit + Hamcrest + Mockito.
 
 So, from time to time, this `pom.xml` snippet containing them proves needed.
 
