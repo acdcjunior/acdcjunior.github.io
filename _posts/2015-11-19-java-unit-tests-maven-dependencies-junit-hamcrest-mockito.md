@@ -4,7 +4,14 @@ title: 'Java Unit Tests Maven dependencies snippet'
 maintag: 'test'
 tags: [test, junit, hamcrest, mockito, maven, java]
 lang: 'en_US'
+description: Test dependencies are very common. Here they go.
+category: Test
+headline: Awesome snippet, begin testing ASAP.
+imagefeature: picture-38.jpg
+comments: true
 ---
+
+
 ### Last check/update: 2015-12-13
 
 Pretty much every Java project I have uses these dependencies: JUnit + Hamcrest + Mockito.
