@@ -381,11 +381,11 @@ h6,
   color: #1e1e1f;
 }
 a {
-  color: #807f83;
+  /*color: #807f83;*/
   border-color: #807f83;
 }
 a:hover {
-  color: #67666a;
+  /*color: #67666a;*/
   border-color: #67666a;
 }
 blockquote:before {
