@@ -15,11 +15,11 @@ Just a demo app. What you'll find:
 
 <!--more-->
 
-##Download/run the example project:
+##Talk is cheap, show me the money (aka download/run the example project now):
 
-Without delay, here are the steps needed to run the example project:
+Here are the steps needed to run the example project:
 
-- **Download the [project source code](https://github.com/acdcjunior/acdcjunior-github-io-example-projects/archive/master.zip);**
+- **Download the [project source code](https://github.com/acdcjunior/acdcjunior-github-io-example-projects/archive/master.zip)**
   - Unzip it and head to this project's folder:  `cd jsf-primefaces-jaas-tomcat-example`;
 - **Run it using: `mvn tomcat7:run`**
   - Open your browser on: [http://127.0.0.1:8080/jsf-primefaces-jaas-tomcat-example/](http://127.0.0.1:8080/jsf-primefaces-jaas-tomcat-example/)
@@ -30,11 +30,14 @@ Now to the features, goals and what you'll find on the example source code.
 
 ###Latest JSF stack
 
-Versions used (the latest at the moment):
+Versions used (the current at the time of the post, though not the latest anymore):
 
 - JSF 2.2
 - Primefaces 5.1
-- Servlet 3.0/3.1
+
+Other specs:
+
+- Servlet 3.0/3.1 - Because we're using Tomcat7 plugin. If you want to use anything from Servlet 4.0, just deploy to a Tomcat 8, the app should work the same.
 
 
 ###User authentication
@@ -52,13 +55,13 @@ Another dealbreaking requisite: We wanted our whole solution to work with simply
 - Download the source code
 - Run `mvn tomcat7:run`
 
-It is very important that the command is `:run` and not `run-war`: When using `:run` any **changes to `.xhtml` files are  picked up immediately**, making the developent much, much easier (also, with minimal IDE support, some code changes inside methods on Java classes may also be picked up).
+It is very important that the command is `:run` and not `run-war`: When using `:run` any **changes to `.xhtml` files are  picked up immediately**, making the developent much, much easier (also, with minimal IDE support, some code changes inside methods on Java classes may also be picked up - try running `mvn tomcat7:run` in debug mode).
 
 ###Layout
 
-Every real application uses a layout system based on templates, right? No one wants to set the same background and the same menubar on every page.
+Every real application uses a layout system based on templates, right? No one wants to place again and again the same background and the same menubar on every page.
 
-The example project uses the [PrimeFace's "full" `<p:layout>`](http://www.primefaces.org/showcase/ui/panel/layout/element.xhtml), with [`<ui:insert>`](https://docs.oracle.com/javaee/7/javaserver-faces-2-2/vdldocs-facelets/toc.htm) and [`<ui:composition>`](https://docs.oracle.com/javaee/7/javaserver-faces-2-2/vdldocs-facelets/ui/composition.html).
+The example project uses the [PrimeFace's "full" `<p:layout>`](http://www.primefaces.org/showcase/ui/panel/layout/element.xhtml), with [`<ui:insert>`](https://docs.oracle.com/javaee/7/javaserver-faces-2-2/vdldocs-facelets/toc.htm) and [`<ui:composition>`](https://docs.oracle.com/javaee/7/javaserver-faces-2-2/vdldocs-facelets/ui/composition.html). Check the `WEB-INF/templates/` folder.
 
 
 
@@ -107,4 +110,4 @@ Quoting [Apache Tomcat 8 - Realm Configuration HOW-TO](http://tomcat.apache.org/
 
 ...
 
-So, anyway, hang in there, I'll update this post as soon as I get to it :D
+So, anyway, hang in there, I'll update this post whenever (hopefully some day) I get to it :D
