@@ -23,12 +23,14 @@ If you are online, hopefully the tips below will help ya:
 
 - Did you add the `NETWORK` section of the `CACHE MANIFEST` file? It will tell the browser what files will be always downloaded.
 
+        {% raw %}
         CACHE MANIFEST
         
         # ...
         
         NETWORK:
         *
+        {% endraw %}
     
 - If you do have the `NETWORK` section, and you are online, then your MANIFEST file may be currently cached by the browser. (Try opening the MANIFEST file URL directly in the browser, does the old version open?) The solution here is to either clean the cache yourself or to wait until the browser decides the previously downloaded file has expired :/
   - Some evidence of this:
@@ -43,10 +45,10 @@ That's it. Good luck!
 
 <br>
 
-PS.: Still talking about Chrome, to clear the appcache/MANIFEST files, try this URL, it may be of help (you have to copy-paste the URLs, Chrome won't open them upon clicking):
+PS.: Still talking about Chrome, to clear the appcache/MANIFEST files, try this URL, it may be of help:
 
-> [chrome://appcache-internals/](chrome://appcache-internals/)
+> chrome://appcache-internals/
 
 For more like it (all the config URLs Chrome has), check:
 
-> [chrome://chrome-urls/](chrome://chrome-urls/)
+> chrome://chrome-urls/
