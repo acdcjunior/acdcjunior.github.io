@@ -15,11 +15,11 @@ mathjax: false
 # tags:
 #  - alternate
 #  - way
-# imagefeature: picture-38.jpg
-image:
-  feature: picture-38.jpg
-  credit: example.com
-  creditlink: "http://example.com/blog/stuff/"
+imagefeature: picture-38.jpg
+#image:
+#  feature: picture-38.jpg
+#  credit: example.com
+#  creditlink: "http://example.com/blog/stuff/"
 # link: http://some-link-for-a-link-post
 featured: true
 published: true
