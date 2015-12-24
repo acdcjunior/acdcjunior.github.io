@@ -240,7 +240,7 @@ pre {
   line-height: 24px;
 }
 .super {
-  font-size: 60px;
+  font-size: 48px;
   font-weight: bold;
   line-height: 1;
   /*text-transform: uppercase;*/
@@ -250,7 +250,7 @@ pre {
   line-height: 1.5em;
 }
 .hyper {
-  font-size: 72px;
+  font-size: 56px;
   font-weight: bold;
   text-align: center;
   line-height: 1;
@@ -3866,7 +3866,7 @@ a#slide:hover{
     }
 
 a#slide:after{
-    content:"F"
+    content:"ACDC"
     }
 
 a#slide.slide:after{
