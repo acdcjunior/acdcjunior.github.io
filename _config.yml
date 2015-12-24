@@ -15,7 +15,7 @@ post_limit: 5
 # Social usernames/URLs
 twitter_username: acdcjunior
 github_username:  acdcjunior
-linkedin_link: http://example.com/
+# linkedin_link: http://example.com/
 google_plus_link: https://www.google.com/+acdcjunior
 stackoverflow_link: http://stackoverflow.com/users/1850609/acdcjunior
 
