@@ -1,6 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,700);
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,400italic);
-@import url(http://fonts.googleapis.com/css?family=Raleway:400,300,100,700);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
 @import url(http://fonts.googleapis.com/css?family=Sacramento);
 
 /*!
@@ -243,7 +243,7 @@ pre {
   font-size: 60px;
   font-weight: bold;
   line-height: 1;
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
 }
 .super.text-center small {
   display: block;
@@ -778,7 +778,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 h1.lighter,
 h2.lighter,
