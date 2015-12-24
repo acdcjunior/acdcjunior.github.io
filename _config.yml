@@ -1,5 +1,5 @@
-title:            HMFAYSAL
-description:      "Omega: The Coolest Theme for Jekyll"
+title:            ACDCJUNIOR's
+description:      "Hey there. How can we make programming more awesome?"
 logo:             omikron.png
 disqus_shortname: acdcjunior
 # Assign a default image for your site's header and footer
@@ -22,22 +22,22 @@ url:       		   ""
 
 # Owner/author information
 owner:
-  name:           Hossain Mohd Faysal
+  name:           Antônio "acdc" Júnior
   avatar:         hmfaysal.jpg
-  email:          hmfaysal@alum.mit.edu
+  email:          acdcjunior@gmail.com
   # Use the coder's toolbox at http://coderstoolbox.net/string/#!encoding=xml&action=encode&charset=us_ascii to encode your description into XML string
-  description:    Hossain Mohammad Faysal is an Electrical Engineer and a Mathematician based in Doha, Qatar. His interests are anything that&#8217;s related to math, from math itself to programming languages to music to physics to engineering to philosophy.
+  description:    Antônio "acdc" Júnior is a passionate programmer based in Brasília, Brasil. His interests include anything that would make our developer's lives more awesome.
   # Social networking links used in footer. Update and remove as you like.
-  twitter:        hmfaysal
-  facebook:       hmfaysal
-  github:         hmfaysal
-  stackexchange:  https://stackexchange.com/users/3402032/hossain-mohd-faysal
-  linkedin:       https://www.linkedin.com/pub/firstname-lastname/12/345/678
+  twitter:        acdcjunior
+  facebook:
+  github:         acdcjunior
+  stackexchange:  http://stackoverflow.com/users/1850609/acdcjunior
+  linkedin:
   instagram:      
   flickr:         
   tumblr:         
   # For Google Authorship https://plus.google.com/authorship
-  google_plus:    https://plus.google.com/u/0/102602916593522619858
+  google_plus:    https://www.google.com/+acdcjunior
 
 # Analytics and webmaster tools stuff goes here
 google_analytics:   UA-50217609-2
@@ -62,7 +62,7 @@ links:
     url: /hossain-mohd-faysal
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-timezone:    America/New_York
+timezone:    America/Sao_Paulo
 future:      true
 highlighter: pygments
 markdown:    kramdown
@@ -89,8 +89,8 @@ kramdown:
 
 prose:
   rooturl: '_posts'
-  siteurl: 'http://hmfaysal.github.io/'
-  relativeLinks: 'http://hmfaysal.github.io/links.jsonp'
+  siteurl: 'http://acdcjunior.github.io/'
+  relativeLinks: 'http://acdcjunior.github.io/links.jsonp'
   media: 'images'
   metadata:
     _posts:
