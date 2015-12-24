@@ -1,4 +1,6 @@
-# _config.yml
-_site/*
+# Jekyll Specific
+_site/
+
+# IDE
 *.iml
 .idea/
