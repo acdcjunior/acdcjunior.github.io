@@ -1,21 +1,24 @@
 ---
 layout: post
-title: 'Exemplos de @Rule do JUnit (@Rule annotation example)'
-maintag: 'junit'
+title: 'Exemplos da anotação `@Rule` do JUnit
+category: JUnit
 tags: [junit, tests, java]
-lang: 'pt_BR' # _
+lang: 'pt_BR'
 ---
-Você precisa executar um trecho de código no `@Before` de varias classes de teste?
-Você precisa executar um trecho de código no `@After` de varias classes de teste?
+Você precisa executar um trecho de código no `@Before` de várias classes de teste?
+Você precisa executar um trecho de código no `@After` de várias classes de teste?
 
-Para evitar a duplicacao de codigo decorrente dessa necessidade, antigamente criavamos uma superclasse abstrata de testes,
-colocavamos nela os metodos `@Before` e `@After`, e faziamos todas as outras classes de teste estenderem essa superclasse.
+Para evitar a duplicação de código decorrente dessa necessidade, antigamente criávamos uma superclasse abstrata de testes,
+colocávamos nela os metodos `@Before` e `@After`, e faziamos todas as outras classes de teste estenderem essa superclasse.
 
-###`@Rule` to the rescue
+Mas e se fossem várias funcionalidades? Aí precisaríamos de várias superclasses. Só que o Java não permite herança múltipla, então
+éramos obrigados a criar uma *God Class* com tudo que precisávamos. Nem preciso dizer o quanto isso complicava o desenvolvimento no longo prazo.
 
-Desde a versao 4.7 o JUnit disponibiliza uma anotacao `@Rule` que pode nos ajudar a contornar este problema:
-reutilizar codigo tipico de `@Before` e `@After` sem necessidade de heranca (e o melhor, voce pode ter varias `@Rule` em
-uma classe de teste, o que a heranca nao permite).
+### `@Rule` ao resgate!
+
+Desde a versão 4.7 o JUnit disponibiliza uma anotação `@Rule` que pode nos ajudar a solucionar esse problema:
+reutilizar código típico de `@Before` e `@After` sem necessidade de herançaa (e o melhor, você pode ter várias `@Rule` em
+uma classe de teste, o que a herança não permite).
 <!--more-->
 
 Chega de blablabla e vamos ao exemplo.
@@ -28,4 +31,4 @@ e uma classe de testes que usa `@Rule` acima:
 
 {% gist 7812834 %}
 
-É isso! Happy testing!
+É isso! A execução desse teste deve te mostrar a ordem exata de como a `@Rule` é executada. Deve ser tudo que você precisa saber. :)
