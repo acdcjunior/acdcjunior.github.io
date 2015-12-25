@@ -1,11 +1,11 @@
 ---
 layout: post
 title: 'Criando Branches no SVN via TortoiseSVN'
-maintag: 'svn'
+category: Tools
 tags: [svn, tortoisesvn]
-lang: 'pt_BR' # _
+lang: 'pt_BR'
 ---
-Como eu esqueço sempre, esse é apenas um lembrete sobre como criar branches no SVN.
+Como eu esqueço sempre, esse é apenas um lembrete de como criar branches no SVN.
 <!--more-->
 
 Digamos que você queira criar um **branch** de um repositório qualquer, por exemplo: `http://mysvn/svn/projeto/trunk`. Chamaremos esse repositório de... `REPOSITORIO` :)

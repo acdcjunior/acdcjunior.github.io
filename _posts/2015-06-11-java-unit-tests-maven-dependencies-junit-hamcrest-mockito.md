@@ -27,7 +27,6 @@ published: true
 Pretty much every Java project I have uses these dependencies: JUnit + Hamcrest + Mockito.
 
 So, from time to time, this `pom.xml` snippet containing them proves needed.
-
 <!--more-->
 
 {% gist e333d02f5afb830aea88 %}

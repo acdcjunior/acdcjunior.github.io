@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'JSF 2.2 Primefaces JAAS Tomcat Example - With Authentication, Template Layout and Maven'
-maintag: 'jsf'
+category: 'Java EE'
 tags: [jsf, primefaces, jaas, tomcat, maven, 'tomcat7:run', template, layout]
 lang: 'en_US'
 ---
@@ -12,10 +12,9 @@ Just a demo app. What you'll find:
 - Servlet 3.0/3.1
 - Tomcat Maven Plugin
 - Declarative and Programatic Authentication using JAAS
-
 <!--more-->
 
-##Talk is cheap, show me the money (aka download/run the example project now):
+## Talk is cheap, show me the money (aka download/run the example project now):
 
 Here are the steps needed to run the example project:
 

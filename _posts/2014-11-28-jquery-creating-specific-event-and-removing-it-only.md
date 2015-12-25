@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Creating (binding) a specific event and removing (unbinding) it only'
-maintag: 'jquery'
+category: jQuery
 tags: [jquery]
 lang: 'en_US'
 ---

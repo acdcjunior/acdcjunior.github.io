@@ -1,9 +1,9 @@
 ---
 layout: post
 title: 'Maven 3: Download e Instalação (Windows)'
-maintag: 'maven'
+Category: Tools
 tags: [maven, java]
-lang: 'pt_BR' # _
+lang: 'pt_BR'
 ---
 Gerenciamento de dependências e builds sempre foi uma coisa complexa e chata de se lidar: Fazer funcionar qualquer lib exigia que procurássemos e baixássemos inúmeros `.JAR`s na exata versão necessitada.
 

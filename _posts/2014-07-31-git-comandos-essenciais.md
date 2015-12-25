@@ -1,11 +1,11 @@
 ---
 layout: post
 title: 'Git - Comandos Essenciais'
-maintag: 'git'
+category: Git
 tags: [git]
-lang: 'pt_BR' # _
+lang: 'pt_BR'
 ---
-Lembrete e breve descrição de alguns dos comandos de **git** que eu mais uso.
+Lembrete e breve descrição de alguns dos comandos do **git** que eu mais uso.
 <!--more-->
 
 #####Update - Atualizar o branch local com as mudanças do branch remoto:

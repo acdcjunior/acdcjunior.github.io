@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Application Cache Error event: Manifest fetch failed (6) and Resource fetch failed (6)'
-maintag: 'html5'
+category: HTML5
 tags: [html5, chrome, cache manifest]
 lang: 'en_US'
 ---
@@ -14,6 +14,7 @@ Or
 > "Application Cache Error event: Resource fetch failed (6)"
 
 in Chrome?
+<!--more-->
 
 One cause is: You are offline. Solution: be online!
 

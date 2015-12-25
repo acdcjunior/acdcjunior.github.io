@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'What XPath version does a given WebDriver support?'
-maintag: 'selenium'
+category: Selenium
 tags: [selenium, xpath, java, webdriver]
 lang: 'en_US'
 ---
@@ -23,4 +23,4 @@ The bad news are even XPath 2.0 support is very poor among browsers. I couldn't 
 
 <br>
 
-<sub>PS.: I do know those snippets are [coding by exception](http://en.wikipedia.org/wiki/Coding_by_exception). Trust me, though, other than making a table enumerating all `WebDriver`s XPath versions, to this date, there is no other way of knowing it.</sub>
+<sub>PS.: I realize those snippets are [coding by exception](http://en.wikipedia.org/wiki/Coding_by_exception). Trust me, though, other than making a table enumerating all `WebDriver`s XPath versions, to this date, there is no other way of knowing it.</sub>

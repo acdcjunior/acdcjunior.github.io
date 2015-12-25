@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Querying a CouchDB view using PouchDB: A map/reduce "GROUP BY" example'
-maintag: 'pouchdb'
+category: NoSQL
 tags: [pouchdb, couchdb, 'map-reduce']
 lang: 'en_US'
 ---
