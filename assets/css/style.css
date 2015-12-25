@@ -210,9 +210,10 @@ xmp,
 abbr,
 acronym,
 q {
-  font-size: 14px;
+  /*font-size: 14px;*/
   word-break: normal;
   border: 0;
+  text-transform: none;
 }
 @include hyphens(none);
 pre {
