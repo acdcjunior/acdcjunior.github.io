@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Exemplos da anotação @Rule do JUnit
+title: 'Exemplos da anotação `@Rule` do JUnit'
 category: JUnit
 tags: [junit, tests, java]
 lang: 'pt_BR'
