@@ -14,3 +14,12 @@ article:before {
 article:not(.full-post):before {
     bottom: 60px;
 }
+@media (max-width: 790px) {
+
+    article:before {
+        left: 0;
+        right: 0;
+    }
+    article { background-color: yellow; }
+
+}
