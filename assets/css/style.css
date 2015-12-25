@@ -3865,9 +3865,9 @@ a#slide:hover{
     background:#39c492
     }
 
-/*a#slide:after{*/
-    /*content:"ACDC"*/
-    /*}*/
+a#slide:after{
+  content:"\f0c9";
+}
 
 a#slide.slide:after{
     position:absolute;
