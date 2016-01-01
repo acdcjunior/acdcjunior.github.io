@@ -18,3 +18,6 @@ Our architecture should not try to be perfect up front, simply because no one ca
 Should we give up, then? Nah, just a different goal: embrace change.
 We should make sure our architecture enables our software to adapt quickly to changes, triggered by new information that
 we learn as the problem and the sofware matures.
+
+
+Architecture is imposing some constraints on our code (e.g. entities can't have references to repositories), but that's a good thing. It enables criativity instead of limiting it.
