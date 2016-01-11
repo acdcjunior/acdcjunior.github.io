@@ -11,4 +11,9 @@ image:
   <figcaption>acdcjunior</figcaption>
 </figure>
 
-Searching for awesomeness in the programming world.
+Searching for awesomeness in agility and programming.
+<br>
+<br>
+<br>
+<br>
+&nbsp;
