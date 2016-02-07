@@ -21,3 +21,8 @@ we learn as the problem and the sofware matures.
 
 
 Architecture is imposing some constraints on our code (e.g. entities can't have references to repositories), but that's a good thing. It enables criativity instead of limiting it.
+
+
+Antigamente: "um modelo para tudo" --> o conceito "Gasto" é igual no domínio todo??
+
+Hoje: DDD/Services: unificacao eh cara e frequentemente ineficaz -> divide em contextos bem definidos -> cada um tem o que quiser, até termos conflitantes
