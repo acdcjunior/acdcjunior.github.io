@@ -10,6 +10,8 @@ o local do componente ao caminho do sistema se ele estiver instalado em outro lo
 
 # Solução
 
+https://github.com/nodejs/node-gyp/issues/629#issuecomment-153196245
+
 Os passos de configuração sao os seguintes:
 
 - Baixe o [VC++ Build Tools Technical Preview](http://go.microsoft.com/fwlink/?LinkId=691132).
