@@ -10,15 +10,15 @@ Ever wanted to use the `afterDeployment`or `beforeDeployment`tags of wildfly (or
 Example:
 {% gist dbd01dad9497b137ea61 %}
 
-The tags there are follow the format `command`, which are **JBoss "CLI"** (Command Line Interface) commands.
+The tags there are following the format `command`, which are **JBoss "CLI"** (Command Line Interface) commands.
 
-###Example Commands
+# Example Commands
 
 Is is quite difficult to find documentation for those commands (that's pretty much the reason I wrote this).  As a starting point, you can find several recipes/examples in [WildFly CLI Recipes page](https://docs.jboss.org/author/display/WFLY8/CLI+Recipes), they have lots of commands you can try.
 
 Make sure you also check [http://jtips.info/index.php?title=WildFly/cli](http://jtips.info/index.php?title=WildFly/cli) - lots of examples there as well.
 
-###How to try the commands/recipes out?
+# How to try the commands/recipes out?
 
 To start the CLI (Command Line Interface), go to your WildFly/JBoss instalation's `bin/` folder and run `jboss-cli(.bat)`. Your server instance must be online.
 
@@ -33,7 +33,7 @@ Where `:command` can be:
 - others... (I don't know them all, but there are others for sure, depending on the node type)
 
 
-###If you're lost: `/:read-children-types`
+# If you're lost: `/:read-children-types`
 
 Pretty much one of **the most useful** commands: `/:read-children-types`. It shows all kind of nodes you can work with, and from there on, dive! Here's how it could go:
 
