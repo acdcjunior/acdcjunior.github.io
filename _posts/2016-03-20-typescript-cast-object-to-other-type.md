@@ -31,7 +31,9 @@ Use `<>`:
 ```javascript
 var myObject: TypeA;
 var otherObject: any;
+
 // values are assigned to them, and...
+
 myObject = <TypeA> otherObject;
 ```
 
