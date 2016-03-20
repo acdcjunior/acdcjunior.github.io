@@ -36,6 +36,8 @@ var otherObject: any;
 myObject = <TypeA> otherObject;
 ```
 
+As simple as that.
+
 ---
 
 ## How about checking if an object is an instance of a given type?
@@ -57,6 +59,10 @@ You can find more about it in the [TypeScript Language Specification](https://gi
 > The instanceof operator requires the left operand to be of type Any, an object type, or a type parameter type, and the right operand to be of type Any or a subtype of the 'Function' interface type. The result is always of the Boolean primitive type.
 >
 > Note that object types containing one or more call or construct signatures are automatically subtypes of the 'Function' interface type, as described in section 3.3.
+
+Great, but...
+
+---
 
 ## Since we're at it, have you heard of the `typeof` operator?
 
