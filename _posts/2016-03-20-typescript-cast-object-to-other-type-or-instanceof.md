@@ -27,7 +27,7 @@ published: true
 Typescript: cast an object to other type. How?
 <!--more-->
 
-Use `<>`:
+## Use `<>` for casting:
 
 ```javascript
 var myObject: TypeA;
@@ -36,7 +36,9 @@ var otherObject: any;
 myObject = <TypeA> otherObject;
 ```
 
-# How about checking if an object is an instance of a given type?
+---
+
+## How about checking if an object is an instance of a given type?
 
 Glad you asked. This shouldn't come as a big surprise, though, `instanceof` in TypeScript is similar to other popular languages:
 
@@ -50,15 +52,15 @@ if (myObject instanceof Type) {
 
 You can find more about it in the [TypeScript Language Specification](https://github.com/Microsoft/TypeScript/blob/master/doc/spec.md#4194-the-instanceof-operator):
 
-> ### 4.19.4 The instanceof operator
+> #### 4.19.4 The instanceof operator
 >
 > The instanceof operator requires the left operand to be of type Any, an object type, or a type parameter type, and the right operand to be of type Any or a subtype of the 'Function' interface type. The result is always of the Boolean primitive type.
 >
 > Note that object types containing one or more call or construct signatures are automatically subtypes of the 'Function' interface type, as described in section 3.3.
 
-# Since we're at it, have you heard of the `typeof` operator?
+## Since we're at it, have you heard of the `typeof` operator?
 
-Using the `typeof` operator, you can find out a variable's type:
+Using the `typeof` operator, you can **find out a variable's type**:
 
 ```javascript
 // Using typeof in an EXPRESSION:
