@@ -1,7 +1,7 @@
 ---
 layout: post
 # type: <nothing> | quote | status | video | photo
-title: 'Typescript: cast an object to other type. How?'
+title: 'Typescript: cast an object to other type. How? And instanceof?'
 category: Typescript
 tags: [typescript, casting]
 lang: 'en_US'
