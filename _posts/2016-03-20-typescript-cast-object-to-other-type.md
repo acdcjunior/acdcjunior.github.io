@@ -36,4 +36,16 @@ var otherObject: any;
 myObject = <TypeA> otherObject;
 ```
 
+# How about checking if an object is an instance of a given type?
+
+Glad you asked. This shouldn't come as a big surprise, though, `instanceof` in TypeScript is similar to other popular languages:
+
+```javascript
+if (myObject instanceof Type) {
+  console.log("myObject *is* an instance of Type!");
+} else {
+  console.log("Oops! myObject is not an instance of Type...");
+}
+```
+
 That's it.
