@@ -29,12 +29,14 @@ Typescript: cast an object to other type. How?
 Use `<>`:
 
 ```javascript
+
 var myObject: TypeA;
 var otherObject: any;
 
 // values are assigned to them, and...
 
 myObject = <TypeA> otherObject;
+
 ```
 
 That's it.
