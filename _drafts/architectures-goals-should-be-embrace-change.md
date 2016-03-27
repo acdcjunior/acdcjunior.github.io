@@ -20,7 +20,7 @@ We should make sure our architecture enables our software to adapt quickly to ch
 we learn as the problem and the sofware matures.
 
 
-Architecture is imposing some constraints on our code (e.g. entities can't have references to repositories), but that's a good thing. It enables criativity instead of limiting it.
+Architecture is imposing some constraints on our code (e.g. entities can't have references to repositories, app layer only should open transactions), but that's a good thing. It enables criativity instead of limiting it.
 
 
 Antigamente: "um modelo para tudo" --> o conceito "Gasto" é igual no domínio todo??
