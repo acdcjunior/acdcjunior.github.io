@@ -1,5 +1,30 @@
+---
+layout: post
+# type: <nothing> | quote | status | video | photo
+title: node-gyp - MSB3428: Não foi possível carregar componente "VCBuild.exe"
+category: nodejs
+tags: [npm, node-gyp]
+lang: 'pt_BR'
+# description: Test dependencies are very common. Here they go.
+# headline: Awesome snippet, let's begin testing ASAP!
+comments: true
+# modified: 2015-12-13
+share: true
+mathjax: false
+# tags:
+#  - alternate
+#  - way
+imagefeature: picture-38.jpg
+#image:
+#  feature: picture-38.jpg
+#  credit: example.com
+#  creditlink: "http://example.com/blog/stuff/"
+# link: http://some-link-for-a-link-post
+# featured: true
+published: true
+---
 
-Ao executar o `npm install` de alguma codigo que você baixou, a mensagem de erro relativa ao `node-gyp` aparece:
+Ao executar o `npm install` de alguma dependência que você baixou, a mensagem de erro relativa ao `node-gyp` aparece:
 
 > C:\...>node "C:\Program Files\nodejs\node_modules\npm\ bin\node-gyp-bin\\..\..\node_modules\node-gyp\bin\node-gyp.js" rebuild
 Compilando os projetos desta solução um de cada vez. Para habilitar a compilação paralela, adicione a opção "/m".
@@ -7,6 +32,8 @@ Compilando os projetos desta solução um de cada vez. Para habilitar a compila�
 > MSBUILD : error MSB3428: Não foi possível carregar componente "VCBuild.exe" do Visual C++.
 Para corrigir isso, 1) instale o .NET Framework 2.0 SDK, 2) instale o Microsoft Visual Studio 2005 ou 3) adicione
 o local do componente ao caminho do sistema se ele estiver instalado em outro local.
+
+<!--more-->
 
 # Solução
 
