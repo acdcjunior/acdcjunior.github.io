@@ -27,16 +27,17 @@ published: true
 Typescript: cast an object to other type. How?
 <!--more-->
 
-## Use `<>` for casting:
+## Use `<>` or the `as` keyword for casting:
 
 ```javascript
 var myObject: TypeA;
 var otherObject: any;
 // values are assigned to them, and...
-myObject = <TypeA> otherObject;
+myObject = <TypeA> otherObject;     // using <>
+myObject = otherObject as <TypeA>;  // using as keyword
 ```
 
-As simple as that.
+Both ways have the same (compile-time, not runtime) outcome.
 
 ---
 
