@@ -37,8 +37,6 @@ o local do componente ao caminho do sistema se ele estiver instalado em outro lo
 
 # Solução
 
-https://github.com/nodejs/node-gyp/issues/629#issuecomment-153196245
-
 Os passos de configuração sao os seguintes:
 
 - Baixe o [VC++ Build Tools Technical Preview](http://go.microsoft.com/fwlink/?LinkId=691132).
@@ -54,3 +52,5 @@ Execute, no `cmd`:
   - Outra opção é usar `npm install [package name] --msvs_version=2015` para cada pacote que você vá usar.
 
 E é isso. Agora é só mandar brasa nos `npm install`.
+
+Fontes: [node-gyp](https://github.com/nodejs/node-gyp/issues/629#issuecomment-153196245)
