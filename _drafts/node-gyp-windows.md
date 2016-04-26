@@ -49,5 +49,8 @@ Os passos de configuração sao os seguintes:
 - Instale o [Python 2.7](https://www.python.org/downloads/), e o adicione no seu `PATH`, `npm config set python python2.7`
   - Não instale o Python 3.*, não vai funcionar! Tem que ser 2.7.*!
 
-Launch cmd, npm config set msvs_version 2015 --global (this is instead of npm install [package name] --msvs_version=2015 every time.)
-SO MUCH npm install 
+Execute, no `cmd`:
+  - `npm config set msvs_version 2015 --global`
+  - Outra opção é usar `npm install [package name] --msvs_version=2015` para cada pacote que você vá usar.
+
+E é isso. Agora é só mandar brasa nos `npm install`.
