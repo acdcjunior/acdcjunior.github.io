@@ -34,7 +34,7 @@ var myObject: TypeA;
 var otherObject: any;
 // values are assigned to them, and...
 myObject = <TypeA> otherObject;     // using <>
-myObject = otherObject as <TypeA>;  // using as keyword
+myObject = otherObject as TypeA;  // using as keyword
 ```
 
 Both ways have the same (compile-time, not runtime) outcome.
