@@ -24,11 +24,11 @@ o local do componente ao caminho do sistema se ele estiver instalado em outro lo
 
 # Solução
 
-Os passos de configuração sao os seguintes:
+Os passos de configuração são os seguintes:
 
 - Baixe o [VC++ Build Tools Technical Preview](http://go.microsoft.com/fwlink/?LinkId=691132).
 - Na instalação, ***não*** siga direto:
-  - [Opcional: se, e *somente se*, você estiver no *Windows 7*, instale também o [.NET Framework 4.5.1](http://www.microsoft.com/en-us/download/details.aspx?id=40773)]
+  - [Opcional: se, e *somente se*, você estiver no **Windows 7**, instale antes também o [.NET Framework 4.5.1](http://www.microsoft.com/en-us/download/details.aspx?id=40773)]
   - Escolha ***Custom Install*** e, em seguida, selecione tanto as SDKs *Windows 8.1* quanto *Windows 10*.
 
 - Instale o [Python 2.7](https://www.python.org/downloads/), e o adicione no seu `PATH`, `npm config set python python2.7`
