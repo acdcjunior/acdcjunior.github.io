@@ -64,7 +64,7 @@ links:
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 timezone:    America/Sao_Paulo
 future:      true
-highlighter: pygments
+highlighter: rouge
 markdown:    kramdown
 paginate:    6
 paginate_path: "page:num"
