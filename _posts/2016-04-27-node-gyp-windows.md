@@ -1,6 +1,6 @@
 ---
 layout: post
-title: node-gyp - MSB3428: Não foi possível carregar componente "VCBuild.exe"
+title: 'node-gyp - MSB3428: Não foi possível carregar componente "VCBuild.exe"'
 category: nodejs
 tags: [npm, node-gyp]
 lang: 'pt_BR'
@@ -10,7 +10,6 @@ mathjax: false
 imagefeature: picture-38.jpg
 published: true
 ---
-
 
 Ao executar o `npm install` de alguma dependência que você baixou, a mensagem de erro relativa ao `node-gyp` aparece:
 
