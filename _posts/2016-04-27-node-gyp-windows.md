@@ -1,26 +1,13 @@
 ---
 layout: post
-# type: <nothing> | quote | status | video | photo
 title: node-gyp - MSB3428: Não foi possível carregar componente "VCBuild.exe"
 category: nodejs
 tags: [npm, node-gyp]
 lang: 'pt_BR'
-# description: Test dependencies are very common. Here they go.
-# headline: Awesome snippet, let's begin testing ASAP!
 comments: true
-# modified: 2015-12-13
 share: true
 mathjax: false
-# tags:
-#  - alternate
-#  - way
 imagefeature: picture-38.jpg
-#image:
-#  feature: picture-38.jpg
-#  credit: example.com
-#  creditlink: "http://example.com/blog/stuff/"
-# link: http://some-link-for-a-link-post
-# featured: true
 published: true
 ---
 
