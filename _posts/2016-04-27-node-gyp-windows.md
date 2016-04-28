@@ -24,6 +24,7 @@ imagefeature: picture-38.jpg
 published: true
 ---
 
+
 Ao executar o `npm install` de alguma dependência que você baixou, a mensagem de erro relativa ao `node-gyp` aparece:
 
 > C:\...>node "C:\Program Files\nodejs\node_modules\npm\ bin\node-gyp-bin\\..\..\node_modules\node-gyp\bin\node-gyp.js" rebuild
