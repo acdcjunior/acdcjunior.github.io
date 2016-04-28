@@ -11,11 +11,11 @@ imagefeature: picture-38.jpg
 published: true
 ---
 
-Ao executar o `npm install` de alguma dependência que você baixou, a mensagem de erro relativa ao `node-gyp` aparece:
+Ao executar o `npm install` de alguma dependência que você baixou, a mensagem de erro relativa ao `node-gyp` aparece:<br>
 
 > C:\...>node "C:\Program Files\nodejs\node_modules\npm\ bin\node-gyp-bin\\..\..\node_modules\node-gyp\bin\node-gyp.js" rebuild
 Compilando os projetos desta solução um de cada vez. Para habilitar a compilação paralela, adicione a opção "/m".
-
+>
 > MSBUILD : error MSB3428: Não foi possível carregar componente "VCBuild.exe" do Visual C++.
 Para corrigir isso, 1) instale o .NET Framework 2.0 SDK, 2) instale o Microsoft Visual Studio 2005 ou 3) adicione
 o local do componente ao caminho do sistema se ele estiver instalado em outro local.
