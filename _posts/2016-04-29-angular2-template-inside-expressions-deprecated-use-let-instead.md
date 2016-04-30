@@ -43,7 +43,7 @@ Use:
 
 # Reason
 
-Since version 2.0.0-beta.17 (2016-04-28) this is needed.
+Since version [2.0.0-beta.17 (2016-04-28)](https://github.com/angular/angular/blob/master/CHANGELOG.md#200-beta17-2016-04-28) this is needed.
 
 
 
