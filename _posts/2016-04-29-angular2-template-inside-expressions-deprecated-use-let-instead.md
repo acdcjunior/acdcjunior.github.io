@@ -20,7 +20,7 @@ Template parse warnings:
 "#" inside of expressions is deprecated. Use "let" instead! ("
         <ul>
           <li [ERROR ->]*ngFor="#i of items">
-            \{{ i }}
+            {⁣{i}}
           </li>
 "): List@2:14
 ```
