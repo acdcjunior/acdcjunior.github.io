@@ -41,6 +41,9 @@ Use:
 <li *ngFor="let i of items">
 ```
 
+# Reason
+
+Since version 2.0.0-beta.17 (2016-04-28) this is needed.
 
 
 
