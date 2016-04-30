@@ -19,8 +19,8 @@ So you get on your console some warnings:
 Template parse warnings:
 "#" inside of expressions is deprecated. Use "let" instead! ("
         <ul>
-          <li [ERROR ->]*ngFor="#i of items" >
-            {{ i }}
+          <li [ERROR ->]*ngFor="#i of items">
+            \{{ i }}
           </li>
 "): List@2:14
 ```
