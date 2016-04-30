@@ -31,14 +31,15 @@ Replace the `#` with `let`.
 
 Instead of:
 
-```
+```html
 <li *ngFor="#i of items">
 ```
 
 Use:
 
-```
+```html
 <li *ngFor="let i of items">
+            ^^^----------------------- notice change here
 ```
 
 # Reason
