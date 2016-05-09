@@ -32,9 +32,10 @@ Os passos de configuração são os seguintes:
   - Escolha ***Custom Install*** e, em seguida, selecione tanto as SDKs *Windows 8.1* quanto *Windows 10*.
 
 - Instale o [Python 2.7](https://www.python.org/downloads/), e o adicione no seu `PATH`, `npm config set python python2.7`
-  - Não instale o Python 3.*, não vai funcionar! Tem que ser 2.7.x!
+  - Não instale o Python 3.x, não vai funcionar! Tem que ser 2.7.x!
 
 Execute, no `cmd`:
+
   - `npm config set msvs_version 2015 --global`
   - Outra opção é usar `npm install [package name] --msvs_version=2015` para cada pacote que você vá usar.
 
