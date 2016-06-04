@@ -27,7 +27,7 @@ There you go. Now begin developing! Any changes to the `.xhtml` files should be 
 
 Now to the features, goals and what you'll find on the example source code.
 
-### Latest JSF stack
+## Latest JSF stack
 
 Versions used (the current at the time of the post, though not the latest anymore):
 
@@ -39,7 +39,7 @@ Other specs:
 - Servlet 3.0/3.1 - Because we're using Tomcat7 plugin. If you want to use anything from Servlet 4.0, just deploy to a Tomcat 8, the app should work the same.
 
 
-##User authentication
+## User authentication
 
 We use **declarative security** via *FORM based authentication*, specifying security constraints for resources in the *deployment descriptor* (`web.xml`) file (more on [Securing Web Applications - The Java EE 7 Tutorial](https://docs.oracle.com/javaee/7/tutorial/security-webtier002.htm)). Some people refer to this as JAAS based authentication, but I'm not so sure this is the correct term (see more at the last part of this post).
 
@@ -56,7 +56,7 @@ Another dealbreaking requisite: We wanted our whole solution to work with simply
 
 It is very important that the command is `:run` and not `run-war`: When using `:run` any **changes to `.xhtml` files are  picked up immediately**, making the developent much, much easier (also, with minimal IDE support, some code changes inside methods on Java classes may also be picked up - try running `mvn tomcat7:run` in debug mode).
 
-###Layout
+## Layout
 
 Every real application uses a layout system based on templates, right? No one wants to place again and again the same background and the same menubar on every page.
 
@@ -64,7 +64,7 @@ The example project uses the [PrimeFace's "full" `<p:layout>`](http://www.primef
 
 
 
-###What's missing?
+## What's missing?
 
 I still need to figure out/explain where JAAS and Java EE are exactly related to each other. JAAS is definitely **not** Java EE (it is a Java SE spec), that I know, but does Tomcat support it? Which points of the `j_*` form are JAAS (if any) and which are not?
 
