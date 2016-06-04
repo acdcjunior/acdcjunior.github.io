@@ -50,6 +50,7 @@ Since version [2.0.0-beta.17 (2016-04-28)](https://github.com/angular/angular/bl
 > The reference `#...` now always means `ref-`.
 >
 > **Before:**
+>
 > - Outside of `ngFor`, a `#...` meant a reference.
 > - Inside of `ngFor`, it meant a local variable. 
 >
