@@ -20,32 +20,8 @@ fin_color:        "255,255,255"
 # whether working locally or remotely. Start Jekyll with: jekyll serve --baseurl ''
 url:       		   "http://acdcjunior.github.io"
 
-# Owner/author information
-owner:
-  name:           Antônio "acdc" Júnior
-  avatar:         theme/acdcjunior.png
-  email:          acdcjunior@gmail.com
-  # Use the coder's toolbox at http://coderstoolbox.net/string/#!encoding=xml&action=encode&charset=us_ascii to encode your description into XML string
-  description:    A passionate programmer based in Brasília, Brasil. Interested in anything that would make our developer lives more awesome.
-  # Social networking links used in footer. Update and remove as you like.
-  twitter:        acdcjunior
-  facebook:
-  github:         acdcjunior
-  stackexchange:  http://stackoverflow.com/users/1850609/acdcjunior
-  linkedin:
-  instagram:      
-  flickr:         
-  tumblr:         
-  # For Google Authorship https://plus.google.com/authorship
-  google_plus:
 
 excerpt_separator: <!--more-->
-
-# Analytics and webmaster tools stuff goes here
-google_analytics:   UA-50217609-2
-google_verify:      
-# https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
-bing_verify:         
 
 # Links to include in footer navigation
 # For external links add external: true
@@ -62,7 +38,7 @@ links:
     url: /acdcjunior
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-timezone:    America/Sao_Paulo
+timezone:    
 future:      true
 highlighter: rouge
 markdown:    kramdown

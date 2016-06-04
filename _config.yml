@@ -63,19 +63,19 @@ google_ad_slot           :
 
 # Site Author
 author:
-  name             : "Your Name"
-  avatar           : "bio-photo.jpg"
-  bio              : "I am an amazing person."
-  location         : "Somewhere"
-  email            :
+  name             : Antônio "acdc" Júnior
+  avatar           : acdcjunior.png
+  bio              : A passionate programmer based in Brasília, Brasil. Interested in anything that would make our developer lives more awesome.
+  location         : Brazil
+  email            : acdcjunior@gmail.com
   uri              :
   bitbucket        :
   codepen          :
   dribbble         :
   flickr           :
-  facebook         :
+  facebook         : acdcjunior
   foursquare       :
-  github           :
+  github           : acdcjunior
   google_plus      :
   keybase          :
   instagram        :
@@ -83,10 +83,10 @@ author:
   linkedin         :
   pinterest        :
   soundcloud       :
-  stackoverflow    : # http://stackoverflow.com/users/123456/username
+  stackoverflow    : http://stackoverflow.com/users/1850609/acdcjunior
   steam            :
   tumblr           :
-  twitter          :
+  twitter          : acdcjunior
   vine             :
   weibo            :
   xing             :
@@ -151,7 +151,7 @@ kramdown:
 permalink: /:title.html
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
-timezone: # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: America/Sao_Paulo
 
 
 # Plugins
