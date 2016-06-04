@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: 'Git - Comandos Essenciais'
 category: Git
 tags: [git]

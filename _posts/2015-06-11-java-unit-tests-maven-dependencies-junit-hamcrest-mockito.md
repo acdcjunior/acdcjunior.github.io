@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 # type: <nothing> | quote | status | video | photo
 title: 'Java Unit Tests Maven dependencies snippet'
 category: Test

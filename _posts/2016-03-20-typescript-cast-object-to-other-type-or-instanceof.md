@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 # type: <nothing> | quote | status | video | photo
 title: 'Typescript: cast an object to other type. How? And instanceof or typeof?'
 category: Typescript

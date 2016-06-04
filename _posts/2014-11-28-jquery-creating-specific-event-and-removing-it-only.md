@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: 'Creating (binding) a specific event and removing (unbinding) it only'
 category: jQuery
 tags: [jquery]

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: 'Criando Branches no SVN via TortoiseSVN'
 category: Tools
 tags: [svn, tortoisesvn]

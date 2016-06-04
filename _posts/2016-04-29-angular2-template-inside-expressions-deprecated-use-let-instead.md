@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: 'angular 2 - Template parse warnings: "#" inside of expressions is deprecated. Use "let" instead! (ngFor)'
 category: angular2
 tags: [angular2, angular]

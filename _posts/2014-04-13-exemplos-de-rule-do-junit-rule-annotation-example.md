@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: 'Exemplos da anotação <code>@Rule</code> do JUnit'
 category: JUnit
 tags: [junit, tests, java]

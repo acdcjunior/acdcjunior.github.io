@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: 'What XPath version does a given WebDriver support?'
 category: Selenium
 tags: [selenium, xpath, java, webdriver]

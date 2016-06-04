@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: 'Maven 3: Download e Instalação (Windows)'
 Category: Tools
 tags: [maven, java]

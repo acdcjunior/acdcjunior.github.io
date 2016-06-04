@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: 'node-gyp - MSB3428: Não foi possível carregar componente "VCBuild.exe"'
 category: nodejs
 tags: [npm, node-gyp]
