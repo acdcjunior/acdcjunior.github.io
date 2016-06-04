@@ -5,8 +5,6 @@ description: "woot"
 category: angular2
 tags: [angular2, angular]
 comments: true
-header:
-  teaser: picture-38.jpg
 lang: 'en'
 ---
 
