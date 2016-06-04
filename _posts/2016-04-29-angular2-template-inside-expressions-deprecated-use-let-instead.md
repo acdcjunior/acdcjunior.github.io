@@ -1,14 +1,13 @@
 ---
 layout: single
 title: 'angular 2 - Template parse warnings: "#" inside of expressions is deprecated. Use "let" instead! (ngFor)'
+description: "woot"
 category: angular2
 tags: [angular2, angular]
-lang: 'en'
 comments: true
-share: true
-mathjax: false
-imagefeature: picture-38.jpg
-published: true
+header:
+  teaser: picture-38.jpg
+lang: 'en'
 ---
 
 So you get on your console some warnings:
