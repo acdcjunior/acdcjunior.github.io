@@ -27,7 +27,7 @@ There you go. Now begin developing! Any changes to the `.xhtml` files should be 
 
 Now to the features, goals and what you'll find on the example source code.
 
-## Latest JSF stack
+## JSF stack versions
 
 Versions used (the current at the time of the post, though not the latest anymore):
 
