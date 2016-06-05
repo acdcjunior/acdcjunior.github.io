@@ -3,13 +3,14 @@ layout: compress
 ---
 {% if page.lang %}
 	{% else %}
-	{% assign page.lang = 'en' %}
+	{% assign page.lang = 'en-US' %}
 {% endif %}
+{% assign site.locale = page.lang %}
 
 {% include base_path %}
 
 <!doctype html>
-<html lang="{{ page.lang }}" class="no-js">
+<html lang="{{ site.locale }}" class="no-js">
   <head>
     {% include head.html %}
     {% include head/custom.html %}
