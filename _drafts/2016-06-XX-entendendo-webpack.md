@@ -20,7 +20,9 @@ Grunt e Gulp são task runners genéricos. Você pode colocar praticamente qualq
 Em resumo, nos task runners, você configura e roda tasks. Nada mais. Cada task faz o que você quiser (ou o que o plugin permitir) que ela faça.
 - podem autoimatizar os testes e rodalos qdo codigo muda
 
-webpack especializado em processar arquivos de entradas e saidas
+# WebPack
+
+> WebPack é como um task runner especializado em processar arquivos de entrada e saída.
 
 Nesse contexto, pense no WebPack como um task runner especializado. Imagine que alguem pegou um task runner, fez algumas pré-configurações e te passou dizendo: *"coloque neste local a página inicial do seu site, coloque aqui a lista das transpilações que você quer fazer e, por fim, coloque naquele outro ponto os tratamentos finais, como minificação ou uglification. Agora basta rodar, a ferramenta junta tudo e coordena o resto pra você."*
 
