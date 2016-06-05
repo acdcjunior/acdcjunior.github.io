@@ -3,7 +3,7 @@ layout: single
 title: 'Git - Comandos Essenciais'
 category: Git
 tags: [git]
-lang: 'pt_BR'
+lang: 'pt-br'
 ---
 Lembrete e breve descrição de alguns dos comandos do **git** que eu mais uso.
 <!--more-->

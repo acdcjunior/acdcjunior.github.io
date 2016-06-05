@@ -3,7 +3,7 @@ layout: single
 title: 'SVN no Eclipse: Subversive vs. Subclipse e integração com o Maven (M2E connector)'
 category: Tools
 tags: [svn, eclipse, subversive, subclipse, maven, m2e]
-lang: 'pt_BR'
+lang: 'pt-br'
 ---
 Quando se fala de suporte a Subversion (SVN) no Eclipse, sabe-se que ele conta com dois principais plugins:
 
