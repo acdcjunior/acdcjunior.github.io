@@ -51,7 +51,7 @@ A partir daí é só `Next`, `Next`... até `Finish`.
 
 <br>
 
-###Integrando com o M2E (Maven)
+## Integrando com o M2E (Maven)
 A funcionalidade mais interessante, porém, é a integração com o M2E, o que permite que você faça o checkout direto de uma pasta no SVN como projeto Maven. Para adicionar essa possibilidade, siga: **`Window -> Preferences -> Maven -> Discovery -> Open Catalog`**
 
 Uma vez lá, selecione e instale o **m2e-subversive**, conforme figura abaixo.
