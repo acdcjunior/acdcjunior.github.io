@@ -12,7 +12,7 @@ Por solucionar este problema, Maven se tornou uma ferramenta quase que essencial
 A seguir explico de forma sucinta como instalá-lo no Windows. Os passos abaixo devem funcionar para qualquer versão recente (Windows XP, Windows Vista, Windows 7, Windows 8).
 <!--more-->
 
-###Instalação e configuração
+## Instalação e configuração
 
 - Baixe a versao binária em [http://maven.apache.org/download.cgi](http://maven.apache.org/download.cgi);
 	- Neste exemplo, usei a [versao 3.1.1][1].
@@ -27,7 +27,7 @@ A seguir explico de forma sucinta como instalá-lo no Windows. Os passos abaixo 
 
 <br>
 
-###Verificando se funcionou
+## Verificando se funcionou
 
 Para certificar-se de que tudo deu certo:
 
