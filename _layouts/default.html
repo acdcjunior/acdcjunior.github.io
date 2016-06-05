@@ -1,11 +1,15 @@
 ---
 layout: compress
 ---
+{% if page.lang %}
+	{% else %}
+	{% assign page.lang = 'en' %}
+{% endif %}
 
 {% include base_path %}
 
 <!doctype html>
-<html lang="{% if page.lang %}{{ page.lang }}{% else %}en{% endif %}" class="no-js">
+<html lang="{{ page.lang }}" class="no-js">
   <head>
     {% include head.html %}
     {% include head/custom.html %}
