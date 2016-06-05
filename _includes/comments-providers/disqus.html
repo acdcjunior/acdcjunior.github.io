@@ -2,6 +2,13 @@
   <script type="text/javascript">
   	/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
   	var disqus_shortname = '{{ site.comments.disqus.shortname }}';
+	var disqus_config = function () {
+        {% if page.lang %}
+        this.language = "{{ page.lang }}";
+        {% else %}
+        this.language = "en";
+        {% endif %}
+    };
 
   	/* * * DON'T EDIT BELOW THIS LINE * * */
   	(function() {
