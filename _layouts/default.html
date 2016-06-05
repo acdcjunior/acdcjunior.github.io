@@ -3,8 +3,10 @@ layout: compress
 ---
 
 {{ site.locale }} | {{ post_specific_locale }}
++++
 
 {% if page.lang %}
+	{% assign post_specific_locale = page.lang %}
 	{% else %}
 	{% assign post_specific_locale = 'en-US' %}
 {% endif %}
