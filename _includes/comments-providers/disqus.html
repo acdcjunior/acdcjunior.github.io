@@ -4,9 +4,9 @@
   	var disqus_shortname = '{{ site.comments.disqus.shortname }}';
 	var disqus_config = function () {
         {% if page.lang %}
-        this.language = "{{ page.lang }}";
+        this.language = "{{ page.lang | replace: '-', '_' | replace: 'br', 'BR' }}";
         {% else %}
-        this.language = "en";
+        this.language = "en_US";
         {% endif %}
     };
 
