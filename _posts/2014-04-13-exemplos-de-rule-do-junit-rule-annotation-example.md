@@ -15,7 +15,7 @@ colocávamos nela os metodos `@Before` e `@After`, e faziamos todas as outras cl
 Mas e se fossem várias funcionalidades? Aí precisaríamos de várias superclasses. Só que o Java não permite herança múltipla, então
 éramos obrigados a criar uma *God Class* com tudo que precisávamos. Nem preciso dizer o quanto isso complicava o desenvolvimento no longo prazo.
 
-### `@Rule` ao resgate!
+## `@Rule` ao resgate!
 
 Desde a versão 4.7 o JUnit disponibiliza uma anotação `@Rule` que pode nos ajudar a solucionar esse problema:
 reutilizar código típico de `@Before` e `@After` sem necessidade de herançaa (e o melhor, você pode ter várias `@Rule` em
