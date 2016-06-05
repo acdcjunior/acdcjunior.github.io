@@ -5,7 +5,7 @@ category: JavaScript
 tags: [javascript, webpack, tools, angular]
 ---
 
-Para entender o WebPack, é importante que você já conheça alguns outros assuntos:
+Para entender o WebPack, é importante que já conhecer alguns outros assuntos:
 
 - Obviamente, Node e NPM.
 - Tenha pelo menos uma ideia do que são **task runners**, como Grunt ou Gulp.
