@@ -1,9 +1,6 @@
 {% capture base_path %}{{ site.url }}{{ site.baseurl }}{% endcapture %}
-
 {% if page.lang %}
 	{% assign post_specific_locale = page.lang %}
 	{% else %}
-	{% assign post_specific_locale = 'en-US' %}
+	{% assign post_specific_locale = site.locale %}
 {% endif %}
-
-resolved: {{ post_specific_locale }}
