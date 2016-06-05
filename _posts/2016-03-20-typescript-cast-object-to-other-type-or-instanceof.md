@@ -4,7 +4,7 @@ layout: single
 title: 'Typescript: cast an object to other type. How? And instanceof or typeof?'
 category: Typescript
 tags: [typescript, casting]
-lang: 'en_US'
+lang: en-US
 # description: Test dependencies are very common. Here they go.
 # headline: Awesome snippet, let's begin testing ASAP!
 comments: true

@@ -3,7 +3,7 @@ layout: single
 title: 'What XPath version does a given WebDriver support?'
 category: Selenium
 tags: [selenium, xpath, java, webdriver]
-lang: 'en_US'
+lang: en-US
 ---
 Ever wondered what version of XPath does a given `WebDriver` support?
 We certainly wished it would be 2.0 or 3.0, but **most likely the version is 1.0**. Don't take my word for it, though, let's see some data.

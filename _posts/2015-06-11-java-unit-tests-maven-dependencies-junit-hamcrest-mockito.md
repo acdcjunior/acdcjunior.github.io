@@ -4,7 +4,7 @@ layout: single
 title: 'Java Unit Tests Maven dependencies snippet'
 category: Test
 tags: [test, junit, hamcrest, mockito, maven, java]
-lang: 'en_US'
+lang: en-US
 description: Test dependencies are very common. Here they go.
 headline: Awesome snippet, let's begin testing ASAP!
 comments: true

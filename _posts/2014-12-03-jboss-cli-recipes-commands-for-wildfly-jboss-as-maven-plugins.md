@@ -3,7 +3,7 @@ layout: single
 title: 'JBoss CLI Examples: Useful for Wildfly/JBoss-AS Maven Plugins'
 category: JBoss
 tags: [jboss, wildfly, cli recipes, maven, java]
-lang: 'en_US'
+lang: en-US
 ---
 Ever wanted to use the `afterDeployment`or `beforeDeployment`tags of wildfly (or jboss-as) maven plugins?
 <!--more-->

@@ -5,7 +5,7 @@ description: "woot"
 category: angular2
 tags: [angular2, angular]
 comments: true
-lang: 'en'
+lang: en-US
 ---
 
 So you get on your console some warnings:
