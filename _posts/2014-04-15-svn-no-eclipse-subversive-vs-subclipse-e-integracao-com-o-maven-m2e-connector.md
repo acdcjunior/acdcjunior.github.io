@@ -19,14 +19,14 @@ Minha recomendação pessoal é o **Subversive**, por uma razão simples: sempre
 
 <br>
 
-###Instalando o Subversive
+## Instalando o Subversive
 Utilize o Eclipse Marketplace: **`Menu -> Help -> Eclipse Marketplace`**
 Digite `svn` na caixa de busca. O Subversive deve aparecer como uma das primeiras opções.
 
 
 <br>
 
-###*Connectors*, os "drivers" para o SVN
+## *Connectors*, os "drivers" para o SVN
 O Subversive precisará de uma implementação do SVN para que ele possa se contectar com os repositórios.
 
 Assim que você instala o Subversive, ele pede para reiniciar. Após o reinicio do eclipse, da primeira vez que você utilizar qualquer funcionalidade do Subversive (abrindo o menu **`Window -> Preferences -> Team -> SVN`** por exemplo) se não existir nenhum conector instalado (o que é o esperado, já que você instalou o Subversive agora), a janela "Connector discovery" é automaticamente chamada.
@@ -51,7 +51,7 @@ A partir daí é só `Next`, `Next`... até `Finish`.
 
 <br>
 
-###Integrando com o M2E (Maven)
+## Integrando com o M2E (Maven)
 A funcionalidade mais interessante, porém, é a integração com o M2E, o que permite que você faça o checkout direto de uma pasta no SVN como projeto Maven. Para adicionar essa possibilidade, siga: **`Window -> Preferences -> Maven -> Discovery -> Open Catalog`**
 
 Uma vez lá, selecione e instale o **m2e-subversive**, conforme figura abaixo.
