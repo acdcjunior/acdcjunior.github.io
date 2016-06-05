@@ -5,9 +5,9 @@
 {% endif %}
 
 {% if words < 180 %}
-  {{ site.data.ui-text[site.locale].less_than }} 1 {{ site.data.ui-text[site.locale].minute_read }}
+  {{ site.data.ui-text[post_specific_locale].less_than }} 1 {{ site.data.ui-text[post_specific_locale].minute_read }}
 {% elsif words < 360 %}
-  1 {{ site.data.ui-text[site.locale].minute_read }}
+  1 {{ site.data.ui-text[post_specific_locale].minute_read }}
 {% else %}
-  {{ words | divided_by:site.words_per_minute }} {{ site.data.ui-text[site.locale].minutes_read }}
+  {{ words | divided_by:site.words_per_minute }} {{ site.data.ui-text[post_specific_locale].minutes_read }}
 {% endif %}
