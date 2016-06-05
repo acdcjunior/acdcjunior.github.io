@@ -74,11 +74,13 @@ Using the `typeof` operator, you can **find out a variable's type**:
 var x = 5;  
 var y = typeof x; // y will have the string "number" as value
 
-// Using typeof in an TYPE QUERY (or... as I like to say, variable declaration):
+// Using typeof in an TYPE QUERY
+// (or... as I like to say, variable declaration):
 var a = 9; // a is a number
 var b: typeof a; // b will be declared as a number as well
 
-b = "a string"; // yields an error, as b is a number: "The type 'string' is not assignable to type 'number'."
+b = "a string"; // yields an error, as b is a number:
+                // "The type 'string' is not assignable to type 'number'."
 ```
 
 Check a [<kbd>demo of the above code here</kbd>](http://www.typescriptlang.org/Playground/#src=%2F%2F%20Using%20typeof%20in%20an%20EXPRESSION%3A%0Avar%20x%20%3D%205%3B%20%20%0Avar%20y%20%3D%20typeof%20x%3B%20%2F%2F%20y%20will%20have%20the%20string%20%22number%22%20as%20value%0Aconsole.log(y)%3B%0A%0A%2F%2F%20Using%20typeof%20in%20an%20TYPE%20QUERY%20(or...%20as%20I%20like%20to%20say%2C%20variable%20declaration)%3A%0Avar%20a%20%3D%209%3B%20%2F%2F%20a%20is%20a%20number%0Aconsole.log(typeof%20a)%3B%0A%0Avar%20b%3A%20typeof%20a%3B%20%2F%2F%20b%20will%20be%20declared%20as%20a%20number%20as%20well%0A%0Ab%20%3D%20%22a%20string%22%3B%20%2F%2F%20yields%20an%20error%2C%20as%20b%20is%20a%20number%3A%20%22The%20type%20'string'%20is%20not%20assignable%20to%20type%20'number'.%22).
