@@ -8,31 +8,31 @@ lang: 'pt_BR'
 Lembrete e breve descrição de alguns dos comandos do **git** que eu mais uso.
 <!--more-->
 
-#####Update - Atualizar o branch local com as mudanças do branch remoto:
+#### Update - Atualizar o branch local com as mudanças do branch remoto:
 
     git pull origin master
 
-#####Mandar para branch remoto:
+#### Mandar para branch remoto:
 
     git push origin master
 
-#####Adicionar arquivo para commit:
+#### Adicionar arquivo para commit:
 
     git add arquivo.txt
     
-#####Remover arquivos (não só do git, mas também apaga o arquivo localmente):
+#### Remover arquivos (não só do git, mas também apaga o arquivo localmente):
 
     git rm arquivo.txt
     
-#####Commitar arquivos:
+#### Commitar arquivos:
 
     git commit -m "Mensagem de Commit"
 
-#####Alterar a URL do branch remoto ([mais info][1]):
+#### Alterar a URL do branch remoto ([mais info][1]):
 
     git remote set-url origin git@github.com:USERNAME/REPOSITORY2.git
     
-#####Adicionar todos os arquivos **alterados** (novos, modificados e removidos) de todas as pastas:
+#### Adicionar todos os arquivos **alterados** (novos, modificados e removidos) de todas as pastas:
 
     git add -A
     
