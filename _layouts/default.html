@@ -2,21 +2,21 @@
 layout: compress
 ---
 
-lang1="{{ site.locale }}" lang4="{{ page.lang }}"
+{{ site.locale }} | {{ post_specific_locale }}
 
 {% if page.lang %}
 	{% else %}
-	{% assign page.lang = 'en-US' %}
+	{% assign post_specific_locale = 'en-US' %}
 {% endif %}
 
-lang2="{{ site.locale }}" lang4="{{ page.lang }}"
+{{ site.locale }} | {{ post_specific_locale }}
 
 {% assign site.locale = page.lang %}
 
 {% include base_path %}
 
 <!doctype html>
-<html lang="{{ site.locale }}" lang4="{{ page.lang }}"  class="no-js">
+<html lang="{{ site.locale }}" lang5="{{ post_specific_locale }}"  class="no-js">
   <head>
     {% include head.html %}
     {% include head/custom.html %}
