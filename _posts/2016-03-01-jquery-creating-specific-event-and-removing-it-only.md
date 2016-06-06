@@ -4,10 +4,10 @@ title: 'Creating (binding) a specific event and removing (unbinding) it only'
 category: jQuery
 tags: [jquery]
 ---
-Say you want to add some specific event and want to unbind just it (and not others) later.
+Say you want to add some specific event and want to specifically unbind just it (and not others) later.
 <!--more-->
 
-As an example, consider the binding of the <kbd>ESC</kbd> key to closes a modal of yours:
+As an example, consider the binding of the <kbd>ESC</kbd> key to close a modal of yours:
 
 {% gist b88f2a355f51584121c9 regularKeyUpBinding.js %}
 
