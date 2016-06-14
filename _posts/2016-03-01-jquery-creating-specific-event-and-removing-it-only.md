@@ -15,7 +15,7 @@ and, later on:
 
 {% gist b88f2a355f51584121c9 regularKeyUpUnbinding.js %}
 
-The problem here is just that the `.off()` snippet may remove some other bindings as well. Any `keyup` binding before will be removed. This may not seem troublesome now, but may bring some unpredictable behavior in the future, the kind of trouble that makes the developer shout: [***"WTF!?"***](https://pbs.twimg.com/media/BxxptxuIUAAgMGr.jpg:large) - and we don't want that karma.
+The problem here is just that the `.off()` snippet may remove some other bindings as well - not just the ones you made. Any `keyup` binding before will be removed. This may not seem troublesome now, but may bring some unpredictable behavior in the future, the kind of trouble that makes the developer shout: [***"WTF!?"***](https://pbs.twimg.com/media/BxxptxuIUAAgMGr.jpg:large) - and we don't want that karma.
 
 The solution is simple: jQuery allows the attachment of **"namespaces"** to the events - just like a label - so you can refer specifically to it later.
 
