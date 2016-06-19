@@ -55,8 +55,8 @@ Os passos de configuração são os seguintes:
 Execute, no `cmd`:
 
   - `npm config set msvs_version 2015 --global`
-    - Alternativamente, você pode usar `npm install [package name] --msvs_version=2015` para cada pacote que você vá usar.
+  - Alternativamente, ao invés dp cpmando acima, você pode usar `npm install [package name] --msvs_version=2015` para cada pacote que você vá instalar.
 
-E é isso. Agora é só mandar brasa nos `npm install`.
+E é isso. Agora é só mandar brasa nos `npm install` com o `node-gyp`.
 
 Fontes: [node-gyp](https://github.com/nodejs/node-gyp/issues/629#issuecomment-153196245)
