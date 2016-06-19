@@ -27,7 +27,7 @@ Outra possibilidade de mensagem de erro (a depender da sua configuração):
 
 # Problema
 
-Esse erro acontece porque o **node-gyp** precisa de um Python (v2.7) e um compilador C/C++ **específicos** instalados. A solução, portanto, é instalar essas ferramentas.
+Esse erro acontece porque o [**node-gyp**](https://github.com/nodejs/node-gyp) precisa de um Python (v2.7) e um compilador C/C++ **específicos** instalados. A solução, portanto, é instalar essas ferramentas.
 
 # Solução
 
@@ -39,12 +39,12 @@ Os passos de configuração são os seguintes:
 - [ :bulb: Importante: se, e *somente se*, você estiver no **Windows 7**, instale antes também o [.NET Framework 4.5.1](http://www.microsoft.com/en-us/download/details.aspx?id=40773)]
 
 ### Instale o **Python 2.7**
-- Baixe e instale o [Python 2.7](https://www.python.org/downloads/)
-  - [:warning: Aviso: Não instale o Python 3.x, não vai funcionar! Tem que ser 2.7.x!]
+- Baixe e instale o [Python **2.7**](https://www.python.org/downloads/)
+  - [:warning: Aviso: Não instale o Python 3.x, **não** vai funcionar! Tem que ser 2.7.x!]
 - Adicione no seu `PATH`
 - Configure o NPM: `npm config set python python2.7`
 
-### Configure o NPM
+### Configure o **NPM**
 
 Execute, no `cmd`:
 
