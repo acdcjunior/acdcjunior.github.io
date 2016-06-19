@@ -38,7 +38,11 @@ Os passos de configuração são os seguintes:
 ### Instale o **Visual C++ Built Tools**
 - Baixe o [VC++ Build Tools](http://landinghub.visualstudio.com/visual-cpp-build-tools).
 - Na instalação, selecione o tipo de instalação **Default** e siga (demora um pouco, ele vai baixar tudo durante a instalação).
+<br> ![microsoft-visual-cpp-build-tools-install-default](/images/posts/microsoft-visual-cpp-build-tools-install-default.png)
 - [ :bulb: Importante: se, e *somente se*, você estiver no **Windows 7**, instale antes também o [.NET Framework 4.5.1](http://www.microsoft.com/en-us/download/details.aspx?id=40773)]
+
+
+
 
 ### Instale o **Python 2.7**
 - Baixe e instale o [Python **2.7**](https://www.python.org/downloads/)
