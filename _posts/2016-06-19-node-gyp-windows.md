@@ -55,7 +55,7 @@ Os passos de configuração são os seguintes:
 Execute, no `cmd`:
 
   - `npm config set msvs_version 2015 --global`
-  - Outra opção é usar `npm install [package name] --msvs_version=2015` para cada pacote que você vá usar.
+    - Alternativamente, você pode usar `npm install [package name] --msvs_version=2015` para cada pacote que você vá usar.
 
 E é isso. Agora é só mandar brasa nos `npm install`.
 
