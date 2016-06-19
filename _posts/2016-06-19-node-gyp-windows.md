@@ -29,6 +29,8 @@ Outra possibilidade de mensagem de erro (a depender da sua configuração):
 
 Esse erro acontece porque o [**node-gyp**](https://github.com/nodejs/node-gyp) precisa de um Python (v2.7) e um compilador C/C++ **específicos** instalados. A solução, portanto, é instalar essas ferramentas.
 
+<br>
+
 # Solução
 
 Os passos de configuração são os seguintes:
