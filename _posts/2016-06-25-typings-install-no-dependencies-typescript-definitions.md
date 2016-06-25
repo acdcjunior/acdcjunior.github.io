@@ -1,6 +1,6 @@
 ---
 layout: single
-title: 'typings - "no dependencies" when running "typings install" to install typescript type definitions'
+title: 'typings - "(No dependencies)" when running "typings install" to get type definitions (TypeScript)'
 category: typescript
 tags: [typings, typescript, node]
 lang: en-US
