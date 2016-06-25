@@ -69,9 +69,9 @@ $ typings install
 
 # Reason
 
-See https://github.com/typings/typings/releases/tag/v1.0.0:
+See [typings v1.0.0 release notes](https://github.com/typings/typings/releases/tag/v1.0.0):
 
-> Many breaking changes (see https://github.com/typings/core/releases/tag/v1.0.0)
+> Many breaking changes (see [https://github.com/typings/core/releases/tag/v1.0.0](https://github.com/typings/core/releases/tag/v1.0.0))
 > - Renamed `ambient` to `global`
 > - ...
 
