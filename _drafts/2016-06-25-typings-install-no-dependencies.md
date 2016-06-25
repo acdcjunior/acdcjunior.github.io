@@ -1,3 +1,15 @@
+---
+layout: single
+title: 'typings - "no dependencies" when running "typings install" to install typescript type definitions'
+category: typescript
+tags: [typings, typescript, node]
+lang: en-US
+comments: true
+share: true
+mathjax: false
+published: true
+---
+
 You have an apparently well-defined `typings.json` file in your current directory/package, such as:
 
 ```json
