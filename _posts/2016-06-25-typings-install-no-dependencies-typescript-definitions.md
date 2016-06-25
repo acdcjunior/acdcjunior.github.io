@@ -75,7 +75,7 @@ See [typings v1.0.0 release notes](https://github.com/typings/typings/releases/t
 > - Renamed `ambient` to `global`
 > - ...
 
-When `typings` was updated from version `0.x` to `1.x`, the properties were renamed, as you can see in the changelog above.
+When [`typings`](https://github.com/typings/typings) was updated from version `0.x` to `1.x`, the properties were renamed, as you can see in the changelog above.
 
 As a consequence, your file that would be fine for version `0.x` is not so cool at `1.x`.
 
