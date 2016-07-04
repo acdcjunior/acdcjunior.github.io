@@ -5,7 +5,7 @@ category: JavaScript
 tags: [javascript, webpack, tools, angular]
 ---
 
-The problem: you are using WebPack in watch mode, either directly of via `webpack-dev-server`, editing through IntelliJ IDEA on Windows, and webpack does not pick up the (or trigger) changes you make to the files (and starting the build process).
+The problem: you are using WebPack in watch mode, either directly of via `webpack-dev-server`, editing through IntelliJ IDEA on Windows, and webpack does not pick up the (or trigger) changes you make to the files (and thus never rebuilds the files automatically).
 
 # The solution
 
