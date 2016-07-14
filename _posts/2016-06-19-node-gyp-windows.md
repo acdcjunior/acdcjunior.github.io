@@ -66,6 +66,7 @@ Fontes: [node-gyp](https://github.com/nodejs/node-gyp/issues/629#issuecomment-15
 PS.: Se depois disso tudo você receber algumas mensagens durante `npm install` como:
 
 > prebuild ERR! configure error
+>
 > prebuild ERR! stack Error: Can't find Python executable "python2.7", you can set the PYTHON env variable.
 
 Então [execute:](http://stackoverflow.com/a/33047257/1850609)
