@@ -61,14 +61,15 @@ E é isso. Agora é só mandar brasa nos `npm install` e no `node-gyp`.
 
 Fontes: [node-gyp](https://github.com/nodejs/node-gyp/issues/629#issuecomment-153196245)
 
-Ps.:
-If after this all you get some messages during `npm install` like:
+---
+
+PS.: Se depois disso tudo você receber algumas mensagens durante `npm install` como:
 
 > prebuild ERR! configure error
 > prebuild ERR! stack Error: Can't find Python executable "python2.7", you can set the PYTHON env variable.
 
-[Do:](http://stackoverflow.com/a/33047257/1850609)
+Então [execute:](http://stackoverflow.com/a/33047257/1850609)
 
     npm config set python "C:\\Programs\\Python2.7\\python2.7.exe"
 
-Or wherever your python was installed to.
+Mudando o caminho para onde quer que seu Python 2.7 foi instalado.
