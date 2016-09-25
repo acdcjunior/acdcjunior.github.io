@@ -45,9 +45,10 @@ Os passos de configuração são os seguintes:
 
 
 ### Instale o **Python 2.7**
-- Baixe e instale o [Python **2.7**](https://www.python.org/downloads/)
+- Baixe e instale o [Python **2.7**](https://www.python.org/downloads/) e o adicione ao `PATH`
   - [:warning: Aviso: Não instale o Python 3.x, **não** vai funcionar! Tem que ser 2.7.x!]
-- Adicione no seu `PATH`
+  - Para adicionar ao seu `PATH`, selecione, durante a instalação, a opção "add to PATH" (que não é selecionada por padrão e fica meio escondida)
+    - Se você instalou sem selecionar a opção acima, tamb[em funciona se você adicionar manualmente ao seu `PATH` os caminhos `C:\<onde_voce_instalou>\Python27\` e  `C:\<onde_voce_instalou>\Python27\Scripts`.
 - Configure o NPM: `npm config set python python2.7`
 
 ### Configure o **NPM**
