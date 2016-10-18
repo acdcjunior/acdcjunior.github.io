@@ -39,6 +39,12 @@ myObject = otherObject as TypeA;    // using as keyword
 
 Both ways have the same (compile-time, not runtime) outcome.
 
+## Ok, both works the same, which one should I use, then? `<>` or `as`?
+
+Since Typescript 1.6, the default is `as`, because `<>` is ambiguous in .jsx files. [Click here for more details.](https://github.com/Microsoft/TypeScript/wiki/What's-new-in-TypeScript#new-tsx-file-extension-and-as-operator)
+
+So... casting using `as` is preferred.
+
 ---
 
 ## How about checking if an object is an instance of a given type?
