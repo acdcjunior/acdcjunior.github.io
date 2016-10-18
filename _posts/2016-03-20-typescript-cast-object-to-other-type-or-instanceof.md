@@ -43,7 +43,7 @@ Both ways have the same (compile-time, not runtime) outcome.
 
 Since Typescript 1.6, the default is `as`, because `<>` is ambiguous in .jsx files. [Click here for more details.](https://github.com/Microsoft/TypeScript/wiki/What's-new-in-TypeScript#new-tsx-file-extension-and-as-operator)
 
-So... **casting using `as` is preferred**.
+So... **casting using** `as` **is preferred**.
 
 ---
 
