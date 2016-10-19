@@ -14,10 +14,10 @@
 
 **Because if you test them for their private behavior, you are testing implementation details (not API) and this**
 
-   - **couples the test code too much to the production code**
-   - **makes the test too brittle**
-   - **makes the code and test harder to change**
-   - **\<insert here other problems that come from tightly coupled classes\>**
+  - **couples the test code too much to the production code**
+  - **makes the code and test harder to refactor (or change in general)**
+  - **makes the test too brittle (they will fail for the tyniest changes...)**
+  - **\<insert here other problems that come from tightly coupled classes\>**
 
 > Ok, ok. I will try to test it from the external API.
 
