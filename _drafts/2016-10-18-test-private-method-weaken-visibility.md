@@ -8,9 +8,9 @@
 
 > What is "their external API"?
 
-**It's just a fancy way of calling the classes' public methods.**
+**You can say that's just a fancy way of calling the classes' public methods.**
 
-> Aw, right. But why should I test from the public methods only?
+> Aw, right. But why should I test for their external API only?
 
 **Because if you test them for their private behavior, you are testing implementation details (not API) and this**
 
