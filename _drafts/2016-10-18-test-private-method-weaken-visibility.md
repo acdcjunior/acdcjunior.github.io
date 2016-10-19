@@ -6,7 +6,11 @@
 
 **You should test classes for their external API only.**
 
-> Why?
+> What is "their external API"?
+
+**It's just a fancy way of calling the classes' public methods.**
+
+> Aw, right. But why should I test from the public methods only?
 
 **Because if you test them for their private behavior, you are testing implementation details (not API) and this**
 
@@ -15,7 +19,7 @@
    - **makes the code and test harder to change**
    - **\<insert here other problems that come from tightly coupled classes\>**
 
-> Ok, I will try.
+> Ok, ok. I will try to test it from the external API.
 
 (minutes later)
 
