@@ -13,6 +13,7 @@
    - **couples the test code too much to the production code**
    - **makes the test too brittle**
    - **makes the code and test harder to change**
+   - **\<insert here other problems that come from tightly coupled classes\>**
 
 > Ok, I will try.
 
