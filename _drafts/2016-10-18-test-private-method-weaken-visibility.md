@@ -16,7 +16,7 @@
 
   - **couples the test code too much to the production code**
   - **makes the code and test harder to refactor (or change in general)**
-  - **makes the test too brittle (they will fail for the tyniest changes...)**
+  - **makes the test too brittle (they will fail for the tiniest changes...)**
   - **\<insert here other problems that come from tightly coupled classes\>**
 
 > Ok, ok. I will try to test it from the external API.
