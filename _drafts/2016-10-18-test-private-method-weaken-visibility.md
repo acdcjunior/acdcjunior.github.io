@@ -40,7 +40,8 @@ is new, why are you writing it with a known design smell already?**
 **If it is legacy code (aka: you are not writing it right now and it doesn't have tests), you should first try to refactor using
 automated tools (IDE) only. If you can safely do that, that's what you should. Extract the method to a new class and test it as usual.**
 
-**If you can't refactor or don't feel safe enough, then you can weaken the visibility and test it. After the tests are there, you 
-probably feel more brave and then now should extract the class ("as usual"). Resist the temptation to just let it be there... (the
-design has a problem, and it won't go away until someone makes it go away). If you don't have time, though, well, what can you do?
-At least you wrote the tests. Hopefully someone in the future (maybe yourself) will come to fix it.**
+**If you can't refactor or don't feel safe enough, ONLY then you can weaken the visibility and test it.**
+
+**After the tests are there, you'll probably braver and then you should extract the class ("as usual"). Resist the temptation to just let it be there... (the design has a problem, and it won't go away until someone makes it go away).**
+
+**If you don't have time, though, well, what can you do? At least you wrote the tests. Hopefully someone in the future (maybe yourself) will come to fix it.**
