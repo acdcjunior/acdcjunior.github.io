@@ -47,6 +47,6 @@ automated tools (IDE) only. If you can safely do that, that's what you should. E
 
 **If you can't refactor or don't feel safe enough, ONLY then you can weaken the visibility and test it.**
 
-**After the tests are there, you'll probably braver and then you should extract the class ("as usual"). Resist the temptation to just let it be there... (the design has a problem, and it won't go away until someone makes it go away).**
+**After the tests are there, you'll probably feel braver and then you should extract the class ("as usual"). Resist the temptation to just let it be there... (the design has a problem, and it won't go away until someone makes it go away).**
 
 **If you don't have time, though, well, what can you do? At least you wrote the tests. Hopefully someone in the future (maybe yourself) will come to fix it.**
