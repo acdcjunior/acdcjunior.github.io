@@ -62,9 +62,9 @@ automated tools (IDE) only. If you can safely do that, that's what you should. E
 
 If you can't refactor or don't feel safe enough, ONLY then you can weaken the visibility and test it. (I suggest you annotate/document the class with Guava's [`@VisibleForTesting`](https://google.github.io/guava/releases/19.0/api/docs/com/google/common/annotations/VisibleForTesting.html) so others know why that visibility is like that.)
 
-After the tests are there, you'll probably feel braver and then you should extract the class ("as usual"). Resist the temptation to just let it be there... (the design has a problem, and it won't go away until someone makes it go away).
+After the tests are there, you'll probably feel braver and then you should extract the code to a new class (again, that's what I mean by "breaking" the original class). Resist the temptation to just let the code be there... (The design has a problem, and it won't go away until someone takes care of it.)
 
-If you don't have time, though, well, what can you do? At least you wrote the tests. Hopefully someone in the future (maybe yourself) will come to fix it.
+If you don't have time, though, well, what can you do? At least you wrote the tests. That's a step in the right direction. Hopefully someone in the future (maybe yourself) will come and fix it for good.
 
 
 ----
