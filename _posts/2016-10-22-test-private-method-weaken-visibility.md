@@ -48,14 +48,14 @@ is just making that problem explicit. Why is is so difficult?
 
 > Because the class is too big, I have to jump through too many hoops to get to the place I want to test.
 
-You already know what to do: if the class is too big, break it. This way, the code that is private now
+You already know what to do: if the class is too big, break it apaet. This way, the code that is private now
 will probably become part of the API of (aka a `public` method at) the new class, and then you can test it more easily.
 
 For the original class, you can now test only if it sends the correct arguments to the new class, and use a test double (stub/mock) of the new class in the test instead of an actual instance.
 
 > That rule applies to both new and legacy code?
 
-If the code is new, you *must* do that. As said, don't weaken the visibility just for testing purposes because that's a design smell (a *test smell*, if you will). If the code is new, why are you writing it with a known design smell already? Now it's the best time to fix it.
+If the code is new, you *must* do that (breaking it apart). As said, don't weaken the visibility just for testing purposes because that's a design smell (a *test smell*, if you will). If the code is new, why are you writing it with a known design smell already? Now it's the best time to fix it.
 
 If it is legacy code (aka: you are not writing it right now and it doesn't have tests), you should first try to refactor using
 automated tools (IDE) only. If you can safely do that, that's what you should. Extract the method to a new class (this is what I meant by "break the class" in the last question) and test it as usual.
