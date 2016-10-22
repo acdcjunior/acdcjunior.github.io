@@ -14,7 +14,7 @@ One of these days I had a conversation with a good friend of mine about testing 
 
 > **Friend:** How can I test a private method? Can I make it public (or package-private/protected) to test it?
 
-**Me:** You shouldn't weaken the method's visibility to test it.
+**Me:** You shouldn't weaken the method's visibility just so you can test it.
 
 > What should I do, then?
 
