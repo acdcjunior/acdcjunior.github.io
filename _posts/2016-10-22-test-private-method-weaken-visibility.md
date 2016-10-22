@@ -10,7 +10,7 @@ mathjax: false
 published: true
 ---
 
-One of these days I had a conversation with a good friend of mine about testing private methods. It ended up being very interesting, so I thought I'd post post the gist a of it. Here it goes:
+One of these days I had a conversation with a good friend of mine about testing private methods. It ended up being very interesting, so I thought I'd post post the gist of it. Here it goes:
 
 > Friend: How can I test a private method? Can I make it public (or package-private/protected) to test it?
 
