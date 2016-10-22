@@ -46,7 +46,7 @@ One of these days I had a conversation with a good friend of mine about testing 
 **OK, good to know. This is probably not a test problem, this is usually a design problem of you production code. The test
 is just making that problem explicit. Why is is so difficult?**
 
-> Because the class is too big, I have to jump through many hoops to get to the place I want to test.
+> Because the class is too big, I have to jump through too many hoops to get to the place I want to test.
 
 **You already know what to do: if the class is too big, break it. This way, the code that is private now
 will probably become part of the API of (aka a `public` method at) the new class, and then you can test it more easily.**
