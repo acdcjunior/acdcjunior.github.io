@@ -55,7 +55,7 @@ For the original class, you can now test only if it sends the correct arguments 
 
 > That rule applies to both new and legacy code?
 
-If the code is new, you *must* do that. As said, don't weaken the visibility just for testing purposes because that's a design smell (a *test smell*, if you will). If the code is new, why are you writing it with a known design smell already?
+If the code is new, you *must* do that. As said, don't weaken the visibility just for testing purposes because that's a design smell (a *test smell*, if you will). If the code is new, why are you writing it with a known design smell already? Now it's the best time to fix it.
 
 If it is legacy code (aka: you are not writing it right now and it doesn't have tests), you should first try to refactor using
 automated tools (IDE) only. If you can safely do that, that's what you should. Extract the method to a new class and test it as usual.
