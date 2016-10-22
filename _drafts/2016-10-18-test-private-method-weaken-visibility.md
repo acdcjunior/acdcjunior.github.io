@@ -1,3 +1,17 @@
+---
+layout: single
+title: 'Unit test private methods, how? Or should I?'
+category: test
+tags: [test, unit test, design]
+lang: en-US
+comments: true
+share: true
+mathjax: false
+published: true
+---
+
+One of these days I had a conversation with a good friend of mine about testing private methods. It ended up being very interesting, so I thought I'd post post a gist a of it. Here it goes:
+
 > How can I test a private method? Can I make it public (or package-private/protected) to test it?
 
 **You shouldn't weaken the method's visibility to test it.**
@@ -50,3 +64,6 @@ automated tools (IDE) only. If you can safely do that, that's what you should. E
 **After the tests are there, you'll probably feel braver and then you should extract the class ("as usual"). Resist the temptation to just let it be there... (the design has a problem, and it won't go away until someone makes it go away).**
 
 **If you don't have time, though, well, what can you do? At least you wrote the tests. Hopefully someone in the future (maybe yourself) will come to fix it.**
+
+
+And that was it!
