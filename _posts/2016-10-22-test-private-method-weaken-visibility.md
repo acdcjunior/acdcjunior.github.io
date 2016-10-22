@@ -50,6 +50,7 @@ is just making that problem explicit. Why is is so difficult?**
 
 **You already know what to do: if the class is too big, break it. This way, the code that is private now
 will probably become part of the API of (aka a `public` method at) the new class, and then you can test it more easily.**
+**For the original class, you can now test only if it sends the correct arguments to the new class, and use a test double (stub/mock) of the new class in the test instead of an actual instance of it.**
 
 > That rule applies to both new and legacy code?
 
