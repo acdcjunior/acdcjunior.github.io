@@ -60,7 +60,7 @@ If the code is new, you *must* do that. As said, don't weaken the visibility jus
 If it is legacy code (aka: you are not writing it right now and it doesn't have tests), you should first try to refactor using
 automated tools (IDE) only. If you can safely do that, that's what you should. Extract the method to a new class (this is what I meant by "break the class" in the last question) and test it as usual.
 
-If you can't refactor or don't feel safe enough, ONLY then you can weaken the visibility and test it.
+If you can't refactor or don't feel safe enough, ONLY then you can weaken the visibility and test it. (I suggest you annotate/document the class with Guava's [`@VisibleForTesting`](https://google.github.io/guava/releases/19.0/api/docs/com/google/common/annotations/VisibleForTesting.html) so others know why that visibility is like that.)
 
 After the tests are there, you'll probably feel braver and then you should extract the class ("as usual"). Resist the temptation to just let it be there... (the design has a problem, and it won't go away until someone makes it go away).
 
