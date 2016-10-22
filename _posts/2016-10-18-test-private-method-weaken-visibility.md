@@ -1,6 +1,6 @@
 ---
 layout: single
-title: 'Unit test private methods, how? Or should I?'
+title: 'Unit test private methods, how? Or... should I?'
 category: test
 tags: [test, unit test, design]
 lang: en-US
