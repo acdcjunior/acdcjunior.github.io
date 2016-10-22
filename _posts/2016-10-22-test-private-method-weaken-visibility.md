@@ -44,7 +44,7 @@ One of these days I had a conversation with a good friend of mine about testing 
 > It's too difficult.
 
 **OK, good to know. This is not a test problem, this is a design problem of you production code. The test
-is just making that problem explicit. Why is is so difficult?
+is just making that problem explicit. Why is is so difficult?**
 
 > Because the class is too big, I have to jump through many hoops to get to the place I want to test.
 
