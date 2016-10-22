@@ -12,9 +12,9 @@ published: true
 
 One of these days I had a conversation with a good friend of mine about testing private methods. It ended up being very interesting, so I thought I'd post post the gist a of it. Here it goes:
 
-> How can I test a private method? Can I make it public (or package-private/protected) to test it?
+> Friend: How can I test a private method? Can I make it public (or package-private/protected) to test it?
 
-**You shouldn't weaken the method's visibility to test it.**
+**Me: You shouldn't weaken the method's visibility to test it.**
 
 > What should I do, then?
 
