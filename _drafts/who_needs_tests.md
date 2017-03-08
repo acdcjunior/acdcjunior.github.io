@@ -26,3 +26,5 @@ from testing your apps, the difference is that too many will only resort to manu
 Who likes when tests break?
 
 When an integration tests fail and you have no idea on how to fix it?
+
+Repeat after me: not having tests will allow us down; x2.
