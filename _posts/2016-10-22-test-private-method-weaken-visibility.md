@@ -48,8 +48,8 @@ is just making that problem explicit. Why is is so difficult?
 
 > Because the class is too big, I have to jump through too many hoops to get to the place I want to test.
 
-You already know what to do: if the class is too big, break it apaet. This way, the code that is private now
-will probably become part of the API of (aka a `public` method at) the new class, and then you can test it more easily.
+You already know what to do: if the class is too big, break it apart. This way, the code that is private now
+will probably become part of the API of (aka a `public` method at) the new class, and then you **can** test it more easily.
 
 For the original class, you can now test only if it sends the correct arguments to the new class, and use a test double (stub/mock) of the new class in the test instead of an actual instance.
 
