@@ -1,6 +1,6 @@
 ---
 layout: single
-title: 'Server-side querying firebase from node'
+title: 'Server-side connecting and querying Firebase from Node.JS'
 category: node
 tags: [firebase, node, sample
 lang: en-US
@@ -10,7 +10,7 @@ mathjax: false
 published: true
 ---
 
-It took me a bit of work to figure out how to query firebase from node, so, in order to make it easier in the future, here goes a rough draft of how you can do it:
+It took me a bit of work to figure out how to connect to and query Firebase from a (server-side, naturally) Node script, so, in order to make it easier in the future, here goes a rough draft of how you can do it:
 
     const firebase = require('firebase');
 
