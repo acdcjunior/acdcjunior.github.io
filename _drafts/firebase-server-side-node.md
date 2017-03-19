@@ -1,36 +1,43 @@
-Server-side querying firebase from node:
+---
+layout: single
+title: 'Server-side querying firebase from node'
+category: node
+tags: [firebase, node, sample
+lang: en-US
+comments: true
+share: true
+mathjax: false
+published: true
+---
 
-const firebase = require('firebase');
+It took me a bit of work to figure out how to query firebase from node, so, in order to make it easier in the future, here goes a rough draft of how you can do it:
 
-const firebaseConfig = {
-    apiKey: '<your-api-key>',
-    authDomain: '<your-domain>.firebaseapp.com',
-    databaseURL: 'https://<your-domain>.firebaseio.com',
-    storageBucket: '<your-domain>.appspot.com'
-};
+    const firebase = require('firebase');
 
-firebase.initializeApp(firebaseConfig);
+    const firebaseConfig = {
+        apiKey: '<your-api-key>',
+        authDomain: '<your-domain>.firebaseapp.com',
+        databaseURL: 'https://<your-domain>.firebaseio.com',
+        storageBucket: '<your-domain>.appspot.com'
+    };
 
-const db = firebase.database();
+    firebase.initializeApp(firebaseConfig);
 
-let signedLoginObject;
+    const db = firebase.database();
 
-function prpFirebase(callback) {
-    if (signedLoginObject) {
-        callback(db, signedLoginObject);
-    } else {
-        console.log('Autenticando...');
-        firebase.auth().signInWithEmailAndPassword('acdcjunior@gmail.com', 'parale1234567').catch(error => {
-            console.log('Erro ao autenticar :', error);
-        }).then(loginObject => {
-            if (loginObject) {
-                console.log('Autenticado com sucesso!');
-                signedLoginObject = loginObject;
-                callback(db, signedLoginObject);
-            } else {
-                console.log('Autenticacao realizada sem sucesso:', loginObject);
-            }
-        });
-    }
-}
-    let ref = db.ref('users/' + loginObject.uid + '/extratos');
+    console.log('Authenticating...');
+    firebase.auth().signInWithEmailAndPassword('your@email.com', 'YoUrPaSsWoRd').catch(error => {
+        console.log('Error while authenticating:', error);
+    }).then(loginObject => {
+        if (loginObject) {
+            console.log('Success!!');
+            // now do your thing!
+            let something = db.ref('users/' + loginObject.uid + '/something');
+            // do something with something
+        } else {
+            console.log('Oops, something went wrong while authenticating:', loginObject);
+        }
+    });
+
+
+That should be enough to get you started.
