@@ -1,0 +1,2 @@
+- Agil nao funciona bem com a questao da hierarquia
+- Nao gostei da falta de planejamento com o agil (tive problemas em startup)
