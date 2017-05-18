@@ -11,6 +11,8 @@ Para entender o WebPack, é importante que já ter familiaridade com alguns outr
 - Tenha pelo menos uma ideia do que são **task runners**, como Grunt ou Gulp.
 - Maneiras de especificar modules em JavaScript (como AMD, CommonJS ou ES2016 `import`).
 
+Principais concorrentes do WebPack ("bundlers"): browserify e Rollup.
+
 Dito isso, vamos ao que interessa.
 
 # WebPack vs. Grunt/Gulp
