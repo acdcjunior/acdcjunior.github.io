@@ -19,3 +19,5 @@ Why so? Because optimized code is harder to write, takes a toll on readability, 
 In the end of the day, most code we write is not performance-sensitive, and those extra cycles at the cost of keeping the code clean almost never are worth it.
 
 So don't waste yours (writing) or anyone else's (reading) time doing that.
+
+> “If it doesn’t work, it doesn’t matter how fast it doesn’t work.” - Mich Ravera
