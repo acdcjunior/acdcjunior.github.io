@@ -38,7 +38,7 @@ In a few words, every time you use `npm install`, NPM will read your `package.js
 
 Ideally, if you didn't change your `package.json` file, anywhere you run `npm install` you should get the exact same content at `node_modules` folder.
 
-But for [several reasons](https://docs.npmjs.com/files/package-locks#description) (different NPM versions at each machine, server changes, version changes - the `~` in `~1.2.3`, etc.), that is not always the case.
+But for [several reasons](https://docs.npmjs.com/files/package-locks#description) (different NPM versions at each machine, server changes, version changes -- e.g. the `~` in `~1.2.3`, etc.), that is not always the case.
 
 That's where `package-lock.json` comes in. It is basically a (*reproducible*) record of what files where actually downloaded.
 
