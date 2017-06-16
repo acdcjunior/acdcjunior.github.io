@@ -34,7 +34,7 @@ But I too didn't find that so enlightening.
 
 Ok, ok. Calm down. Let me take a stab at it.
 
-In few words, every time you use `npm install`, NPM will read your `package.json` file and download your dependencies (and your dependencies' dependencies) to your `node_modules` folder.
+In a few words, every time you use `npm install`, NPM will read your `package.json` file and download your dependencies (and your dependencies' dependencies) to your `node_modules` folder.
 
 Ideally, if you didn't change your `package.json` file, anywhere you run `npm install` you should get the exact same content at `node_modules` folder.
 
