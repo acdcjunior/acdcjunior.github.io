@@ -22,7 +22,7 @@ What is it, and what to do?
 
 **Yes.**
 
-In case you are wondering, yes, you should commit `package-lock.json`.
+In case you are wondering, yes, you should commit `package-lock.json`. Yes, *commit* as in add to your version control and push it. Don't be afraid.
 
 But what is it? At [the docs](https://docs.npmjs.com/files/package-lock.json) you get:
 
