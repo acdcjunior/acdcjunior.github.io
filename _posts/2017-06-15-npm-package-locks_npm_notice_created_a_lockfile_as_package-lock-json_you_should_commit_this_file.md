@@ -11,12 +11,16 @@ imagefeature: picture-38.jpg
 published: true
 ---
 
-So you just got
+So you just got...
 
 > npm notice created a lockfile as package-lock.json. You should commit this file.
 
 What is it, and what to do?
 <!--more-->
+
+# Should I commit it?
+
+**Yes.**
 
 In case you are wondering, yes, you should commit `package-lock.json`.
 
