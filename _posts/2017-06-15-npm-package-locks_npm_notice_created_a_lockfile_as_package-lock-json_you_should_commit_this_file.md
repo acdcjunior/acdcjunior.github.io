@@ -36,8 +36,8 @@ Ideally, if you didn't change your `package.json` file, anywhere you run `npm in
 
 But for [several reasons](https://docs.npmjs.com/files/package-locks#description), that is not always the case.
 
-That's where `package-lock.json` comes in. It is basically a record of what files where actually downloaded.
+That's where `package-lock.json` comes in. It is basically a (*reproducible*) record of what files where actually downloaded.
 
-So, now, everytime you run `npm install`, you (or your fellow devs, or the CI server) will get the exact same dependency tree downloaded.
+So, now, everytime you run `npm install`, if `package-lock.json` is present, you (or your fellow devs, or the CI server, or your boss' cousin) will get the exact same dependency tree downloaded to `node_modules`.
 
 Simple, isn't it?
