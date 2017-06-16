@@ -28,7 +28,7 @@ But I too didn't find that so enlightening.
 
 # Really, in human terms, what da &#^$#& is `package-lock.json`?
 
-Ok, ok. Calm down. Let me give a stab at it.
+Ok, ok. Calm down. Let me take a stab at it.
 
 In few words, every time you use `npm install`, NPM will read your `package.json` file and download your dependencies (and their dependencies) to your `node_modules` folder.
 
