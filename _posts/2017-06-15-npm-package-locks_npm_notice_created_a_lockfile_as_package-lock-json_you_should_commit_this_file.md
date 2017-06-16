@@ -20,13 +20,13 @@ What is it, and what to do?
 
 In case you are wondering, yes, you should commit `package-lock.json`.
 
-But what is it? [In the docs](https://docs.npmjs.com/files/package-lock.json) you get:
+But what is it? At [the docs](https://docs.npmjs.com/files/package-lock.json) you get:
 
 > `package-lock.json` is automatically generated for any operations where npm modifies either the `node_modules` tree, or `package.json`. It describes the exact tree that was generated, such that subsequent installs are able to generate identical trees, regardless of intermediate dependency updates.
 
 But I too didn't find that so enlightening.
 
-# Really, in human terms, what da &#^$#& is `package-lock.json`?
+# Really, for &#^$#&'s sake, in human terms, what is `package-lock.json`?
 
 Ok, ok. Calm down. Let me take a stab at it.
 
