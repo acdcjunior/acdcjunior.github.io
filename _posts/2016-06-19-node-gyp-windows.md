@@ -75,3 +75,16 @@ Então [execute:](http://stackoverflow.com/a/33047257/1850609)
     npm config set python "C:\\Programs\\Python2.7\\python2.7.exe"
 
 Mudando o caminho para onde quer que seu Python 2.7 foi instalado.
+
+---
+
+Se você obteve:
+
+> error MSB4132: The tools version "2.0" is unrecognized. Available tools versions are "14.0", "4.0".
+
+Você provavelmente esqueceu de configurar o NPM. Execute:
+
+    npm config set msvs_version 2015 --global
+    
+ou veja a explicação acima.
+
