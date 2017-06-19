@@ -86,5 +86,5 @@ Você provavelmente esqueceu de configurar o NPM. Execute:
 
     npm config set msvs_version 2015 --global
     
-ou veja a explicação acima.
+ou veja a explicação [acima](#configure-o-npm).
 
