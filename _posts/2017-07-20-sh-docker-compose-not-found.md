@@ -10,7 +10,7 @@ mathjax: false
 published: true
 ---
 
-You are at alpine and:
+You are at alpine and, boom:
 
     sh: docker-compose: not found
 
@@ -27,4 +27,4 @@ Just:
     chmod +x /usr/local/bin/docker-compose
     pip install docker-compose
 
-Change the 1.14.0 with the version found at https://github.com/docker/compose/releases/latest.
+Change the **1.14.0** with the version found at [docker-compose releases](https://github.com/docker/compose/releases/latest).
