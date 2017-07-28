@@ -4,14 +4,16 @@ title: 'What XPath version does a given WebDriver support?'
 category: Selenium
 tags: [selenium, xpath, java, webdriver]
 lang: en-US
+modified: 2017-07-28
 ---
+
 Ever wondered what version of XPath does a given `WebDriver` support?
 We certainly wished it would be 2.0 or 3.0, but **most likely the version is 1.0**. Don't take my word for it, though, let's see some data.
 <!--more-->
 
 As [Selenium wiki](https://code.google.com/p/selenium/wiki/XpathInWebDriver) states, `WebDriver` uses the browser's native XPath capabilities wherever possible. When the browser does not support XPath (IE 6/7/8, I'm looking at you), Selenium provides its own implementation, supporting XPath 1.0 (with some caveats, see wiki).
 
-If you needed a "generic" method that'd decide if the `WebDriver` you're using supports XPath 1.0 or 2.0.
+If you need a "generic" method that'd decide if the `WebDriver` you're using supports XPath 1.0 or 2.0, the code below can be of help.
 
 ## Does Selenium WebDriver support XPath 2.0?
 
