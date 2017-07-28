@@ -16,7 +16,7 @@ baseurl                  : # the subpath of your site, e.g. "/blog"
 gh_repo                  : https://github.com/acdcjunior/acdcjunior.github.io/
 teaser                   : # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 # breadcrumbs            : false # true, false (default)
-words_per_minute         : 150
+words_per_minute         : 100
 comments:
   provider               : "disqus" # false (default), "disqus", "discourse", "facebook", "google-plus", custom"
   disqus:
