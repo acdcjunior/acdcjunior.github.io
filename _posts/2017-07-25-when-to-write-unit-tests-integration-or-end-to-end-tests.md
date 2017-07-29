@@ -67,4 +67,15 @@ When an integration tests fail and you have no idea on how to fix it?
 
 Repeat after me: not having tests will slow us down; x2.
 
+# Without automated tests, the project can't grow
+
+You may have tons of manual tests. Still, a project without automated tests simply can't grow.
+
+So you develop. Let's call the time spent doing this *developing-time*. Similarly, let's call time spent doing manual tests *testing-time*.
+
+Since you are spending some *developing-time*, the features tend to grow and grow. If you test them manually, how do you expect to keep up? You will require more and more *testing-time* (or you will suppose that some parts don't require testing because you allegedly didn' "touch" them - are you sure? -... and bugs will lurk around).
+
+So, like this, eventually, you will come to a halt.
+
+
 > [this post is a work in progress!]
