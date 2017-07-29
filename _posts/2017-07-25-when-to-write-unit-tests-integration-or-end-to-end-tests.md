@@ -8,6 +8,7 @@ comments: true
 share: true
 mathjax: false
 published: true
+modified: 2017-07-29
 ---
 
 Who cares about tests?
@@ -35,6 +36,10 @@ Tests are useless when you are doing a quick one-off work.
 But they are key when you want to be consistently fast.
 
 # So, who needs tests?
+
+> *"We have users, we don't need tests!"*
+
+Indeed. Users are a very effective tool in finding bugs. But they are also the more stressful and costly one (maybe not the most costly to you, but certainly the most costly to the overall business).
 
 Only those who:
 - really don't like bugs
