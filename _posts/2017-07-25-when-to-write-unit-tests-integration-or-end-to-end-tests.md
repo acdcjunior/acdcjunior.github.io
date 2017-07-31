@@ -19,13 +19,15 @@ No?
 
 Why should you write tests at all, then?
 
-I believe a team won't miss tests when they don't mind the occasional bug and are not used to doing refactoring.
+Some reasons justify why some teams don't miss tests. If they don't mind the occasional bug and are not used to doing refactoring are examples.
 
-What those points indicate?
+What do those points indicate?
 
-For one, it tells us the team is not worried about being fast consistently. (It does want to go fast, but only when it matters, and at the cost of quality.)
+For one, it tells us the team is not worried about being fast consistently. (It does want to go fast, but only "right now", and at the cost of quality.)
 
-# But before... what is your goal?
+Is that good enough?
+
+# Don't forget your end goal
 
 > Our goal is to deliver *quality* software **fast, consistently**.
 
@@ -39,43 +41,45 @@ But they are key when you want to be consistently fast.
 
 > *"We have users, we don't need tests!"*
 
-Indeed. Users are a very effective tool in finding bugs. But they are also the more stressful and costly one (maybe not the most costly to you, but certainly the most costly to the overall business).
+Indeed. Users are a very effective tool to find bugs. But they are also the more stressful and costly one (users finding bugs may not be the most costly alternative to you, but certainly it is the most costly to the overall business).
 
-Only those who:
-- really don't like bugs
-  - want to have more accurate estimates, because with bugs lying around, you never kwnow
-- don't like rework
-  - again, rework kills estimates (and is very boring... and unprofessional)
-- refactor a lot
-  - where do you draw the confidence from? How will you know that system-wide refactoring won't break some corner-but-important functinality?
-- want to speed up delivery
-  - Continuous Delivery is **unthinkable** without a reliable and complete suite of tests
+# You won't miss tests if you...
 
 In other words, you won't miss tests if you:
 - are used to having bugs more often than not
 - don't refactor a lot
-- don't mind tons of manual testing (and back and forth develop-try cicles)
+- don't mind tons of manual testing (and back and forth develop-wait-deploy-try cycles)
+
+Another way of looking at this is asking who will miss tests, and when.
+
+# Who misses tests?
+
+Only those who:
+- really don't like bugs
+  - ...and want to have more accurate estimates, because with bugs lying around, you never kwnow
+- don't like rework
+  - again, rework kills estimates (and is very boring... and unprofessional)
+- refactor a lot
+  - where do you draw the confidence from? How will you know that system-wide refactoring won't break some corner-but-important functionality?
+- want to speed up delivery
+  - Continuous Delivery is **unthinkable** without a reliable suite of tests
+- need to enable experimentation
+  - learning comes from experimentation. New devs won't be able to safely experiment, and learn how the system works, without tests. Same goes to business oportunities, many modern practices rely on constant experimentation of features.
 
 Of course, there are many kinds of testing. Manual testing is one of them -- that's actually why some say that you can't escape
-from testing your apps, the difference is that too many will only resort to manual testing.
+from testing your apps, you will either automate the testing or not.
 
-# Do you need unit tests? (aka "The Test Pyramid")
+# Without *automated* tests, projects can't grow
 
-Who likes when tests break?
+Ok, you say, you have tons of manual tests. Still, a project without automated tests simply can't grow.
 
-When an integration tests fail and you have no idea on how to fix it?
+Why?
 
-Repeat after me: not having tests will slow us down; x2.
+"Growing", in this context, must involve some kind of development. Let's call the time spent doing this *developing-time*. Similarly, let's call time spent doing manual tests *testing-time*.
 
-# Without automated tests, the project can't grow
+Since you are spending some *developing-time*, the number of features tend to rise. If you test them manually, how do you expect to keep up? As the time goes by, you will require more and more *testing-time* (or, alternatively, you will suppose that some parts don't require testing because you allegedly didn't "touch" them... and bugs will lurk around).
 
-You may have tons of manual tests. Still, a project without automated tests simply can't grow.
-
-So you develop. Let's call the time spent doing this *developing-time*. Similarly, let's call time spent doing manual tests *testing-time*.
-
-Since you are spending some *developing-time*, the features tend to grow and grow. If you test them manually, how do you expect to keep up? You will require more and more *testing-time* (or you will suppose that some parts don't require testing because you allegedly didn' "touch" them - are you sure? -... and bugs will lurk around).
-
-So, like this, eventually, you will come to a halt.
+So, like this, eventually, your project will come to a halt.
 
 
 > [this post is a work in progress!]
