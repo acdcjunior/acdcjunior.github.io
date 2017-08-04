@@ -19,11 +19,11 @@ No?
 
 Why should you write tests at all, then?
 
-Some reasons justify why some teams don't miss tests. If they don't mind the occasional bug and are not used to doing refactoring are examples.
+If you try a bit harder, you can find some reasons that would justify why some teams don't miss tests. Some such situations are when the team doesn't mind the occasional bug and or when its members are not used to doing refactoring frequently.
 
 What do those points indicate?
 
-For one, it tells us the team is not worried about being fast consistently. (It does want to go fast, but only "right now", and at the cost of quality.)
+For one, they tell us the team is not worried about being fast in the long run. It does want to go fast, but only "right now" (and at the cost of quality).
 
 Is that good enough?
 
@@ -39,9 +39,15 @@ But they are key when you want to be consistently fast.
 
 # So, who needs tests?
 
+Once I heard a joke:
+
 > *"We have users, we don't need tests!"*
 
-Indeed. Users are a very effective tool to find bugs. But they are also the more stressful and costly one (users finding bugs may not be the most costly alternative to you, but certainly it is the most costly to the overall business).
+Indeed. I coudn't disagree. Users are a very effective tool to find bugs.
+
+But they are also the more stressful and costly one (users finding bugs may not be the most expensive alternative to you, but certainly it is the most costly to the overall business).
+
+Yet, some teams go by without tests. How so?
 
 # You won't miss tests if you...
 
@@ -56,7 +62,7 @@ Another way of looking at this is asking who will miss tests, and when.
 
 Only those who:
 - really don't like bugs
-  - ...and want to have more accurate estimates, because with bugs lying around, you never kwnow
+  - ...and want to have more accurate estimates, because with bugs lying around, you never know
 - don't like rework
   - again, rework kills estimates (and is very boring... and unprofessional)
 - refactor a lot
@@ -75,9 +81,11 @@ Ok, you say, you have tons of manual tests. Still, a project without automated t
 
 Why?
 
-"Growing", in this context, must involve some kind of development. Let's call the time spent doing this *developing-time*. Similarly, let's call time spent doing manual tests *testing-time*.
+> *development-time* without automated tests increase the need for (manual) *testing-time*
 
-Since you are spending some *developing-time*, the number of features tend to rise. If you test them manually, how do you expect to keep up? As the time goes by, you will require more and more *testing-time* (or, alternatively, you will suppose that some parts don't require testing because you allegedly didn't "touch" them... and bugs will lurk around).
+ "Growing", in this context, must involve some kind of development. Let's call the time spent doing this *development-time*. Similarly, let's call time spent doing manual tests *testing-time*.
+
+Since you are spending some *development-time*, the number of features tend to rise. If you test them manually, how do you expect to keep up? As the time goes by, you will require more and more *testing-time*. As an alternative, though, you can suppose that some parts don't require testing because you allegedly didn't "touch" them. Well... yeah. In order for this to be true, you must touch and touch less area every time, otherwise bugs will lurk around.
 
 So, like this, eventually, your project will come to a halt.
 
