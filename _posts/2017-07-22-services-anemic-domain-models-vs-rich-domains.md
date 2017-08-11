@@ -23,12 +23,14 @@ Not quite.
 On the less important subdomains, going the extra mile to apply RDMs frequently doesn't pay off.
 
 ### Anemic Domain Models
-- Frequently implemented as data-only entities (devoid of logic) + service classes which contain the business rules.
-- Allows you to easily put the entities in an inconsistent state
-- Requires you to remember every detail of every operation -- and tests don't help here: if you don't know you have to do it, you don't write tests for it.
+- Usually implemented as data-only entities (devoid of logic) + service classes which contain the business rules (see [Transaction Script](https://martinfowler.com/eaaCatalog/transactionScript.html) pattern).
+- Allows you to (too) easily put the entities in an inconsistent state
+- Requires you to remember every detail of every operation -- and tests don't help here: if you don't know you have to do it (if you don't know you have to implement a given detail), you don't write tests for it (because you didn't know you had to handle it in the first place).
 - Higher cognitive load (you have, at any given time, to worry about more in order to make less mistakes)
 
 ### Rich Domain Models
-- Require more communication over the abstractions and responsibilities of the entities involved.
+- Require more communication (people/documentation kind of communication) over the abstractions and responsibilities of the entities involved.
+- Demand a somewhat higher level of technical expertise/experience from the programmers involved (you can't just follow the simplest path, abstractions must make sense; modularity and boundaries must be well thought out).
+- Scales much better than the ADM (because objects tend to be self-validating, methods that would put them in inconsistent states won't even exist).
 
-> [to be expanded.]
+Still, even a RDM can help you so much. The most important lesson is to keep your models boundaries at check. With good boundaries, you can focus on a (hopefully smaller) ***core*** part of your domain and use ADM, CRUD (or whatever suits the situation) in the supporting parts/modules.
