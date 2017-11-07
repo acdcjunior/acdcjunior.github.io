@@ -41,9 +41,9 @@ Both ways have the same (compile-time, not runtime) outcome.
 
 ### Ok, both works the same, which one should I use, then? `<>` or `as`?
 
-Since Typescript 1.6, the default is `as`, because `<>` is ambiguous in .jsx files. [Click here for more details.](https://github.com/Microsoft/TypeScript/wiki/What's-new-in-TypeScript#new-tsx-file-extension-and-as-operator)
+Since Typescript 1.6, the default is `as`, because `<>` is ambiguous and unavailable in .tsx (TypeScript's version of .jsx) files. [Click here for more details.](https://github.com/Microsoft/TypeScript/wiki/What's-new-in-TypeScript#new-tsx-file-extension-and-as-operator)
 
-So... **casting using** `as` **is preferred**.
+So... **casting using** `as` **is preferred**. (If you are using .TSX, then it is mandatory.)
 
 ---
 
