@@ -26,7 +26,7 @@ If you did that, then this should work for you:
 > d53468c this is my commit message title
 
 
-But say you didn't. So, for the given commit message:
+But say you didn't. So, for the commit message:
 
     getting one line git commit msg
     second
@@ -40,7 +40,7 @@ You get:
 
 > c43b68c getting one line git commit msg second third line 
     
-Don't want hash:
+Or, if you don't want the hash (you want the message only):
 
     $ git log --oneline --format=%B -n 1 HEAD
 
@@ -51,7 +51,7 @@ Don't want hash:
 > fifth line
 
     
-Just the **first line** of the **message**:
+But, ladies and gentlemen, if you just want the **first line** of the **message**, do:
     
     $ git log --oneline --format=%B -n 1 HEAD | head -n 1
 
