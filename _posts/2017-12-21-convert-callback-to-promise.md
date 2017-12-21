@@ -64,13 +64,17 @@ someFunctionWithPromise(1, 2).then((successArgs) => {
 Or use `async`/`await`:
 
 ```javascript
-let successArgs;
-try {
-    successArgs = await someFunctionWithPromise(1, 2);
-    console.log("Success :) ", successArgs);
-} catch (errorArgs) {
-    console.log("Error :( ", errorArgs);
-}
+(async () => {
+    
+    let successArgs;
+    try {
+        successArgs = await someFunctionWithPromise(1, 2);
+        console.log("Success :) ", successArgs);
+    } catch (errorArgs) {
+        console.log("Error :( ", errorArgs);
+    }
+    
+})();
 ```
 
 And done deal.
