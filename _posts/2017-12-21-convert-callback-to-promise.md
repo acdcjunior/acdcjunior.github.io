@@ -31,6 +31,9 @@ function someFunctionWithPromise(argOne, argTwo) {
     
 That's it.
 
+
+Check a [<kbd>running demo here</kdb>](https://jsfiddle.net/acdcjunior/jbe38chc/).
+
 # If you have an error callback as well
 
 You really should handle errors. Say the signature is, then:
