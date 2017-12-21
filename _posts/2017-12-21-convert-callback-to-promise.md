@@ -11,7 +11,7 @@ published: true
 modified: 2017-12-21
 ---
 
-Say you have a function with the following signature, which requires a callback:
+Say you have a function with the following signature, which requires a callback as argument:
 
 <!-- more -->
 
@@ -32,7 +32,9 @@ function someFunctionWithPromise(argOne, argTwo) {
 That's it.
 
 
-Check a [<kbd>running demo here</kbd>](https://jsfiddle.net/acdcjunior/jbe38chc/).
+Check a [**<kbd>running demo here</kbd>**](https://jsfiddle.net/acdcjunior/jbe38chc/).
+
+<br>
 
 # If you have an error callback as well
 
@@ -51,6 +53,8 @@ function someFunctionWithPromise(argOne, argTwo) {
     });
 }
 ```
+
+<br>
 
 # Consuming the `Promise`'d function
 
@@ -80,3 +84,5 @@ Or use `async`/`await`:
 ```
 
 And done deal.
+
+Don't forget to check the [**<kbd>running demo</kbd>**](https://jsfiddle.net/acdcjunior/jbe38chc/).
