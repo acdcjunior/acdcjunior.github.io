@@ -29,4 +29,48 @@ function someFunctionWithPromise(argOne, argTwo) {
 }
 ```
     
-Done.
+That's it.
+
+# If you have an error callback as well
+
+You really should handle errors. Say the signature is, then:
+
+```javascript
+someFunctionWithCallback(argOne, argTwo, successCallback, errorCallback)
+```
+    
+To convert it to a `Promise`'d function do:
+
+```javascript
+function someFunctionWithPromise(argOne, argTwo) {
+    return new Promise((resolve, reject) => {
+        someFunctionWithCallback(argOne, argTwo, resolve, reject);
+    });
+}
+```
+
+# Consuming the `Promise`'d function
+
+Either:
+
+```javascript
+someFunctionWithPromise(1, 2).then((successArgs) => {
+    console.log("Success :) ", successArgs);
+}).catch((errorArgs) => {
+    console.log("Error :( ", errorArgs);
+});
+```
+
+Or use `async`/`await`:
+
+```javascript
+let successArgs;
+try {
+    successArgs = await someFunctionWithPromise(1, 2);
+    console.log("Success :) ", successArgs);
+} catch (errorArgs) {
+    console.log("Error :( ", errorArgs);
+}
+```
+
+And done deal.
