@@ -69,9 +69,8 @@ Or use `async`/`await`:
 ```javascript
 (async () => {
     
-    let successArgs;
     try {
-        successArgs = await someFunctionWithPromise(1, 2);
+        let successArgs = await someFunctionWithPromise(1, 2);
         console.log("Success :) ", successArgs);
     } catch (errorArgs) {
         console.log("Error :( ", errorArgs);
