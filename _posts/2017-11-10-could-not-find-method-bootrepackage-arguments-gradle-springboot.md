@@ -48,4 +48,5 @@ So, change your `bootRepackage` to `bootJar` (or `bootWar`, but most probably `b
 That's it.
 
 <br><br><br>
-Note: If you had `bootRepackage { enabled = false }` you are probably doing it wrong. I suggest you just *don't apply* spring boot's plugin to that project (module), that is, remove `apply plugin: 'org.springframework.boot'`. You may have some trouble getting the dependencies when you remove that plugin. If that's the case, add `apply plugin: "io.spring.dependency-management"` as well. [Here's a sample project](https://github.com/acdcjunior/spring-boot2-gradle-subprojects-example/) doing that.
+**Note:** If you had `bootRepackage { enabled = false }` you are probably doing it wrong. I suggest you just *don't apply* spring boot's plugin to that project (module) -- in other words, remove `apply plugin: 'org.springframework.boot'`.<br>
+You may have some trouble getting the dependencies when you remove such plugin. If that's the case, add `apply plugin: "io.spring.dependency-management"` as well. [Here's a sample project](https://github.com/acdcjunior/spring-boot2-gradle-subprojects-example/) doing that.
