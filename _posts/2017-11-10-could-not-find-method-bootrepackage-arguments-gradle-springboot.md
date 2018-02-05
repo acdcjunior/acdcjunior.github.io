@@ -39,6 +39,13 @@ BUILD FAILED in 2s
 
 # Fix
 
-From:  https://spring.io/blog/2017/04/05/spring-boot-s-new-gradle-plugin#building-executable-jars-and-wars
+From: [spring.io/blog/2017/04/05/spring-boot-s-new-gradle-plugin](https://spring.io/blog/2017/04/05/spring-boot-s-new-gradle-plugin#building-executable-jars-and-wars)
 
 > The *`bootRepackage` task has been replaced with `bootJar` and `bootWar` tasks* for building executable jars and wars respectively. Both tasks extend their equivalent standard Gradle jar or war task, giving you access to all of the usual configuration options and behaviour.
+
+So, change your `bootRepackage` to `bootJar` (or `bootWar`, but most probably `bootJar`).
+
+That's it.
+
+<br><br><br>
+Note: If you had `bootRepackage { enabled = false }` you are probably doing it wrong. I suggest you just *don't apply* spring boot's plugin to that project (module), that is, remove `apply plugin: 'org.springframework.boot'`. You may have some trouble getting the dependencies when you remove that plugin. If that's the case, add `apply plugin: "io.spring.dependency-management"` as well. [Here's a sample project](https://github.com/acdcjunior/spring-boot2-gradle-subprojects-example/) doing that.
