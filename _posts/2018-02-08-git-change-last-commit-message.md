@@ -13,7 +13,7 @@ modified: 2018-02-08
 
 Run:
 
-    git commit --amend --no-edit -m "new commit message"
+    git commit --amend -m "new commit message"
     
 <!-- more -->
 
