@@ -1,6 +1,6 @@
 ---
 layout: single
-title: 'Git: change last commit's message'
+title: "Git: change last commit's message"
 category: git
 tags: [git]
 lang: en-US
