@@ -1,6 +1,6 @@
 ---
 layout: single
-title: 'Easy way to add Mochar + Chai + Sinon to Unit Test JavaScript'
+title: 'Easy way to add Mocha + Chai + Sinon to Unit Test JavaScript'
 category: javascript
 tags: [javascript, test]
 lang: en-US
