@@ -24,8 +24,7 @@ Considering `myDate` is your property, you can use:
 
 Since `v-model` [is only syntactic sugar to `:value` and `@input`][1], you can use them instead. In this case, we used and changed them a little (to format the `String` that is the output of the date input to a `Date` object and vice-versa).
 
-Check **demo** and caveats below.
-
+[Check a **JSFiddle Demo**](https://jsfiddle.net/acdcjunior/r3cjf4x5/3/) of the code below.
 
 ```html
 <script src="https://unpkg.com/vue"></script>
@@ -76,6 +75,10 @@ new Vue({
 <br><br>
 
 # Creating a custom `input-date` component and using `v-model`
+
+If you want to stick to the `v-model`, you can use the code below. I don't really see any reason why someone would stick to it, but the component below is a useful demonstration of a component that binds to the `value` property of a HTML `input`.
+
+[Check a **JSFiddle Demo**](https://jsfiddle.net/acdcjunior/0Laa8xv7/) of the code below.
 
 ```html
 <script src="https://unpkg.com/vue"></script>
