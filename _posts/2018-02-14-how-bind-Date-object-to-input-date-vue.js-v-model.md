@@ -84,7 +84,7 @@ Check **demo** and caveats below.
   <button @click="setMyDateToToday">Set date one to today</button>
   <button @click="addADayToMyDate">Add a day to my date</button>
 </div>
-```html
+```
 
 ```javascript
 Vue.component('input-date', {
