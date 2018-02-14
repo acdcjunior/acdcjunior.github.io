@@ -30,14 +30,14 @@ Since `v-model` [is only syntactic sugar to `:value` and `@input`][1], you can u
 <script src="https://unpkg.com/vue"></script>
 
 <div id="app">
-  <p>{{ message }}</p>
+  <p>\{{ message }}</p>
 
   <input type="date" :value="myDate && myDate.toISOString().split('T')[0]"
                      @input="myDate = $event.target.valueAsDate">
 
   <p>
   <code>
-  myDate: {{ myDate }}</code>
+  myDate: \{{ myDate }}</code>
   </p>
 
   <button @click="setMyDateToToday">Set date one to today</button>
@@ -85,7 +85,7 @@ If you want to stick to the `v-model`, you can use the code below. I don't reall
 
 <div id="app">
   myDate: <input-date v-model="myDate"></input-date>
-  <p>myDate: {{ myDate }}</p>
+  <p>myDate: \{{ myDate }}</p>
 
   <button @click="setMyDateToToday">Set date one to today</button>
   <button @click="addADayToMyDate">Add a day to my date</button>
