@@ -26,49 +26,49 @@ Check **demo** and caveats below.
 
 
 ```html
-    <script src="https://unpkg.com/vue"></script>
+<script src="https://unpkg.com/vue"></script>
 
-    <div id="app">
-      <p>{{ message }}</p>
+<div id="app">
+  <p>{{ message }}</p>
 
-      <input type="date" :value="myDate && myDate.toISOString().split('T')[0]"
-                         @input="myDate = $event.target.valueAsDate">
+  <input type="date" :value="myDate && myDate.toISOString().split('T')[0]"
+                     @input="myDate = $event.target.valueAsDate">
 
-      <p>
-      <code>
-      myDate: {{ myDate }}</code>
-      </p>
+  <p>
+  <code>
+  myDate: {{ myDate }}</code>
+  </p>
 
-      <button @click="setMyDateToToday">Set date one to today</button>
-      <button @click="addADayToMyDate">Add a day to my date</button>
-    </div>
+  <button @click="setMyDateToToday">Set date one to today</button>
+  <button @click="addADayToMyDate">Add a day to my date</button>
+</div>
 ```
 
 ```javascript
-    new Vue({
-      el: '#app',
-      data: {
-        message: 'Hello Vue.js!',
-        myDate: new Date('2011-04-11T10:20:30Z')
-      },
-      methods: {
-        setMyDateToToday() {
-        	this.myDate = new Date();
-        },
-        addADayToMyDate() {
-          if (this.myDate) // as myDate can be null
-            // you have to set the this.myDate again, so vue can detect it changed
-            // this is not a caveat of this specific solution, but of any binding of dates
-            this.myDate = new Date(this.myDate.setDate(this.myDate.getDate() + 1));
-        },
-      }
-    });
-    // Notes:
-    // We use `myDate && myDate.toISOString().split('T')[0]` instead
-    // of just `myDate.toISOString().split('T')[0]` because `myDate` can be null.
+new Vue({
+  el: '#app',
+  data: {
+    message: 'Hello Vue.js!',
+    myDate: new Date('2011-04-11T10:20:30Z')
+  },
+  methods: {
+    setMyDateToToday() {
+      this.myDate = new Date();
+    },
+    addADayToMyDate() {
+      if (this.myDate) // as myDate can be null
+        // you have to set the this.myDate again, so vue can detect it changed
+        // this is not a caveat of this specific solution, but of any binding of dates
+        this.myDate = new Date(this.myDate.setDate(this.myDate.getDate() + 1));
+    },
+  }
+});
+// Notes:
+// We use `myDate && myDate.toISOString().split('T')[0]` instead
+// of just `myDate.toISOString().split('T')[0]` because `myDate` can be null.
 
-    // the date to string conversion myDate.toISOString().split('T')[0] may
-    // have timezone caveats. See: https://stackoverflow.com/a/29774197/1850609
+// the date to string conversion myDate.toISOString().split('T')[0] may
+// have timezone caveats. See: https://stackoverflow.com/a/29774197/1850609
 ```
 
 
