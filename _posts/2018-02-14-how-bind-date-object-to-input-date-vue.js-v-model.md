@@ -78,7 +78,7 @@ new Vue({
 
 If you want to stick to the `v-model`, you can use the code below. I don't really see any reason why someone would stick to it, but the component below is a useful demonstration of a component that binds to the `value` property of a HTML `input`.
 
-[Check a **JSFiddle Demo**](https://jsfiddle.net/acdcjunior/0Laa8xv7/) of the code below.
+[Check a **JSFiddle Demo**](https://jsfiddle.net/acdcjunior/0Laa8xv7/1/) of the code below.
 
 ```html
 <script src="https://unpkg.com/vue"></script>
