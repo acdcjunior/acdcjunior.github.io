@@ -73,6 +73,7 @@ new Vue({
 // have timezone caveats. See: https://stackoverflow.com/a/29774197/1850609
 ```
 
+<br><br>
 
 # Creating a custom `input-date` component and using `v-model`
 
@@ -115,7 +116,7 @@ Vue.component('input-date', {
     },
     selectAll: function (event) {
       // Workaround for Safari bug
-      // http://stackoverflow.com/questions/1269722/selecting-text-on-focus-using-jquery-not-working-in-safari-and-chrome
+      // https://stackoverflow.com/q/1269722/1850609
       setTimeout(function () {
       	event.target.select()
       }, 0)
