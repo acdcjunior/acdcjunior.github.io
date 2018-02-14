@@ -15,8 +15,10 @@ To use `v-model` you have to create a custom component (see below). But there is
 
 Considering `myDate` is your property, you can use:
 
-    <input type="date" :value="myDate && myDate.toISOString().split('T')[0]"
-                       @input="myDate = $event.target.valueAsDate">
+```html
+<input type="date" :value="myDate && myDate.toISOString().split('T')[0]"
+                   @input="myDate = $event.target.valueAsDate">
+```
 
 <!-- more -->
 
