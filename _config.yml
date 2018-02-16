@@ -11,7 +11,7 @@ title                    : acdcjunior's
 title_separator          : "-"
 name                     : Antônio "acdc" Júnior
 description              : Programming and agile awesomeness
-url                      : http://acdcjunior.github.io
+url                      : https://acdcjunior.github.io
 baseurl                  : # the subpath of your site, e.g. "/blog"
 gh_repo                  : https://github.com/acdcjunior/acdcjunior.github.io/
 teaser                   : # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
