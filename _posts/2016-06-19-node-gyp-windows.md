@@ -36,7 +36,7 @@ Esse erro acontece porque o [**node-gyp**](https://github.com/nodejs/node-gyp) p
 Os passos de configuração são os seguintes:
 
 ### Instale o **Visual C++ Built Tools**
-- Baixe o [VC++ Build Tools](http://landinghub.visualstudio.com/visual-cpp-build-tools).
+- Baixe o VC++ Build Tools: o link era [este](http://landinghub.visualstudio.com/visual-cpp-build-tools), mas, se não estiver funcionando, tente [este](https://blogs.msdn.microsoft.com/vcblog/2016/03/31/announcing-the-official-release-of-the-visual-c-build-tools-2015/) ou [este](https://aka.ms/buildtools).
 - Na instalação, selecione o tipo de instalação **Default** e siga (demora um pouco, ele vai baixar tudo durante a instalação).
 <br> ![microsoft-visual-cpp-build-tools-install-default](/images/posts/microsoft-visual-cpp-build-tools-install-default.png)
 - [ :bulb: Importante: se, e *somente se*, você estiver no **Windows 7**, instale antes também o [.NET Framework 4.5.1](http://www.microsoft.com/en-us/download/details.aspx?id=40773)]
@@ -88,3 +88,13 @@ Você provavelmente esqueceu de configurar o NPM. Execute:
     
 ou veja a explicação [acima](#configure-o-npm).
 
+
+# Update: Novidade
+
+Se nada acima funcionar, recentemente o pessoal do node-gyp deu uma outra alternativa:
+
+"Instalar todas as ferramentas e configurações necessárias usando [Microsoft's windows-build-tools](https://github.com/felixrieseberg/windows-build-tools) via:
+
+    npm install --global --production windows-build-tools
+    
+a partir de um PowerShell ou CMD.exe **executado como Administrador**.
