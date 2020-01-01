@@ -16,12 +16,14 @@ Run:
 <!-- more -->
 
 ```shell
-npm i -D mocha chai sinon @types/sinon-chai
+npm i -D mocha chai sinon @types/mocha @types/sinon-chai
 ```
 
-`mocha`, `chai`, `sinon` are the dependencies needed to run the tests, use bdd-style assertions and create test doubles (spies, mocks), respectively. The `@types/sinon-chai` is to help your IDE (e.g. WebStorm) recognize the methods of the libs.
+`mocha`, `chai`, `sinon` are the dependencies needed to run the tests, use bdd-style assertions and create test doubles (spies, mocks), respectively.
 
-Now create a file, say `<your-project-root>/src/filterFilesWithExtensions.test`:
+The `@types/mocha` and `@types/sinon-chai` is to help your IDE (e.g. WebStorm) recognize the methods of the libs.
+
+Now create a file, say `<your-project-root>/src/filterFilesWithExtensions.test.js`:
 
 ```javascript
 const expect = require('chai').expect;
