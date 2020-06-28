@@ -11,7 +11,7 @@ published: true
 modified: 2018-02-14
 ---
 
-If you really want oo use `v-model` you <i>have to</i> create a custom component (see below in the second part of this post).
+If you really want to use `v-model` you <i>have to</i> create a custom component (see below in the second part of this post).
 
 But there is also a more direct alternative. Considering `myDate` is your property, you could just use:
 
@@ -38,11 +38,13 @@ Full demo, as well as discussion of this and the component solution below.
 
 <!-- more -->
 
-## Full breakdown of the solution
+<br>
 
-Since `v-model` [is only syntactic sugar to `:value` and `@input`][1], you can use them instead. In this case, we used and changed them a little (to format the `String` that is the output of the date input to a `Date` object and vice-versa).
+# Full breakdown of the solution
 
-[Check a **JSFiddle Demo**](https://jsfiddle.net/acdcjunior/r3cjf4x5/274/) of the code below.
+Since `v-model` [is only syntactic sugar to `:value` and `@input`][1], you can use these two attributes instead of `v-model`. In this case, we used them because we want to change their behavior a little (to format the `String` that is the output of the date input to a `Date` object and vice-versa).
+
+[Check a **JSFiddle Demo**][jsfiddle-direct] of the code below.
 
 ```html
 {% raw %}
@@ -100,12 +102,13 @@ new Vue({
 // We use `myDate && new Date(myDate.getTime()-(myDate.getT...` instead
 // of just `new Date(myDate.getTime()-(myDate.getT...` because `myDate` can be null.
 ```
+Again, the [executable **JSFiddle Demo** is here][jsfiddle-direct].
 
 <br><br>
 
 # Creating a custom `input-date` component and using `v-model`
 
-If you want to stick to the `v-model`, you can use the code below. I don't really see any reason why someone would stick to it, but the component below is a useful demonstration of a component that binds to the `value` property of a HTML `input`.
+If you want to stick to the `v-model`, you can use the code below. The component below is also a useful demonstration of a component that binds to the `value` property of a HTML `input`.
 
 [Check a **JSFiddle Demo**](https://jsfiddle.net/acdcjunior/0Laa8xv7/127/) of the code below.
 
@@ -184,3 +187,4 @@ new Vue({
 
 
   [1]: https://vuejs.org/v2/guide/components.html#Form-Input-Components-using-Custom-Events
+  [jsfiddle-direct]: https://jsfiddle.net/acdcjunior/r3cjf4x5/274/
