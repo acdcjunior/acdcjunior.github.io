@@ -21,6 +21,7 @@ Considering `myDate` is your property, you can use:
 OR
 <input type="date" :value="dateToYYYYMMDD(myDate)"
                    @input="myDate = $event.target.valueAsDate">
+    <!-- see code for dateToYYYYMMDD method below -->
 ```
 
 With `dateToYYYYMMDD()` being
