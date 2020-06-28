@@ -30,6 +30,7 @@ With `dateToYYYYMMDD()` being
   methods:
     // ...
     dateToYYYYMMDD(d) {
+      // alternative implementations in https://stackoverflow.com/q/23593052/1850609
     	return d && new Date(d.getTime()-(d.getTimezoneOffset()*60*1000)).toISOString().split('T')[0]
     }
 ```
