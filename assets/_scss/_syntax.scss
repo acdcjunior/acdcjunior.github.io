@@ -3,6 +3,10 @@
    ========================================================================== */
 
 div.highlighter-rouge, figure.highlight {
+  /* respect ads if exist */
+  display: flex;
+  overflow: auto;
+
   position: relative;
   margin-bottom: 1em;
   padding: 1em;
