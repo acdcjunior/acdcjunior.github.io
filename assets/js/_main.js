@@ -3,6 +3,9 @@
    ========================================================================== */
 
 $(document).ready(function(){
+  console.log('initiated');
+  console.log($("span.next-28").size());
+
 
   // FitVids init
   $("#main").fitVids();

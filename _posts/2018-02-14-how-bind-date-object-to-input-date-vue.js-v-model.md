@@ -15,7 +15,7 @@ If you really want to use `v-model` you <i>have to</i> create a custom component
 
 But there is also a more direct alternative. Considering `myDate` is your property, you could just use:
 
-<div style="margin-right: 28%">
+<span class="next-28"></span>
 
 ```html
 <input type="date" :value="myDate && new Date(myDate.getTime()-(myDate.getTimezoneOffset()*60*1000)).toISOString().split('T')[0]"
@@ -25,8 +25,6 @@ OR
                    @input="myDate = $event.target.valueAsDate">
     <!-- see code for dateToYYYYMMDD method below -->
 ```
-
-</div>
 
 With `dateToYYYYMMDD()` being
 
