@@ -34,6 +34,9 @@ layout: default
       {% endunless %}
 
       <section class="page__content" itemprop="text">
+        <div style="float: right">
+          <div data-ea-publisher="acdcjunior-github-io" data-ea-type="image"></div>
+        </div>
         {{ content }}
         {% if page.link %}<div><a href="{{ page.link }}" class="btn">{{ site.data.ui-text[post_specific_locale].ext_link_label }}</a></div>{% endif %}
       </section>
