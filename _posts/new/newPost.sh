@@ -1,0 +1,1 @@
+node ./newPost.js spring-boot This is my spring-boot title
