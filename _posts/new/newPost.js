@@ -1,6 +1,6 @@
 function toKebabCase(s) {
   return s.replace(/([a-z])([A-Z])/g, '$1-$2')
-          .replace(/[\s_]+/g, '-')
+          .replace(/[\s_':-]+/g, '-')
           .toLowerCase();
 }
 
@@ -29,6 +29,7 @@ const categories = {
   javascript: ['javascript'],
   tests: ['tests'],
   architecture: ['architecture'],
+  kubectl: ['kubectl', 'kubernetes', 'k8s', 'devops'],
 };
 
 const [, , category, ...titleParts] = process.argv;

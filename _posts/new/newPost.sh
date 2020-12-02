@@ -1,1 +1,3 @@
-node ./newPost.js spring-boot This is my spring-boot title
+node ./newPost.js kubectl kubectl: export pod logs to file
+
+read -p "Press enter to continue..."
