@@ -11,7 +11,7 @@ title                    : acdcjunior's
 title_separator          : "-"
 name                     : Antônio "acdc" Júnior
 description              : Programming and agile awesomeness
-url                      : https://acdcjunior.github.io
+url                      : https://acdcjunior.dev
 baseurl                  : # the subpath of your site, e.g. "/blog"
 gh_repo                  : https://github.com/acdcjunior/acdcjunior.github.io/
 teaser                   : # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
@@ -39,7 +39,7 @@ yandex_site_verification :
 twitter:
   username               : acdcjunior
 facebook:
-  username               : 
+  username               :
   app_id                 :
   publisher              :
 og_image                 : # Open Graph/Twitter default site image
@@ -66,14 +66,14 @@ author:
   name             : Antônio "acdc" Júnior
   avatar           : acdcjunior.jpg
   bio              : A (mostly) software developer based in Brasília, Brasil. Interested in anything that would make our coding lives more awesome.
-  location         : 
-  email            : 
+  location         :
+  email            :
   uri              :
   bitbucket        :
   codepen          :
   dribbble         :
   flickr           :
-  facebook         : 
+  facebook         :
   foursquare       :
   github           : acdcjunior
   google_plus      :
