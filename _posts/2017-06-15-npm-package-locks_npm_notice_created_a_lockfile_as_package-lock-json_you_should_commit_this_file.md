@@ -1,7 +1,7 @@
 ---
 layout: single
 title: 'NPM Package Locks: "npm notice created a lockfile as package-lock.json. You should commit this file."'
-category: NPM
+category: npm
 tags: [npm, node, javascript]
 lang: en-US
 comments: true

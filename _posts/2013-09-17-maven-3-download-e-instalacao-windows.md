@@ -1,7 +1,7 @@
 ---
 layout: single
 title: 'Maven 3: Download e Instalação (Windows)'
-Category: Tools
+Category: tools
 tags: [maven, java]
 lang: pt-BR
 ---

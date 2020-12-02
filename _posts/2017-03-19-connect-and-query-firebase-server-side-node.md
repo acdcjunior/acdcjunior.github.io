@@ -1,7 +1,7 @@
 ---
 layout: single
 title: 'Server-side connecting and querying Firebase from Node.JS'
-category: node
+category: nodejs
 tags: [firebase, node, sample]
 lang: en-US
 comments: true

@@ -2,7 +2,7 @@
 layout: single
 # type: <nothing> | quote | status | video | photo
 title: 'Java Unit Tests Maven dependencies snippet'
-category: Test
+category: tests
 tags: [test, junit, hamcrest, mockito, maven, java]
 lang: en-US
 description: Test dependencies are very common. Here they go.

@@ -1,7 +1,7 @@
 ---
 layout: single
 title: 'Exemplos da anotação <code>@Rule</code> do JUnit'
-category: JUnit
+category: junit
 tags: [junit, tests, java]
 lang: pt-BR
 ---

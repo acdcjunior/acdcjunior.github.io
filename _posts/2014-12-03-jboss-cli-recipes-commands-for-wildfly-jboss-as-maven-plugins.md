@@ -1,7 +1,7 @@
 ---
 layout: single
 title: 'JBoss CLI Examples: Useful for Wildfly/JBoss-AS Maven Plugins'
-category: JBoss
+category: jboss
 tags: [jboss, wildfly, cli recipes, maven, java]
 lang: en-US
 ---

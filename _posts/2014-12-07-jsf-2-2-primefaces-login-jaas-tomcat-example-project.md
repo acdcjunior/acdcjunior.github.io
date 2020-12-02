@@ -1,11 +1,11 @@
 ---
 layout: single
 title: 'JSF 2.2 Primefaces JAAS Tomcat Example - With Authentication, Template Layout and Maven'
-category: 'Java EE'
-tags: [jsf, primefaces, jaas, tomcat, maven, 'tomcat7:run', template, layout]
+category: jsf
+tags: [jsf, primefaces, jaas, tomcat, maven, 'tomcat7:run', template, layout, 'java ee']
 lang: en-US
 ---
-Just a demo app. What you'll find:
+Just a Java EE demo app. What you'll find:
 
 - JSF 2.2
 - Primefaces 5.1

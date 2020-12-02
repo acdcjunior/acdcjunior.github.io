@@ -1,7 +1,7 @@
 ---
 layout: single
 title: 'Creating (binding) a specific event and removing (unbinding) it only'
-category: jQuery
+category: jquery
 tags: [jquery]
 ---
 Say you want to add some specific event and want to specifically unbind just it (and not others) later.

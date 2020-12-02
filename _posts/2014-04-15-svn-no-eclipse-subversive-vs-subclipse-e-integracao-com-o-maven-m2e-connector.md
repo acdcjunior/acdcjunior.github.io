@@ -1,7 +1,7 @@
 ---
 layout: single
 title: 'SVN no Eclipse: Subversive vs. Subclipse e integração com o Maven (M2E connector)'
-category: Tools
+category: tools
 tags: [svn, eclipse, subversive, subclipse, maven, m2e]
 lang: pt-BR
 ---

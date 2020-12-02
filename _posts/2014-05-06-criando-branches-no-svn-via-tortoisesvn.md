@@ -1,7 +1,7 @@
 ---
 layout: single
 title: 'Criando Branches no SVN via TortoiseSVN'
-category: Tools
+category: tools
 tags: [svn, tortoisesvn]
 lang: pt-BR
 ---

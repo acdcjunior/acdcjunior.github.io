@@ -1,7 +1,7 @@
 ---
 layout: single
 title: 'Application Cache Error event: Manifest fetch failed (6) and Resource fetch failed (6)'
-category: HTML5
+category: html5
 tags: [html5, chrome, cache manifest]
 lang: en-US
 ---

@@ -1,7 +1,7 @@
 ---
 layout: single
 title: 'What XPath version does a given WebDriver support?'
-category: Selenium
+category: selenium
 tags: [selenium, xpath, java, webdriver]
 lang: en-US
 modified: 2017-07-28
