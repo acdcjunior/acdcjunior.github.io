@@ -1,3 +1,3 @@
-node ./newPost.js kubectl kubectl: export pod logs to file
+node ./newPost.js vue.js Create a plugin with reactive properties
 
 read -p "Press enter to continue..."
