@@ -27,6 +27,8 @@ published: true
 Typescript: cast an object to other type. How?
 <!--more-->
 
+<br>
+
 ## Use `<>` or the `as` keyword for casting:
 
 ```javascript
@@ -39,11 +41,17 @@ myObject = otherObject as TypeA;    // using as keyword
 
 Both ways have the same (compile-time, not runtime) outcome.
 
+<br>
+
 ### Ok, both works the same, which one should I use, then? `<>` or `as`?
 
-Since Typescript 1.6, the default is `as`, because `<>` is ambiguous and unavailable in .tsx files. (TSX is the TypeScript's version of .jsx. [Click here for more details.](https://github.com/Microsoft/TypeScript/wiki/What's-new-in-TypeScript#new-tsx-file-extension-and-as-operator))
+Since Typescript 1.6, the default is `as`, because `<>` is ambiguous and unavailable in .tsx files. (TSX is the TypeScript's version of `.jsx`. [Click here for more details.](https://github.com/Microsoft/TypeScript/wiki/What's-new-in-TypeScript#new-tsx-file-extension-and-as-operator))
 
 So... **casting using** `as` **is preferred**. (If you are using .TSX, then it is the only option.)
+
+
+<br>
+<br>
 
 ---
 
@@ -63,11 +71,13 @@ You can find more about it in the [TypeScript Language Specification](https://gi
 
 > #### 4.19.4 The instanceof operator
 >
-> The instanceof operator requires the left operand to be of type Any, an object type, or a type parameter type, and the right operand to be of type Any or a subtype of the 'Function' interface type. The result is always of the Boolean primitive type.
+> The `instanceof` operator requires the left operand to be of type Any, an object type, or a type parameter type, and the right operand to be of type `Any` or a subtype of the '`Function`' interface type. The result is always of the `Boolean` primitive type.
 >
-> Note that object types containing one or more call or construct signatures are automatically subtypes of the 'Function' interface type, as described in section 3.3.
+> Note that object types containing one or more call or construct signatures are automatically subtypes of the '`Function`' interface type, as described in section 3.3.
 
 Great, but...
+
+<br>
 
 ---
 
