@@ -39,7 +39,7 @@ myObject = <TypeA> otherObject;     // using <>
 myObject = otherObject as TypeA;    // using as keyword
 ```
 
-Both ways have the same (compile-time, not runtime) outcome.
+Both ways have the same (compile-time) outcome.
 
 <br>
 
