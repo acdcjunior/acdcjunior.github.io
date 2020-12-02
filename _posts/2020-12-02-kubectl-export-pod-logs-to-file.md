@@ -11,13 +11,13 @@ published: true
 modified: 2020-12-02
 ---
 
-Say you want to save/export the logs of a pod to a file.
+Say you have your kubernetes setup going and want to use `kubectl` to save/export the logs of a pod to a file.
 
 <!--more-->
 
 <br>
 
-In its simplest form, use:
+In its simplest form, use `kubectl logs`:
 
 ```sh
 kubectl logs -n my-namespace my-pod-name-xyz > my-pod-name.log
