@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "Application Services: DOs and DON'Ts"
+title: "Application Services Best Practices: DOs and DON'Ts"
 category: architecture
 tags: ['architecture', 'ddd', 'domain driven design', 'design']
 lang: en-US
@@ -17,7 +17,7 @@ A list of quick design guidelines for application services.
 
 <br>
 
-- Make then thin, they should not have heavy logic
+- Make them thin, they should not have heavy logic
   - Naturally, should not contain domain logic, but application logic
 - The application services are the part of your app that should contain most heavyweight integration logic (such as calling repositories or external services). This
 means their tests are going to be more complicated, likely integration tests. Therefore:
@@ -25,4 +25,4 @@ means their tests are going to be more complicated, likely integration tests. Th
   - If you have logic that implies branching, move them to external (standalone) functions, and test them in isolation. This allows you to test these with unit tests, which
   will make it easy to test all logic branches.
   
-More to come soon...
+To be continued...
