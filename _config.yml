@@ -27,7 +27,7 @@ comments:
     # https://developers.facebook.com/docs/plugins/comments
     appid                :
     num_posts            : # 5 (default)
-    colorscheme          : # "light" (default), "dark"
+    colorscheme          : "dark"
 
 # SEO Related
 google_site_verification :
@@ -65,7 +65,7 @@ google_ad_slot           :
 author:
   name             : Antônio "acdc" Júnior
   avatar           : acdcjunior.jpg
-  bio              : A (mostly) software developer based in Brasília, Brasil. Interested in anything that would make our coding lives more awesome.
+  bio              : A (mostly) software developer somewhere around Brasil. Interested in anything that would make our coding lives more awesome.
   location         :
   email            :
   uri              :
