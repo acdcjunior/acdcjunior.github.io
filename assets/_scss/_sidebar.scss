@@ -17,6 +17,9 @@
 
     &:hover {
       opacity: 1;
+      img {
+        filter: unset;
+      }
     }
   }
 
@@ -79,10 +82,11 @@
   img {
     max-width: 100px;
     border-radius: 50%;
+    filter: grayscale(1);
 
     @include breakpoint($large) {
       padding: 5px;
-      border: 1px solid $border-color;
+      border: 1px solid $code-border-color;
     }
   }
 }
@@ -104,6 +108,7 @@
 
 .author__name {
   margin: 0;
+  white-space: nowrap;
 
   @include breakpoint($large) {
     margin-top: 10px;
@@ -129,6 +134,7 @@
   display: table-cell;
   vertical-align: middle;
   font-family: $sans-serif;
+  font-size: 140%;
   z-index: 10;
   position: relative;
   cursor: pointer;
