@@ -10,17 +10,70 @@
   @include clearfix();
   margin-bottom: 1em;
 
-  @include breakpoint($large) {
-    @include span(2 of 12);
-    opacity: 0.75;
-    transition: opacity 0.2s ease-in-out;
+  > div {
+    display: grid;
+    gap: 5px;
+    grid-template-areas: "a b"
+                         "c c";
+    @include breakpoint($small) {
+      grid-template-areas: "a b"
+                           "a c";
+    }
+    @include breakpoint($large) {
+      display: block;
+    }
 
-    &:hover {
-      opacity: 1;
-      img {
-        filter: unset;
+    > .author__avatar {
+      grid-area: a;
+    }
+    > .author__content {
+      grid-area: b;
+
+      padding: unset;
+    }
+    > .author__urls-wrapper {
+      grid-area: c;
+
+      > .btn {
+        display: none;
+      }
+
+      > .author__urls {
+        display: flex;
+        flex-wrap: wrap;
+
+        justify-content: space-around;
+        @include breakpoint($small) {
+          justify-content: unset;
+        }
+        @include breakpoint($large) {
+          display: block;
+        }
+
+        .scholar-icon {
+          width: 1em;
+        }
+        gap: 3px;
+        font-size: .75em;
+        @include breakpoint($small) {
+          gap: 15px;
+          font-size: .85em;
+          .scholar-icon {
+            width: .85em;
+          }
+        }
+
+        position: unset;
+        border: unset;
+        background: unset;
+        margin: unset;
+        padding: unset;
       }
     }
+  }
+
+  @include breakpoint($large) {
+    @include span(2 of 12);
   }
 
   @include breakpoint($x-large) {
@@ -70,8 +123,6 @@
 .author__avatar {
   display: table-cell;
   vertical-align: top;
-  width: 36px;
-  height: 36px;
 
   @include breakpoint($large) {
     display: block;
@@ -81,13 +132,11 @@
 
   img {
     max-width: 100px;
-    border-radius: 50%;
-    filter: grayscale(1);
+    min-width: 40px;
+    border-radius: 1% 35%;
 
-    @include breakpoint($large) {
-      padding: 5px;
-      border: 1px solid $code-border-color;
-    }
+    padding: 5px;
+    border: 1px solid $code-border-color;
   }
 }
 
@@ -181,7 +230,7 @@
     box-shadow: none;
   }
 
-  &:before {
+  &:beforex {
     display: block;
     content: "";
     position: absolute;
@@ -198,7 +247,7 @@
     }
   }
 
-  &:after {
+  &:afterx {
     display: block;
     content: "";
     position: absolute;
