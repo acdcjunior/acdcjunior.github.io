@@ -27,13 +27,6 @@ $(document).ready(function(){
     stickySideBar();
   });
 
-  // Follow menu drop down
-
-  $(".author__urls-wrapper button").on("click", function() {
-    $(".author__urls").fadeToggle("fast", function() {});
-    $(".author__urls-wrapper button").toggleClass("open");
-  });
-
   // init smooth scroll
   $("a").smoothScroll({offset: -20});
 

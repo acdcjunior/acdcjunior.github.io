@@ -14,24 +14,10 @@ div.highlighter-rouge, figure.highlight {
   background-color: $code-background-color;
   box-shadow: $box-shadow;
 
-  &:before {
-    position: absolute;
-    top: 0;
-    right: 0;
-    padding: 0.5em;
-    background-color: $code-border-color;
-    content: "\f121";
-    font-family: "fontawesome" !important;
-    font-size: $type-size-6;
-    line-height: 1;
-    text-transform: none;
-    speak: none;
-  }
-
   .highlight {
     margin: 0;
     font-family: $monospace;
-    font-size: $type-size-7;
+    font-size: $code-snippet-font-size;
     line-height: 1.8;
     pre {
       padding: 1em 5em 1em 1em;

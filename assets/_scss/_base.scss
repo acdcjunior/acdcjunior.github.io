@@ -2,12 +2,16 @@
    BASE ELEMENTS
    ========================================================================== */
 
+html {
+  font-size: $global-font-size;
+}
+
 body {
   margin: 0;
   padding: 0;
   color: $text-color;
   font-family: $global-font-family;
-  line-height: 1.5;
+  line-height: $global-line-height;
 
   &.overflow--hidden {
     /* when primary navigation is visible, the content in the background won't scroll */
@@ -28,15 +32,16 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   margin-top: 0;
-  font-size: $type-size-3;
+  font-size: $type-size-2;
 }
 
 h2 {
-  font-size: $type-size-4;
+  font-size: $type-size-3;
+  margin-top: 50px;
 }
 
 h3 {
-  font-size: $type-size-5;
+  font-size: $type-size-4;
 }
 
 h4 {
@@ -91,9 +96,11 @@ abbr[data-original-title] {
 /* blockquotes */
 
 blockquote {
-  margin: 2em 1em 2em 2em;
+  margin: 1em .5em;
   padding-left: 1em;
   padding-right: 1em;
+  padding-top: 1em;
+  padding-bottom: 1px;
   font-style: italic;
   background-color: $blockquote-color;
   border-left: 0.25em solid $primary-color;

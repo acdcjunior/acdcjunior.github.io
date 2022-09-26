@@ -20,7 +20,6 @@
   </div>
 
   <div class="author__urls-wrapper">
-    <button class="btn btn--inverse">Follow</button>
     <ul class="author__urls social-icons">
       {% if author.location %}
         <li><i class="fa fa-fw fa-map-marker" aria-hidden="true"></i> {{ author.location }}</li>
@@ -47,7 +46,7 @@
         <li><a href="https://www.facebook.com/{{ author.facebook }}"><i class="fa fa-fw fa-facebook-square" aria-hidden="true"></i> Facebook</a></li>
       {% endif %}
       {% if author.google_scholar %}
-        <li><a href="{{ author.google_scholar }}" target="_blank"><img class="scholar-icon" src="https://scholar.google.com/favicon.ico"> Google Scholar</a></li>
+        <li><a href="{{ author.google_scholar }}" target="_blank"><img class="scholar-icon" src="https://scholar.google.com/favicon.ico"> Scholar</a></li>
       {% endif %}
       {% if author.linkedin %}
         <li><a href="https://www.linkedin.com/in/{{ author.linkedin }}"><i class="fa fa-fw fa-linkedin-square" aria-hidden="true"></i> LinkedIn</a></li>

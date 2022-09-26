@@ -13,6 +13,7 @@ $paragraph-indent           : false; // true, false (default)
 $indent-var                 : 1.3em;
 
 /* system typefaces */
+$pt-sans                    : "PT Sans", Helvetica, Arial, sans-serif;
 $serif                      : Georgia, Times, serif;
 $sans-serif                 : -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
 $monospace                  : Monaco, Consolas, "Lucida Console", monospace;
@@ -28,11 +29,15 @@ $bodoni                     : "Bodoni MT", serif;
 $calisto                    : "Calisto MT", serif;
 $garamond                   : Garamond, serif;
 
-$global-font-family         : $sans-serif;
-$header-font-family         : $sans-serif;
+$global-font-family         : $pt-sans;
+$header-font-family         : $pt-sans;
 $caption-font-family        : $serif;
 
+$global-line-height         : 1.5;
+
 /* type scale */
+$global-font-size           : 1.25em;
+$code-snippet-font-size     : 0.9em;
 $type-size-1                : 2.441em;  // ~39.056px
 $type-size-2                : 1.953em;  // ~31.248px
 $type-size-3                : 1.563em;  // ~25.008px
@@ -40,7 +45,6 @@ $type-size-4                : 1.25em;   // ~20px
 $type-size-5                : 1em;      // ~16px
 $type-size-6                : 0.75em;   // ~12px
 $type-size-7                : 0.6875em; // ~11px
-$type-size-8                : 0.625em;  // ~10px
 
 
 /*
@@ -59,7 +63,7 @@ $background-color           : $body-color;
 $code-background-color      : #002b36;
 $code-border-color          : #006464;
 $code-background-color-dark : $code-background-color;
-$text-color-orginal         : rgb(247, 249, 249); // #bdc1c6;
+$text-color-orginal         : #f7f9f9d9; // rgb(247 249 249 / 90%); // #bdc1c6;
 $text-color                 : $text-color-orginal; // #838c93;
 $text-color-dark-xtension   : $text-color-orginal; // #c2bfba;
 

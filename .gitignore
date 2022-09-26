@@ -11,3 +11,5 @@ npm-debug.log*
 
 *.iml
 .idea/
+
+.jekyll-cache/
