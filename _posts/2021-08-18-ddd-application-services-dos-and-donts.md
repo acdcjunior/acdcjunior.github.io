@@ -28,7 +28,7 @@ They manifest themselves as **layers** in (a module view of) your architecture. 
 packages or folders in your app (depending on your language, naturally).
 
 **Application** is where your code is. It's where your "business rules", however you decide to implement
-them, are. In more complex systems, it is usually worthwhile to separate this layer into two: *application*
+them, are. In more complex systems, it is usually worthwhile to break this layer further into two: *application*
 and *domain*. More on that later.
 
 **Presentation** is where you put all code that converts requests from the "outside world" into the
