@@ -34,9 +34,7 @@ That's it.
 
 Check a [**<kbd>running demo here</kbd>**](https://jsfiddle.net/acdcjunior/jbe38chc/).
 
-<br>
-
-# If you have an error callback as well
+## If you have an error callback as well
 
 You really should handle errors. Say the signature is, then:
 
@@ -54,9 +52,7 @@ function someFunctionWithPromise(argOne, argTwo) {
 }
 ```
 
-<br>
-
-# Consuming the `Promise`'d function
+## Consuming the `Promise`'d function
 
 Either:
 

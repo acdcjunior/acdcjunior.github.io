@@ -15,15 +15,11 @@ Say you have your kubernetes setup going and want to use `kubectl` to save/expor
 
 <!--more-->
 
-<br>
-
 In its simplest form, use `kubectl logs`:
 
 ```sh
 kubectl logs -n my-namespace my-pod-name-xyz > my-pod-name.log
 ```
-    
-<br>
     
 But there are other parameters, such as `--since-time` if you only want the logs after a certain point in time:
 
@@ -31,14 +27,9 @@ But there are other parameters, such as `--since-time` if you only want the logs
 kubectl logs -n my-namespace my-pod-name-xyz --since-time=2020-12-02T00:00:00Z > my-pod-name-since-2020-12-02.log
 ```
 
-<br>
-
 That's it.
 
-<br>
-<br>
-
-# More?
+## More?
     
 For a list of all possible options, use
 

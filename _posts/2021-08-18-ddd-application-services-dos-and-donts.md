@@ -15,8 +15,6 @@ A list of quick design guidelines for application services.
 
 <!--more-->
 
-<br>
-
 Separating the code in your project by concerns simplifies maintenance (e.g. understanding/reviewing,
 fixing bugs, upgrading dependencies) and evolution (e.g. adding features) in the future.
 
@@ -43,7 +41,7 @@ needs and send it back to the client.
 **Infrastructure** is where you put everything else. Utility classes/functions, plumbing/platform code
 and whatnot.
 
-# Application vs Application + Domain
+## Application vs Application + Domain
 
 As stated, we can further separate application code into two distinct modules _application_ and _domain_.
 When doing this separation, the actual _business rules_ go into the _domain_ layer and the _application_
@@ -52,8 +50,6 @@ is contains what your app can do and the former organizes _how_ your app does th
 
 In this article I'm going to lay down a quick list of good practices for application services, which are the
 kind of objects that generally live in the application layer.
-
-<br>
 
 - Make them thin, they should not have heavy logic
   - Naturally, should not contain domain logic, but application logic

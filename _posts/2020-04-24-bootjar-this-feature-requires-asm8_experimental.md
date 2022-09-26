@@ -16,9 +16,10 @@ So you get:
 
 > Execution failed for task ':bootJar'
 
+When running `gradlew build`:
 
 ```
-$ .\gradlew build
+$ ./gradlew build
 
 > Task :compileJava
 Note: file.java uses preview language features.
@@ -40,7 +41,7 @@ Run with --stacktrace option to get the stack trace. Run with --info or --debug 
 BUILD FAILED in 8s
 ```
 
-# Fix
+## Fix
 
 Update spring-boot to the latest version. The minimum is `2.2.6.RELEASE`.
 

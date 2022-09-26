@@ -19,6 +19,6 @@ Run:
 
 Notice this changes the last commit's message only. Also it will only work if you haven't pushed it yet.
 
-<br><br>
+<br>
 
-(Note: Technically, it could work if you have already pushed it, but you'd need to do a forced push - which would rewrite the repository and possibly force other people who had alterady pulled the older-messaged-commit to, in the worst case, clone the repo again.)
+(Note: Technically, it could work if you have already pushed it, but you'd need to do a forced push - which would rewrite the repository and possibly force other people who had already pulled the older-messaged-commit to, in the worst case, clone the repo again.)

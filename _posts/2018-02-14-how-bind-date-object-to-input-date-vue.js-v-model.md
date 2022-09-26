@@ -41,7 +41,7 @@ Full demo, as well as discussion of this and the component solution below.
 
 <br>
 
-# Full breakdown of the solution
+## Breakdown of the solution
 
 Since `v-model` [is only syntactic sugar to `:value` and `@input`][1], you can use these two attributes instead of `v-model`. In this case, we used them because we want to change their behavior a little (to format the `String` that is the output of the date input to a `Date` object and vice-versa).
 
@@ -108,7 +108,7 @@ Again, the [executable **JSFiddle Demo** is here][jsfiddle-direct].
 
 <br><br>
 
-# Creating a custom `input-date` component and using `v-model`
+## Creating a custom `input-date` component and using `v-model`
 
 If you want to stick to the `v-model`, you can use the code below. The component below is also a useful demonstration of a component that binds to the `value` property of a HTML `input`.
 

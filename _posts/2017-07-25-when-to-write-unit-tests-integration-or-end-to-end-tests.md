@@ -13,9 +13,13 @@ modified: 2017-07-29
 
 Who cares about tests?
 
-If you run a rising startup with a now-or-never deadline coming up on the next few days, will you write tests?
+If you have a now-or-never deadline coming up on the next few days, will you write tests?
 
 No?
+
+Ok, at least will you pay this tech debt as soon as possible?
+
+Also no?
 
 Why should you write tests at all, then?
 
@@ -23,33 +27,33 @@ If you try a bit harder, you can find some reasons that would justify why some t
 
 What do those points indicate?
 
-For one, they tell us the team is not worried about being fast in the long run. It does want to go fast, but only "right now" (and at the cost of quality).
+For one, they tell us the team is not worried about being fast in the long run. They do want to go fast, but only "right now" (and at the expense of quality).
 
 Is that good enough?
 
-# Don't forget your end goal
+## Don't forget your end goal
 
 > Our goal is to deliver *quality* software **fast, consistently**.
 
-Our goal as software devs is, ultimately, to deliver quality software faster... and faster! But also, an this is an important point, **consistently** faster.
+Our goal as software devs is, ultimately, to deliver quality software faster... and faster! But also, and this is an important point, **consistently** faster.
 
 Tests are useless when you are doing a quick one-off work.
 
 But they are key when you want to be consistently fast.
 
-# So, who needs tests?
+## So, who needs tests?
 
 Once I heard a joke:
 
 > *"We have users, we don't need tests!"*
 
-Indeed. I coudn't disagree. Users are a very effective tool to find bugs.
+Indeed. I couldn't disagree. Users are a very effective tool to find bugs.
 
 But they are also the more stressful and costly one (users finding bugs may not be the most expensive alternative to you, but certainly it is the most costly to the overall business).
 
 Yet, some teams go by without tests. How so?
 
-# You won't miss tests if you...
+## You won't miss tests if you...
 
 In other words, you won't miss tests if you:
 - are used to having bugs more often than not
@@ -58,7 +62,7 @@ In other words, you won't miss tests if you:
 
 Another way of looking at this is asking who will miss tests, and when.
 
-# Who misses tests?
+## Who misses tests?
 
 Only those who:
 - really don't like bugs
@@ -70,12 +74,12 @@ Only those who:
 - want to speed up delivery
   - Continuous Delivery is **unthinkable** without a reliable suite of tests
 - need to enable experimentation
-  - learning comes from experimentation. New devs won't be able to safely experiment, and learn how the system works, without tests. Same goes to business oportunities, many modern practices rely on constant experimentation of features.
+  - learning comes from experimentation. New devs won't be able to safely experiment, and learn how the system works, without tests. Same goes to business opportunities, many modern practices rely on constant experimentation of features.
 
 Of course, there are many kinds of testing. Manual testing is one of them -- that's actually why some say that you can't escape
 from testing your apps, you will either automate the testing or not.
 
-# Without *automated* tests, projects can't grow
+## Without *automated* tests, projects can't grow
 
 Ok, you say, you have tons of manual tests. Still, a project without automated tests simply can't grow.
 
