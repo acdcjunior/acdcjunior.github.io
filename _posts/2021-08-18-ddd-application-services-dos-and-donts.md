@@ -11,20 +11,32 @@ published: true
 modified: 2022-02-26
 ---
 
-A list of quick design guidelines for application services.
+Application services are an integral part of popular layered architectural styles, such as
+_ports & adapters (hexagonal)_, _onion architecture_ or _clean architecture_.
+
+In this post I suggest some quick design guidelines to improve the design of your application services.
 
 <!--more-->
+
+<br>
+
+--
+
+<br>
 
 Separating the code in your project by concerns simplifies maintenance (e.g. understanding/reviewing,
 fixing bugs, upgrading dependencies) and evolution (e.g. adding features) in the future.
 
-At least three kinds of concerns are generally accepted:
+At least three kinds of concerns (or layers) are generally accepted:
 
+- presentation (user interface)
+- application (sometimes divided into application _and_ domain)
 - infrastructure
-- application (and/or domain)
-- presentation
 
-They manifest themselves as **layers** in (a module view of) your architecture. In other words, they become
+![Layers](/images/posts/checkout-as-maven-project.png)
+<sup>_Layers as presented in the Domain-Driven Design book_</sup>
+
+They manifest themselves as **layers** in your architecture (or, actually, in a [_module view_](https://www.youtube.com/watch?v=xDi_6vwfhIY) of your architecture). In the end, these layers become
 packages or folders in your app (depending on your language, naturally).
 
 **Application** is where your code is. It's where your "business rules", however you decide to implement
