@@ -18,11 +18,7 @@ In this post I suggest some quick design guidelines to improve the design of you
 
 <!--more-->
 
-<br>
-
---
-
-<br>
+⦁⦁⦁
 
 Separating the code in your project by concerns simplifies maintenance (e.g. understanding/reviewing,
 fixing bugs, upgrading dependencies) and evolution (e.g. adding features) in the future.
@@ -33,8 +29,13 @@ At least three kinds of concerns (or layers) are generally accepted:
 - application (sometimes divided into application _and_ domain)
 - infrastructure
 
-![Layers](/images/posts/checkout-as-maven-project.png)
+<table><tr><td>
+
+![Layers](/images/posts/ddd-layers.png)
+
+</td></tr><tr><td>
 <sup>_Layers as presented in the Domain-Driven Design book_</sup>
+</td></tr></table>
 
 They manifest themselves as **layers** in your architecture (or, actually, in a [_module view_](https://www.youtube.com/watch?v=xDi_6vwfhIY) of your architecture). In the end, these layers become
 packages or folders in your app (depending on your language, naturally).
