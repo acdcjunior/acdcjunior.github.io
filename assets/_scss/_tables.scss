@@ -10,6 +10,13 @@ table {
   border-collapse: collapse;
   border: 1px solid $light-gray;
 
+  &[border="0"] {
+    &, tr, td {
+      border: 0;
+    }
+    text-align: center;
+  }
+
   & + table {
     margin-top: 1em;
   }
