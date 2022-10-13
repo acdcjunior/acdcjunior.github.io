@@ -29,12 +29,12 @@ At least three kinds of concerns (or layers) are generally accepted:
 - application (sometimes divided into application _and_ domain)
 - infrastructure
 
-<table><tr><td>
+<table border="0"><tr><td>
 
-![Layers](/images/posts/ddd-layers.png)
+<img src="/images/posts/ddd-layered-architecture.jpg">
 
 </td></tr><tr><td>
-<sup>_Layers as presented in the Domain-Driven Design book_</sup>
+<sup><em>Layers as presented in the Domain-Driven Design book</em></sup>
 </td></tr></table>
 
 They manifest themselves as **layers** in your architecture (or, actually, in a [_module view_](https://www.youtube.com/watch?v=xDi_6vwfhIY) of your architecture). In the end, these layers become
@@ -58,19 +58,32 @@ and whatnot.
 
 As stated, we can further separate application code into two distinct modules _application_ and _domain_.
 When doing this separation, the actual _business rules_ go into the _domain_ layer and the _application_
-layer becomes responsible for the _coordination_ code (aka _application_ code). In other words, the latter
-is contains what your app can do and the former organizes _how_ your app does things.
+layer becomes responsible for the _coordination_ code (aka _application_ or _use cases_ code). In other words, the latter
+contains what your app can do and the former organizes _how_ your app does things.
 
 In this article I'm going to lay down a quick list of good practices for application services, which are the
 kind of objects that generally live in the application layer.
 
-- Make them thin, they should not have heavy logic
-  - Naturally, should not contain domain logic, but application logic
-- The application services are the part of your app that should contain most heavyweight integration logic (such as calling repositories or external services). This
+### Separate their steps
+
+Application services methods generally contain a very specific sequence of steps in the format "hydrate" -> "execute" -> "dehydrate".
+More specifically, they do the following tasks:
+
+- 1) Hydrate aggregates
+- 2) Invoke methods on aggregates
+- 3) Dehydrate aggregates 
+
+### Make them thin, they should not contain heavy logic
+
+Naturally, should not contain domain logic, but application logic
+
+### Avoid branching logic (no `if`s)
+
+The application services are the part of your app that should contain most heavyweight integration logic (such as calling repositories or external services). This
 means their tests are going to be more complicated, likely integration tests. Therefore:
-  - The application methods should be straightforward, keeping branching to a minimum
-    - For instance, without any branches (no `if`s), a single (integration) test will suffice
-  - If you have logic that implies branching, move them to external (standalone) functions, and test them in isolation. This allows you to test these with unit tests, which
-  will make it easy to test all logic branches.
+- The application methods should be straightforward, keeping branching to a minimum
+  - For instance, without any branches (no `if`s), a single (integration) test will suffice
+- If you have logic that implies branching, move them to external (standalone) functions, and test them in isolation. This allows you to test these with unit tests, which
+will make it easy to test all logic branches.
   
 To be continued...
