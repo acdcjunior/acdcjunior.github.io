@@ -64,18 +64,36 @@ contains what your app can do and the former organizes _how_ your app does thing
 In this article I'm going to lay down a quick list of good practices for application services, which are the
 kind of objects that generally live in the application layer.
 
-### Separate their steps
+<!-- 
 
-Application services methods generally contain a very specific sequence of steps in the format "hydrate" -> "execute" -> "dehydrate".
-More specifically, they do the following tasks:
+> Defines the jobs the software is supposed to do and directs the expressive domain objects to work out problems. The tasks this layer is responsible for are meaningful to the business or necessary for interaction with the application layers of other systems.
 
-- 1) Hydrate aggregates
-- 2) Invoke methods on aggregates
-- 3) Dehydrate aggregates 
+> This layer is kept thin. It does not contain business rules or knowledge, but only coordinates tasks and delegates work to collaborations of domain objects in the next layer down. It does not have state reflecting the business situation, but it can have state that reflects the progress of a task for the user or the program.
+
+-->
 
 ### Make them thin, they should not contain heavy logic
 
-Naturally, should not contain domain logic, but application logic
+The application layer is the _integration layer_. This means it can only be tested via (expensive) integration tests.
+A good practice, then, is to keep the logic here to a minimum, and push whatever possible to other layers (such as infrastructure or domain).
+
+Naturally, the application services should not contain domain logic, but application logic, only.
+
+### Separate their steps
+
+Application services methods generally contain a very specific sequence of steps in the format "hydrate" -> "execute" -> "dehydrate".
+More specifically, they typically do the following tasks, in the sequence:
+
+- Open the transaction
+- Hydration
+  - Fetch the entity from the Repository into memory
+  - Here the Repository can be a Database or remote API.
+- Invokes domain logic (aka methods on aggregate roots)
+- Dehydration
+  - Persists the entities back and emits events 
+- Close the transaction
+
+Notice, again, these are all "integration" tasks.
 
 ### Avoid branching logic (no `if`s)
 
@@ -87,3 +105,36 @@ means their tests are going to be more complicated, likely integration tests. Th
 will make it easy to test all logic branches.
   
 To be continued...
+
+<!--
+
+
+Pode também executar outras tarefas que não são nem de apresentação, nem de domínio, como checagem de
+perfis de acesso (segurança) ou emissão eventos (embora a implementação do envio para o meio externo esteja na infra).
+
+Esta camada deve ser mantida **magra**. Sem lógica (p.ex., sem `if`s).
+
+---
+
+As classes dessa camada são tipicamente Serviços de Aplicação.
+
+Os serviços nesta camada:
+- Não deve ter regras de negócio.
+- São tipicamente "magros".
+- São stateless.
+- São "coordenadores": responsáveis por coordenar o domínio, apenas.
+
+Estereótipos das classes desta camada:
+
+- Serviços de Aplicação
+  - Sufixo `AppService`. Exemplo: `DistribuicaoAppService`
+  - Um por "funcionalidade" provida pelo sistema ("caso de uso").
+  - São uma fachada para o negócio.
+  - Referência: Padrão *(Application) Service* [DDD], *Façade* [GoF]
+
+- Assemblers/Montadores:
+  - Classes responsáveis por transformarem DTOs em Entidades
+  - Sufixo: `Assembler`. Exemplo: `DistribuicaoAssembler`
+  - Referência: Padrão *Assembler* (descrito em *Data Transfer Object* [PoEAA], uma especialização do padrão *Mapper* [PoEAA])
+
+-->
