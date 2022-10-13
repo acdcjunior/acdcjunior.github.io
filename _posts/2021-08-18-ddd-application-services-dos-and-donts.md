@@ -20,10 +20,8 @@ In this post I suggest some quick design guidelines to improve the design of you
 
 ⦁⦁⦁
 
-Separating the code in your project by concerns simplifies maintenance (e.g. understanding/reviewing,
-fixing bugs, upgrading dependencies) and evolution (e.g. adding features) in the future.
-
-At least three kinds of concerns (or layers) are generally accepted:
+Separating the code in your project by **concerns** simplifies maintenance (e.g., understanding/reviewing,
+fixing bugs, upgrading dependencies) and evolution (e.g. adding features). At least three kinds of concerns (or layers) are generally accepted:
 
 - presentation (user interface)
 - application (sometimes divided into application _and_ domain)
