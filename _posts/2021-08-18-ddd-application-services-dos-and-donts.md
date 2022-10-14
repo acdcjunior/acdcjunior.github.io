@@ -64,12 +64,12 @@ contains what your app can do and the former organizes _how_ your app does thing
 
 ```kotlin
 @Service
-class UserAppService(private val userRepository: OperacaoRepository) {
+class UserAppService(private val userRepository: UserRepository) {
 
   @Transactional
   fun upgradeClass(userId: UserId /* Long */, newLevel: UserClass) {
     // implicit "begin transaction" by @Transactional
-    val user = userRepository.findById(userId)
+    val user = userRepository.find(userId)
       
     val upgradedUser = user.upgradeClass(newLevel)
 
@@ -100,25 +100,25 @@ A good practice, then, is to keep the logic here to a minimum, and push whatever
 For instance, considering the application service method presented before:
 
 ```kotlin
-  fun upgradeClass(userId: UserId /* Long */, newLevel: UserClass) {
-    val user = userRepository.findById(userId)
+fun upgradeClass(userId: UserId /* Long */, newLevel: UserClass) {
+  val user = userRepository.find(userId)
       
-    val upgradedUser = user.upgradeClass(newLevel)
+  val upgradedUser = user.upgradeClass(newLevel)
 
-    userRepository.save(upgradedUser)
-  }
+  userRepository.save(upgradedUser)
+}
 ```
 
 In this form, it potentially only requires one test, since there are no "logical branches". Conversely, if it were like:
 
 ```kotlin
-  fun upgradeClass(userId: UserId /* Long */, newLevel: UserClass) {
-    val user = userRepository.findById(userId)
+fun upgradeClass(userId: UserId /* Long */, newLevel: UserClass) {
+  val user = userRepository.find(userId)
 
-    val upgradedUser = if (newLevel == UserClass.PLATINUM) /* do something */ else /* do something else */
+  val upgradedUser = if (newLevel == UserClass.PLATINUM) /* do something */ else /* do something else */
 
-    userRepository.save(upgradedUser)
-  }
+  userRepository.save(upgradedUser)
+}
 ```
 
 Then now you are required to create at least two different tests to verify this method properly.
@@ -132,14 +132,14 @@ More specifically, they typically do the following tasks, in the sequence:
 
 - Open the transaction
 - Hydration
-  - Fetch the entity from the Repository into memory
-  - Here the Repository can be a Database or remote API.
+  - Fetch the entity from the Repository into memory. Here the Repository can be a private database or remote API. They aren't interchangeable and affect greatly concerns like availability and (distributed) transactions.
 - Invokes domain logic (aka methods on aggregate roots)
 - Dehydration
   - Persists the entities back and emits events 
 - Close the transaction
 
-Notice, again, these are all "integration" tasks.
+Notice, again, these are all "integration" tasks. Therefore they require integration tests to be verified.
+For instance, you'll have to have a running database server (or a contract server for the remote APIs) during this test. Just this need alone will add a considerable increase in the time each test will take to run, plus add potential to interference and flakiness.
 
 ### Avoid branching logic (no `if`s)
 
@@ -151,7 +151,10 @@ means their tests are going to be more complicated, likely integration tests. Th
   - For instance, without any branches (no `if`s), a single (integration) test will suffice
 - If you have logic that implies branching, move them to external (standalone) functions, and test them in isolation. This allows you to test these with unit tests, which
 will make it easy to test all logic branches.
-  
+
+
+---
+
 To be continued...
 
 <!--
