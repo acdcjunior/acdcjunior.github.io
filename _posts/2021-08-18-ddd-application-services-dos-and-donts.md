@@ -21,7 +21,7 @@ In this post I suggest some quick design guidelines to improve the design of you
 ⦁⦁⦁
 
 Separating the code in your project by **concerns** simplifies maintenance (e.g., understanding/reviewing,
-fixing bugs, upgrading dependencies) and evolution (e.g. adding features). At least three kinds of concerns (or layers) are generally accepted:
+fixing bugs, upgrading dependencies) and evolution (e.g., adding features). At least three kinds of concerns (or layers) are generally accepted:
 
 - presentation (user interface)
 - application (sometimes divided into application _and_ domain)
@@ -56,11 +56,33 @@ and whatnot.
 
 As stated, we can further separate application code into two distinct modules _application_ and _domain_.
 When doing this separation, the actual _business rules_ go into the _domain_ layer and the _application_
-layer becomes responsible for the _coordination_ code (aka _application_ or _use cases_ code). In other words, the latter
+layer becomes responsible for the _coordination_ code (aka _application_ or _use case_ code). In other words, the latter
 contains what your app can do and the former organizes _how_ your app does things.
 
-In this article I'm going to lay down a quick list of good practices for application services, which are the
-kind of objects that generally live in the application layer.
+**Why _use case_ code?** In the end of the day, each method of an application service will represent a coarse-grained
+(or high-level) operation (a.k.a. use case) your application can do. For instance, consider the application service below:
+
+```kotlin
+@Service
+class UserAppService(private val userRepository: OperacaoRepository) {
+
+  @Transactional
+  fun upgradeClass(userId: UserId /* Long */, newLevel: UserClass) {
+    // implicit "begin transaction" by @Transactional
+    val user = userRepository.findById(userId)
+      
+    val upgradedUser = user.upgradeClass(newLevel)
+
+    userRepository.save(upgradedUser)
+    // implicit "commit transaction" by @Transactional
+  }
+}
+```
+
+To "upgrade a user's class" (whatever that means to the business) is a user case of the application.
+
+Application services have many, but specific, responsibilities. In this article I'm going to lay down a quick list of good
+practices for these services, which are the most important objects that live in the application layer.
 
 <!-- 
 
@@ -74,6 +96,32 @@ kind of objects that generally live in the application layer.
 
 The application layer is the _integration layer_. This means it can only be tested via (expensive) integration tests.
 A good practice, then, is to keep the logic here to a minimum, and push whatever possible to other layers (such as infrastructure or domain).
+
+For instance, considering the application service method presented before:
+
+```kotlin
+  fun upgradeClass(userId: UserId /* Long */, newLevel: UserClass) {
+    val user = userRepository.findById(userId)
+      
+    val upgradedUser = user.upgradeClass(newLevel)
+
+    userRepository.save(upgradedUser)
+  }
+```
+
+In this form, it potentially only requires one test, since there are no "logical branches". Conversely, if it were like:
+
+```kotlin
+  fun upgradeClass(userId: UserId /* Long */, newLevel: UserClass) {
+    val user = userRepository.findById(userId)
+
+    val upgradedUser = if (newLevel == UserClass.PLATINUM) /* do something */ else /* do something else */
+
+    userRepository.save(upgradedUser)
+  }
+```
+
+Then now you are required to create at least two different tests to verify this method properly.
 
 Naturally, the application services should not contain domain logic, but application logic, only.
 
@@ -94,6 +142,8 @@ More specifically, they typically do the following tasks, in the sequence:
 Notice, again, these are all "integration" tasks.
 
 ### Avoid branching logic (no `if`s)
+
+This is so much an important aspect, that it pays to get dive into a bit more.
 
 The application services are the part of your app that should contain most heavyweight integration logic (such as calling repositories or external services). This
 means their tests are going to be more complicated, likely integration tests. Therefore:
