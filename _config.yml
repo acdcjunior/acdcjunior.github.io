@@ -27,7 +27,7 @@ comments:
     # https://developers.facebook.com/docs/plugins/comments
     appid                :
     num_posts            : # 5 (default)
-    colorscheme          : "dark"
+    colorscheme          : 
 
 # SEO Related
 google_site_verification :
@@ -66,7 +66,10 @@ author:
   name             : Antônio "acdc" Júnior
   avatar           : acdcjunior.jpg
   bio              : A (mostly) software developer somewhere around in Brazil. Interested in anything that would make our coding lives more awesome.
-  location         :
+  github           : acdcjunior
+  stackoverflow    : 1850609/acdcjunior
+  twitter          : acdcjunior
+  location         : Brazil
   email            :
   uri              :
   bitbucket        :
@@ -75,18 +78,15 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : acdcjunior
-  google_scholar   : https://scholar.google.com/citations?user=7_nYmrEAAAAJ&hl=pt-BR
+  google_scholar   :
   keybase          :
   instagram        :
   lastfm           :
   linkedin         :
   pinterest        :
   soundcloud       :
-  stackoverflow    : 1850609/acdcjunior
   steam            :
   tumblr           :
-  twitter          : acdcjunior
   vine             :
   weibo            :
   xing             :
